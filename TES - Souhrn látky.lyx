@@ -1268,8 +1268,9 @@ p\Rightarrow\text{\textbf{G}}p\Leftrightarrow\neg\left[p\wedge\left(\text{\textb
 \begin_layout Plain Layout
 \begin_inset Formula 
 \begin{eqnarray*}
-\neg p\vee\text{\textbf{G}}p & \Leftrightarrow & \neg p\vee{\color{red}\mathbf{\neg}}\text{\textbf{F}}\neg g\\
-\underbrace{\pi\left(0\right)\nvDash p}_{p}\vee\underbrace{\left(\forall k\geq0\right)\left(\pi^{k}\vDash q\right)}_{\text{\textbf{G}}} & \Leftrightarrow & \pi\left(0\right)\nvDash p\vee{\color{red}\mathbf{\neg}}\underbrace{\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]}_{\text{\textbf{F}}\neg g}
+\neg p\vee\text{\textbf{G}}p & \Leftrightarrow & \neg p\vee{\color{blue}\neg\text{\textbf{F}}\neg g}\\
+\neg p\vee\text{\textbf{G}}p & \Leftrightarrow & \neg p\vee{\color{blue}\text{\textbf{G}}g}\\
+\underbrace{\pi\left(0\right)\nvDash p}_{p}\vee\underbrace{\left(\forall k\geq0\right)\left(\pi^{k}\vDash g\right)}_{\text{\textbf{G}}} & \Leftrightarrow & \pi\left(0\right)\nvDash p\vee\underbrace{\left[\left(\forall k\geq0\right)\left(\pi^{k}\vDash g\right)\right]}_{\text{\textbf{G}}g}
 \end{eqnarray*}
 
 \end_inset
@@ -1293,7 +1294,7 @@ Nyní převedeme pravou stranu do výrokové logiky bez symbolu
 
 \begin_inset Formula 
 \[
-\pi\left(0\right)\nvDash p\vee\neg\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]\Leftrightarrow\boxed{\pi\left(0\right)\in\mathcal{I}\left(p\right)\vee\left(\forall k\geq0\right)\left(\pi\left(k\right)\in\mathcal{I}\left(p\right)\right)}\text{.}
+\pi\left(0\right)\nvDash p\vee\left[\left(\forall k\geq0\right)\left(\pi^{k}\vDash g\right)\right]\Leftrightarrow\boxed{\pi\left(0\right)\notin\mathcal{I}\left(p\right)\vee\left(\forall k\geq0\right)\left(\pi\left(k\right)\in\mathcal{I}\left(p\right)\right)}\text{.}
 \]
 
 \end_inset
