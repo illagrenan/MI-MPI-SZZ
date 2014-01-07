@@ -1869,6 +1869,30 @@ A=\left(S,\, S_{0},\, X,\,\mathcal{I},\, T\right)\text{.}
 Pokud nemá stav invariant, můžeme v něm setrvat neomezeně dlouho.
 \end_layout
 
+\begin_layout Itemize
+2 typy přechodů:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+časovaný přechod - ze stavu A do stavu A, značíme 
+\begin_inset Formula $(s,v)\,\overset{d}{\rightarrow}(s,v+d)$
+\end_inset
+
+ ...
+ čas ubíhá v určité lokaci
+\end_layout
+
+\begin_layout Itemize
+akční přechod - ze stavu A do stavu B, značíme 
+\begin_inset Formula $(s,v)\overset{\wedge}{\rightarrow}(s^{,},v^{,})$
+\end_inset
+
+ ...
+ změna lokace
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Box Boxed
 position "t"
