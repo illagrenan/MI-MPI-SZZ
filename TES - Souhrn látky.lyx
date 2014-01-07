@@ -1405,6 +1405,18 @@ invariant Invariant je triviální, pokud obsahuje všechny stavy přechodového
  systému.
 \end_layout
 
+\begin_layout Standard
+Existují dvě metody dokazování invariantu:
+\end_layout
+
+\begin_layout Enumerate
+postupným průchod automatem,
+\end_layout
+
+\begin_layout Enumerate
+důkaz sporem.
+\end_layout
+
 \begin_layout Subsubsection
 Induktivní podmínky
 \end_layout
@@ -1456,6 +1468,39 @@ Důkaz, že pokud
 \left\{ x'|x\in\mathcal{I}\left(p\right),\,\left(x,\, x'\right)\in T\right\} \subseteq\mathcal{I}\left(p\right)\Longleftrightarrow\forall x\forall x'.\,\left[V(x)\wedge T\left(x,\, x'\right)\right]\Rightarrow V\left(x'\right)
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Negované induktivní podmínky pro využití v důkazu sporem:
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\neg\left[\forall x.\, S_{0}\left(x\right)\Rightarrow V\left(x\right)\right]\Leftrightarrow\boxed{\exists x.\, S_{0}\left(x\right)\wedge\neg V\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\neg\left[\forall x\forall x'.\,\left[V(x)\wedge T\left(x,\, x'\right)\right]\Rightarrow V\left(x'\right)\right]\Leftrightarrow\boxed{\exists x\exists x'\left[V\left(x\right)\wedge T\left(x,\, x'\right)\right]\wedge\neg V\left(x'\right)}$
 \end_inset
 
 
