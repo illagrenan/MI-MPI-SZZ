@@ -1719,7 +1719,7 @@ Petriho síť převedená do konečného automatu
 Časované automaty
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Základní pojmy
 \end_layout
 
@@ -1754,6 +1754,10 @@ Akční
 \end_inset
 
 přechod Přechod do jiného místa.
+\end_layout
+
+\begin_layout Subsection
+Definice
 \end_layout
 
 \begin_layout Standard
@@ -1808,7 +1812,55 @@ A=\left(S,\, S_{0},\, X,\,\mathcal{I},\, T\right)\text{.}
 \end_layout
 
 \begin_layout Itemize
-Pokud nemá stav invariant, můžeme v něm setrvat neomezeně dlouho
+Pokud nemá stav invariant, můžeme v něm setrvat neomezeně dlouho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Struktura přechodové funkce
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\left(\underbrace{A}_{\text{odkud}},\,\underbrace{\mathbf{T}}_{\text{guard}},\,\underbrace{\left\{ x\right\} }_{\text{resetuj hodiny x}},\,\underbrace{B}_{\text{kam}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
