@@ -1292,9 +1292,9 @@ Nyní převedeme pravou stranu do výrokové logiky bez symbolu
 
 
 \begin_inset Formula 
-\begin{eqnarray*}
-\pi\left(0\right) & \nvDash & p\vee\neg\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]\Leftrightarrow\boxed{\pi\left(0\right)\in\mathcal{I}\left(p\right)\vee\left(\forall k\geq0\right)\left(\pi\left(k\right)\in\mathcal{I}\left(p\right)\right)}\text{.}
-\end{eqnarray*}
+\[
+\pi\left(0\right)\nvDash p\vee\neg\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]\Leftrightarrow\boxed{\pi\left(0\right)\in\mathcal{I}\left(p\right)\vee\left(\forall k\geq0\right)\left(\pi\left(k\right)\in\mathcal{I}\left(p\right)\right)}\text{.}
+\]
 
 \end_inset
 
