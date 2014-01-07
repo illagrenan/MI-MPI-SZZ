@@ -848,7 +848,7 @@ Vlastnosti a cesty
 První element cesty 
 \begin_inset Formula 
 \[
-\pi\left(0\right)\models p
+\pi\left(0\right)\vDash p
 \]
 
 \end_inset
@@ -886,7 +886,7 @@ t
 )
 \begin_inset Formula 
 \[
-\pi^{1}\models p
+\pi^{1}\vDash p
 \]
 
 \end_inset
@@ -921,7 +921,7 @@ uture
 )
 \begin_inset Formula 
 \[
-\exists k\geq0,\,\pi^{k}\models p
+\exists k\geq0,\,\pi^{k}\vDash p
 \]
 
 \end_inset
@@ -956,7 +956,7 @@ lobally
 )
 \begin_inset Formula 
 \[
-\forall k\geq0,\,\pi^{k}\models p
+\forall k\geq0,\,\pi^{k}\vDash p
 \]
 
 \end_inset
@@ -991,7 +991,7 @@ ntil
 )
 \begin_inset Formula 
 \[
-\exists i,\,\pi^{i}\models q\,\,\text{a}\,\,\forall j<i,\,\pi^{j}\models p
+\exists i,\,\pi^{i}\vDash q\,\,\text{a}\,\,\forall j<i,\,\pi^{j}\vDash p
 \]
 
 \end_inset
@@ -1145,14 +1145,168 @@ red
 \end_layout
 
 \begin_layout Subsection
-Převod do základní logiky
+Převod do predikátové logiky
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\neg\left(Fp\right)=G\neg p
+\neg\left(\mathbf{\mathbf{\text{\textbf{F}}}}p\right)=\mathbf{\mathbf{\text{\textbf{G}}}}\neg p
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\neg\left(\mathbf{\text{\textbf{G}}}p\right)=\mathbf{\text{\textbf{F}}}\neg p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\neg\left(\mathbf{\text{\textbf{X}}}p\right)=\mathbf{\text{\textbf{X}}}\neg p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{\text{\textbf{F}}}p\Leftrightarrow\mathbf{\text{\textbf{TU}}}p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{\text{\textbf{G}}}p\Leftrightarrow\mathbf{\text{\textbf{FR}}}p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\neg\left[p\mathbf{\text{\textbf{U}}}q\right]=\neg p\mathbf{\text{\textbf{R}}}\neg q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\neg\left[p\mathbf{\text{\textbf{R}}}q\right]=\neg p\mathbf{\text{\textbf{U}}}\neg q
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Převeďte LTL formuli do výrazu predikátové logiky (bez temporálních operátorů):
+\begin_inset Formula 
+\[
+p\Rightarrow\text{\textbf{G}}p\Leftrightarrow\neg\left[p\wedge\left(\text{\textbf{F}}\neg g\right)\right]\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+\neg p\vee\text{\textbf{G}}p & \Leftrightarrow & \neg p\vee{\color{red}\mathbf{\neg}}\text{\textbf{F}}\neg g\\
+\underbrace{\pi\left(0\right)\nvDash p}_{p}\vee\underbrace{\left(\forall k\geq0\right)\left(\pi^{k}\vDash q\right)}_{\text{\textbf{G}}} & \Leftrightarrow & \pi\left(0\right)\nvDash p\vee{\color{red}\mathbf{\neg}}\underbrace{\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]}_{\text{\textbf{F}}\neg g}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Nyní převedeme pravou stranu do výrokové logiky bez symbolu 
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $\vDash$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\pi\left(0\right) & \nvDash & p\vee\neg\left[\left(\exists k\geq0\right)\neg\left(\pi^{k}\vDash q\right)\right]\Leftrightarrow\boxed{\pi\left(0\right)\in\mathcal{I}\left(p\right)\vee\left(\forall k\geq0\right)\left(\pi\left(k\right)\in\mathcal{I}\left(p\right)\right)}\text{.}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
