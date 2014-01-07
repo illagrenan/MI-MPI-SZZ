@@ -1,6 +1,11 @@
 # Souhrn látky na MI-TES #
 
-- PDF je generované LYXem.
+- PDF je generované LYXem (Stáhnout aktuální PDF verzi z Githubu).
+
+
+**Stáhnout PDF:**
+
+[![](http://i.imgur.com/fusAfAc.png)](https://github.com/illagrenan/mi-tes_sourhn/blob/master/TES%20-%20Souhrn%20l%C3%A1tky.pdf?raw=true)
 
 
 ## Jak editovat ##
