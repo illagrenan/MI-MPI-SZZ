@@ -514,7 +514,11 @@ A=(S,\, S_{0},\, I,\, O,\, R)
 \end_layout
 
 \begin_layout Standard
-Základní vlastnosti, které po automatovém modelu požadujeme.
+
+\series bold
+Základní vlastnosti
+\series default
+, které po automatovém modelu požadujeme.
 \end_layout
 
 \begin_layout Itemize
@@ -527,6 +531,54 @@ Receptivní -- pro každý vstup existuje výstup
 
 \begin_layout Itemize
 S pamětí
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Struktura přechodové funkce
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\left(\underbrace{A}_{\text{Input}},\,\underbrace{B}_{\text{odkud}},\,\underbrace{C}_{\text{kam}},\,\underbrace{D}_{\text{Output}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1353,8 +1405,8 @@ invariant Invariant je triviální, pokud obsahuje všechny stavy přechodového
  systému.
 \end_layout
 
-\begin_layout Standard
-Induktivní podmínky:
+\begin_layout Subsubsection
+Induktivní podmínky
 \end_layout
 
 \begin_layout Enumerate
@@ -1365,7 +1417,7 @@ Každý počáteční stav splňuje
 , tj.
 \begin_inset Formula 
 \[
-S_{0}\subseteq\mathcal{I}\left(p\right)
+S_{0}\subseteq\mathcal{I}\left(p\right)\Longleftrightarrow\forall x.\, S_{0}\left(x\right)\Rightarrow V\left(x\right)
 \]
 
 \end_inset
@@ -1401,7 +1453,7 @@ Důkaz, že pokud
 , tj.
 \begin_inset Formula 
 \[
-\left\{ x'|x\in\mathcal{I}\left(p\right),\,\left(x,\, x'\right)\in T\right\} \subseteq\mathcal{I}\left(p\right)
+\left\{ x'|x\in\mathcal{I}\left(p\right),\,\left(x,\, x'\right)\in T\right\} \subseteq\mathcal{I}\left(p\right)\Longleftrightarrow\forall x\forall x'.\,\left[V(x)\wedge T\left(x,\, x'\right)\right]\Rightarrow V\left(x'\right)
 \]
 
 \end_inset
