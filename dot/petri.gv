@@ -1,0 +1,19 @@
+digraph finite_state_machine {
+    rankdir=LR;
+    size="8,5"
+	
+	 node [shape = point];
+	qi;	
+	
+		node [shape=circle]
+		
+		qi -> AD;
+		AD -> AB;
+		AB -> CD;
+		CD -> AD;
+		CD -> CB;
+		CB ->AB;
+		CD -> AB;
+	
+	
+}
