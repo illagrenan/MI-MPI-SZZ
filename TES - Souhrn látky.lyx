@@ -873,7 +873,7 @@ elease
 \begin_inset Quotes grd
 \end_inset
 
-
+)
 \begin_inset Formula 
 \[
 \begin{array}{c}
@@ -925,6 +925,70 @@ samotné časem
 \end_inset
 
  může a nemusí nastat pouze jednou.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Upozornění
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Styl zápisu 
+\begin_inset Formula 
+\[
+red\rightarrow G\text{green}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+říká, že v prvním stavu musí platit vlastnost 
+\begin_inset Quotes gld
+\end_inset
+
+red
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1155,7 +1219,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename dot/fsm1.gv
+	filename dot/fsm1.svg
 	width 80col%
 
 \end_inset
@@ -1258,12 +1322,149 @@ TRUE
 Neomezené testování modelů
 \end_layout
 
+\begin_layout Description
+
+\series bold
+Invariant
+\series default
+ Podmínka, která musí být splněna před a po každém průchodu.
+ Musí tedy platit na cestě libovolné délky nebo-li musí platit na všech
+ dosažitelných stavech.
+\end_layout
+
+\begin_layout Description
+
+\series bold
+Induktivní
+\begin_inset space ~
+\end_inset
+
+invariant
+\series default
+ Invariant, který splňuje induktivní podmínky.
+\end_layout
+
+\begin_layout Description
+Triviální
+\begin_inset space ~
+\end_inset
+
+invariant Invariant je triviální, pokud obsahuje všechny stavy přechodového
+ systému.
+\end_layout
+
+\begin_layout Standard
+Induktivní podmínky:
+\end_layout
+
+\begin_layout Enumerate
+Každý počáteční stav splňuje 
+\begin_inset Formula $p$
+\end_inset
+
+, tj.
+\begin_inset Formula 
+\[
+S_{0}\subseteq\mathcal{I}\left(p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Důkaz, že pokud 
+\begin_inset Formula $x$
+\end_inset
+
+ splňuje 
+\begin_inset Formula $p$
+\end_inset
+
+, a 
+\begin_inset Formula $x'$
+\end_inset
+
+ je výsledkem přechodu z 
+\begin_inset Formula $x$
+\end_inset
+
+, pak 
+\begin_inset Formula $x'$
+\end_inset
+
+ také splňuje 
+\begin_inset Formula $p$
+\end_inset
+
+, tj.
+\begin_inset Formula 
+\[
+\left\{ x'|x\in\mathcal{I}\left(p\right),\,\left(x,\, x'\right)\in T\right\} \subseteq\mathcal{I}\left(p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Petriho sítě
 \end_layout
 
 \begin_layout Subsection
 Základní vlastnosti
+\end_layout
+
+\begin_layout Standard
+Definice:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(P,\, T,\, F,\, w,\, M_{0}\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P$
+\end_inset
+
+ = places
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T$
+\end_inset
+
+ = transitions
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F$
+\end_inset
+
+ = hrany
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $w$
+\end_inset
+
+ - váhová funkce (implicitně je jedna jinak se ohodnocují hrany)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $M_{0}$
+\end_inset
+
+ - počáteční značení
 \end_layout
 
 \begin_layout Standard
@@ -1281,7 +1482,10 @@ Značení
 \begin_layout Itemize
 
 \series bold
-Dosažitelnost
+Dosažitelnost =
+\series default
+ značení M je dosažitelné právě když existuje posloupnost odpálení z M0
+ do M.
 \end_layout
 
 \begin_layout Itemize
