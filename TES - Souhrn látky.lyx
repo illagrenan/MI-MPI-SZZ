@@ -738,7 +738,12 @@ laicky zpožďuje vstup
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $Delay\, D_{S_{0}}pro\, množinu\, S_{0},\,(i,\,0)\,\in D_{S_{0}}\text{\Leftrightarrow}$
+Delay 
+\begin_inset Formula $D_{S_{0}}$
+\end_inset
+
+ pro množinu 
+\begin_inset Formula $S_{0},\,(i,\,0)\in D_{S_{0}}\text{\,\Leftrightarrow}$
 \end_inset
 
 
@@ -746,14 +751,14 @@ laicky zpožďuje vstup
 
 \begin_deeper
 \begin_layout Itemize
-\begin_inset Formula $o(0)\in S_{0},$
+\begin_inset Formula $o(0)\in S_{0}$
 \end_inset
 
-
+,
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $pro\, každé\, k\in N,\, o(k)=i(k-1)$
+\begin_inset Formula $\forall k\in N,\, o(k)=i(k-1)$
 \end_inset
 
 
@@ -761,20 +766,42 @@ laicky zpožďuje vstup
 
 \begin_layout Itemize
 pro libovolné vstupní množiny 
-\begin_inset Formula $I\, a\, O$
+\begin_inset Formula $I\,\text{a}\, O$
 \end_inset
 
  tak, že 
-\begin_inset Formula $I\subseteq O,\, S_{0}\subseteq O$
+\begin_inset Formula $I\subseteq O,\, S_{0}\subseteq O\text{.}$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-ukázka 
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/delay.png
+	filename dot/delay.svg
 	scale 80
 
 \end_inset
@@ -782,7 +809,27 @@ ukázka
 
 \end_layout
 
-\end_deeper
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Ukázka delay
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Linear temporal logic (LTL)
 \end_layout
