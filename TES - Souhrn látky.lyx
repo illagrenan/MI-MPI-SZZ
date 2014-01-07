@@ -1459,6 +1459,18 @@ invariant Invariant je triviální, pokud obsahuje všechny stavy přechodového
  systému.
 \end_layout
 
+\begin_layout Standard
+Existují dvě metody dokazování invariantu:
+\end_layout
+
+\begin_layout Enumerate
+postupným průchod automatem,
+\end_layout
+
+\begin_layout Enumerate
+důkaz sporem.
+\end_layout
+
 \begin_layout Subsubsection
 Induktivní podmínky
 \end_layout
@@ -1510,6 +1522,39 @@ Důkaz, že pokud
 \left\{ x'|x\in\mathcal{I}\left(p\right),\,\left(x,\, x'\right)\in T\right\} \subseteq\mathcal{I}\left(p\right)\Longleftrightarrow\forall x\forall x'.\,\left[V(x)\wedge T\left(x,\, x'\right)\right]\Rightarrow V\left(x'\right)
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Negované induktivní podmínky pro využití v důkazu sporem:
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\neg\left[\forall x.\, S_{0}\left(x\right)\Rightarrow V\left(x\right)\right]\Leftrightarrow\boxed{\exists x.\, S_{0}\left(x\right)\wedge\neg V\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset Formula $\neg\left[\forall x\forall x'.\,\left[V(x)\wedge T\left(x,\, x'\right)\right]\Rightarrow V\left(x'\right)\right]\Leftrightarrow\boxed{\exists x\exists x'\left[V\left(x\right)\wedge T\left(x,\, x'\right)\right]\wedge\neg V\left(x'\right)}$
 \end_inset
 
 
@@ -1728,7 +1773,7 @@ Petriho síť převedená do konečného automatu
 Časované automaty
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection
 Základní pojmy
 \end_layout
 
@@ -1763,6 +1808,10 @@ Akční
 \end_inset
 
 přechod Přechod do jiného místa.
+\end_layout
+
+\begin_layout Subsection
+Definice
 \end_layout
 
 \begin_layout Standard
@@ -1817,7 +1866,55 @@ A=\left(S,\, S_{0},\, X,\,\mathcal{I},\, T\right)\text{.}
 \end_layout
 
 \begin_layout Itemize
-Pokud nemá stav invariant, můžeme v něm setrvat neomezeně dlouho
+Pokud nemá stav invariant, můžeme v něm setrvat neomezeně dlouho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Struktura přechodové funkce
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\left(\underbrace{A}_{\text{odkud}},\,\underbrace{\mathbf{T}}_{\text{guard}},\,\underbrace{\left\{ x\right\} }_{\text{resetuj hodiny x}},\,\underbrace{B}_{\text{kam}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
