@@ -729,6 +729,60 @@ Kaskádní kompozice systémů
 
 \end_layout
 
+\begin_layout Subsection
+Delay 
+\end_layout
+
+\begin_layout Itemize
+laicky zpožďuje vstup
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Delay\, D_{S_{0}}pro\, množinu\, S_{0},\,(i,\,0)\,\in D_{S_{0}}\text{\Leftrightarrow}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $o(0)\in S_{0},$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $pro\, každé\, k\in N,\, o(k)=i(k-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+pro libovolné vstupní množiny 
+\begin_inset Formula $I\, a\, O$
+\end_inset
+
+ tak, že 
+\begin_inset Formula $I\subseteq O,\, S_{0}\subseteq O$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+ukázka 
+\begin_inset Graphics
+	filename images/delay.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Linear temporal logic (LTL)
 \end_layout
