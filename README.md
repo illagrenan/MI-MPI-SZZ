@@ -12,3 +12,9 @@
 
 - Vytvořeno v [editoru LYX](http://www.lyx.org/).
 - Automaty jsou v [Graphvizu](http://www.graphviz.org/).
+- 
+## Příkazy pro Graphviz ##
+
+```
+$ dot -Tsvg INPUT.gv -o OUTPUT.svg
+```
