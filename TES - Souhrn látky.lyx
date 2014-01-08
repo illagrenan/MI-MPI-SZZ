@@ -459,6 +459,100 @@ centering
 
 \end_layout
 
+\begin_layout Subsection
+Substituce
+\end_layout
+
+\begin_layout Itemize
+píšeme 
+\begin_inset Formula $A[x\leftarrow t]$
+\end_inset
+
+ pro výsledek nahrazení každého 
+\series bold
+volného výskytu proměnné
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ termem 
+\begin_inset Formula $t$
+\end_inset
+
+ ve výrazu 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+ale 
+\series bold
+pozor!
+\series default
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+substituce váže silněji než logické symboly - tedy:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $[P(x)\wedge Q(x)][x\leftarrow0]\Longleftrightarrow P(0)\wedge Q(0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $P(x)\wedge Q(x)[x\leftarrow0]\Longleftrightarrow P(x)\wedge Q(0)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $[[\exists x.P(x)]\wedge Q(x)][x\leftarrow0]\Longleftrightarrow[\exists x.P(x)]\wedge Q(0)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+nesmí dojít ke střetu názvů proměnných
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $[\forall x\,.\, P(x,\, y)][y\leftarrow x]$
+\end_inset
+
+ ...
+ 
+\series bold
+toto se nesmí!
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 Automatové modely
 \end_layout
