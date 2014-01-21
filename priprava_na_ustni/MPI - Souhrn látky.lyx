@@ -1,0 +1,653 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{lmodern}
+\exhyphenpenalty=10000\hyphenpenalty=10000
+\usepackage{colortbl}
+\definecolor{lightgray}{gray}{0.8}
+\definecolor{green}{RGB}{0, 180, 0}
+\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{yellow}{RGB}{211,211,0}
+\setlength{\parindent}{0pt}
+\date{}
+\usepackage{multicol}
+\usepackage{cancel,soul,ulem}
+\usepackage{pgfplots}
+\usepackage{upgreek}
+\usepackage{enumerate}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\let\old@start@align\start@align
+\def\start@align{\setcounter{equation}{0}\old@start@align}
+\makeatother
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language czech
+\language_package babel
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 7
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\branch 5
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\series bold
+\size giant
+Matematika pro informatiku
+\end_layout
+
+\begin_layout Author
+Ústní zkouška
+\end_layout
+
+\begin_layout Date
+leden 2014
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Algebra, teorie čísel, teorie grafů
+\end_layout
+
+\begin_layout Section
+Grupoidy, pologrupy, monoid a grupy, základní vlastnosti a definice
+\end_layout
+
+\begin_layout Itemize
+Všechny mají společnou strukturu -- neprázdnou množinu objektu a binární
+ operaci
+\end_layout
+
+\begin_layout Itemize
+Značíme 
+\begin_inset Formula $G=(M,\circ)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Důvod, proč se tímto zabýváme: pokud dokážeme nějaké tvrzení pro obecnou
+ strukturu, bude toto tvrzení platit i pro všechny konkrétní struktury,
+ které od ní 
+\begin_inset Quotes gld
+\end_inset
+
+dědí
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Jedná se tedy o triviální důkaz asociativity
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Hierarchie struktur:
+\end_layout
+
+\begin_layout Itemize
+Grupoid -- uzavřenost nad operací
+\end_layout
+
+\begin_layout Itemize
+Pologrupa -- asociativita (
+\begin_inset Formula $\left(x\circ y\right)\circ z=x\circ\left(y\circ z\right)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Monoid -- neutrální prvek
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $(\exists e\in M)(\forall a\in M)(a\circ e=a\circ e=a)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Grupa -- inverzní prvek
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $(\forall a\in M)(\exists a^{-1}\in M)(a\circ a^{-1}=e)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Abelovská grupa -- komutativita (
+\begin_inset Formula $x\circ y=y\circ x$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Tyto struktury od sebe skutečně 
+\begin_inset Quotes gld
+\end_inset
+
+dědí
+\begin_inset Quotes grd
+\end_inset
+
+, tj.
+ každá pologrupa je grupoid, každý monoid je pologrupa atp.
+\end_layout
+
+\begin_layout Standard
+Pokud máme zadanou dvojici 
+\begin_inset Quotes gld
+\end_inset
+
+množina a operace
+\begin_inset Quotes grd
+\end_inset
+
+ zjistíme, o co se jedná, jen postupným testováním.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Klíčová slova:
+\series default
+\bar default
+ Binární operace, neutrální prvek, inverzní prvek, Abelovská grupa, Cayleho
+ tabulka, jednoznačné dělení, podgrupa.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Podgrupy, generátory a podgrupy generované množinami
+\end_layout
+
+\begin_layout Section
+Cyklické grupy, generátory
+\end_layout
+
+\begin_layout Section
+Homomorfizmus, izomorfizmus -- vlastnosti a příklady izomorfních grupy
+\end_layout
+
+\begin_layout Itemize
+Homomorfismus -- zobrazení z jedné struktury do jiné stejného typu, které
+ zachovává veškerou důležitou strukturu.
+\end_layout
+
+\begin_layout Itemize
+Izomorfismus -- bijektivní (prostý a na) homomorfismus.
+\end_layout
+
+\begin_layout Standard
+Kleinova grupa -- nejmenší necyklická grupa.
+ Jedná se o direktní součin dvou kopií cyklické grupy řádu 2.
+\begin_inset Formula 
+\[
+V=\left(\mathbb{Z}_{2}\times\mathbb{Z}_{2},~\circ\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Klíčová slova:
+\series default
+\bar default
+ Izomorfní grupa, bijekce, Kleinova grupa, symetrická grupa, grupa permutací
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Problém diskrétního logaritmu v různých grupách, Diffie-Hellman Key Exchange
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diskrétní
+\series default
+ -- celá čísla a konečné objekty.
+ Diskrétní objekty jsou prezentovány pomocí konečných grafů a množin.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+Diskrétní
+\begin_inset Quotes grd
+\end_inset
+
+ je opak 
+\begin_inset Quotes gld
+\end_inset
+
+spojitého
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Logaritmus
+\series default
+ -- matematická funkce, která je inverzní k exponenciální funkci.
+ 
+\end_layout
+
+\begin_layout Standard
+Neexistuje žádný rychlý algoritmus řešící problém diskrétního logaritmu,
+ používá se proto v asymetrické kryptografii.
+\end_layout
+
+\begin_layout Standard
+Def: Máme grupu 
+\begin_inset Formula $\mathbb{Z}_{p}^{\times}$
+\end_inset
+
+ řádu 
+\begin_inset Formula $p-1$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ je nějaký její generátor a 
+\begin_inset Formula $\beta$
+\end_inset
+
+ je její prvek.
+ Řešit problém diskrétního logaritmu znamená najít celé číslo 
+\begin_inset Formula $1\leq x\leq p-1$
+\end_inset
+
+ takové, že 
+\begin_inset Formula 
+\[
+\alpha^{x}\equiv\beta\left(\text{mod}~p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Diffie-Hellman_Key_Exchange.svg
+	lyxscale 60
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diffie-Hellman Key Exchange Schema
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Díky této vlastnosti máme jednosměrnou (one-way) funkci pro asymetrickou
+ kryptografii.
+ Protože najít
+\begin_inset Formula 
+\[
+\beta\equiv\alpha^{x}\left(\text{mod}~p\right)
+\]
+
+\end_inset
+
+je jednoduché, pokud známe 
+\begin_inset Formula $x,~\alpha~\text{a}~p$
+\end_inset
+
+.
+ Najít však 
+\begin_inset Formula $x$
+\end_inset
+
+ pokud známe 
+\begin_inset Formula $\beta$
+\end_inset
+
+ a 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ je velmi obtížné.
+ (Jinak řečeno: násobení a mocnění prvočísel je velmi rychlé a snadné).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Inverzní operace k mocnění
+\series default
+ je diskrétní logaritmus.
+\end_layout
+
+\begin_layout Itemize
+Na tomto principu je založena 
+\series bold
+RSA
+\series default
+ (Rivest, Shamir, Adleman).
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Tělesa, okruhy, obory integrity
+\end_layout
+
+\begin_layout Section
+Konečná tělesa obecně, konečná tělesa s prvočíselným řádem
+\end_layout
+
+\begin_layout Section
+Konečná tělesa neprvočíselného řádu, ireducibilní polynom, okruh polynomů
+\end_layout
+
+\begin_layout Section
+Základní vlastnosti kongruence, Eulerova a Fermatova věta, čínská věta o
+ zbytcích, efektivní mosnění
+\end_layout
+
+\begin_layout Section
+Prvočísla a testování prvočíselnosti
+\end_layout
+
+\begin_layout Section
+Bipartitní grafy, párování v bipartitním grafu
+\end_layout
+
+\begin_layout Section
+Stabilní párování
+\end_layout
+
+\begin_layout Section
+Bioinformatika: problémy spojené se sekvencováním DNA
+\end_layout
+
+\begin_layout Part
+Numerika, optimalizace, fuzzy matematika
+\end_layout
+
+\begin_layout Section
+Limity a derivace funkcí více proměnných, gradient, Jacobiho matice, Hessián
+\end_layout
+
+\begin_layout Section
+Lokální a globální extrémy funkcí více proměnných
+\end_layout
+
+\begin_layout Section
+Konstrukce Riemannova integrálu funkce jedné a více proměnných
+\end_layout
+
+\begin_layout Section
+Výpočet Riemannova integrálu funkce jedné a více proměnných
+\end_layout
+
+\begin_layout Section
+Výpočet Riemannova integrálu funkce více proměnných
+\end_layout
+
+\begin_layout Section
+Strojová čísla a reprezentace s pohyblivou řádovou čárkou
+\end_layout
+
+\begin_layout Section
+Chyby vznikající při výpočtech s pohyblivou řádovou čárkou
+\end_layout
+
+\begin_layout Section
+Numerické metody řešení soustav lineárních rovnic
+\end_layout
+
+\begin_layout Section
+Vlastní čísla a mocninná metoda
+\end_layout
+
+\begin_layout Section
+Typy optimalizačních úloh a optimalizačních metod
+\end_layout
+
+\begin_layout Section
+Optimalizační metody pro spojité funkce
+\end_layout
+
+\begin_layout Section
+Optimalizace s omezeními
+\end_layout
+
+\begin_layout Section
+Vzdálenost a další míry podobnosti
+\end_layout
+
+\begin_layout Section
+Fuzzy množiny a operace s nimi
+\end_layout
+
+\begin_layout Section
+Přístupy k neurčitosti založené na pravděpodobnostních rozděleních: kopule,
+ entropie
+\end_layout
+
+\begin_layout Section
+Kombinování neurčitosti pomocí fuzzy pravidlových systémů a fuzzy integrálů
+\end_layout
+
+\end_body
+\end_document

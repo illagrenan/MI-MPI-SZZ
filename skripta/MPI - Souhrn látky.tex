@@ -1,0 +1,780 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english,czech]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9,latin2]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm}
+\pagestyle{plain}
+\usepackage{color}
+\usepackage{babel}
+\usepackage{float}
+\usepackage{fancybox}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+\usepackage[unicode=true,pdfusetitle,
+ bookmarks=true,bookmarksnumbered=true,bookmarksopen=true,bookmarksopenlevel=7,
+ breaklinks=false,pdfborder={0 0 0},backref=false,colorlinks=false]
+ {hyperref}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\noun}[1]{\textsc{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{lmodern}
+\exhyphenpenalty=10000\hyphenpenalty=10000
+\usepackage{colortbl}
+\usepackage{soul}
+\definecolor{lightgray}{gray}{0.8}
+\definecolor{green}{RGB}{0, 100, 0}
+\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{yellow}{RGB}{211,211,0}
+\setlength{\parindent}{0pt}
+\date{}
+\usepackage{multicol}
+
+\makeatother
+
+\begin{document}
+
+\title{MPI -- Pøíprava na midterm}
+
+\maketitle
+
+\section{Hierarchie mno¾in s jednou binární operací}
+
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+Obecnì se jedná o dvojici \textbf{mno¾ina a binární operace }$\circ$
+na ní, která vezme nìjaké dva objekty z $M$ a jednoznaènì jim pøiøadí
+jiný objekt.
+\[
+\begin{array}{c}
+\left(M,\,\circ\right)\\
+M\circ M\rightarrow M
+\end{array}
+\]
+%
+\end{minipage}}
+\begin{description}
+\item [{Grupoid}] $M$ je \emph{uzavøená} vùèi operaci $\circ$. 
+\[
+\forall a,\, b\in M\, a\circ b\in M
+\]
+
+\item [{Pologrupa}] Operace je nad $M$ \emph{asociativní}.
+\[
+\forall a,\, b,\, c\in M\,\left(a\circ b\right)\circ c=a\circ\left(b\circ c\right)
+\]
+
+\item [{Monoid}] Existuje právì jeden%
+\footnote{Pøedná¹ka 3 -- handout, vìta 11.%
+} \emph{neutrální prvek}.
+\[
+\exists e\in M\,\forall a\in M\, e\circ a=a\circ e=a
+\]
+
+\item [{Grupa}] V¹echny prvky mají právì%
+\footnote{Pøedná¹ka 3 -- handout, vìta 12.%
+} jeden \emph{inverzní prvek}.
+\[
+\forall a\in M\,\exists a^{-1}\in M\, a\circ a^{-1}=a^{-1}\circ a=e
+\]
+
+\item [{Abelovská~grupa}] Operace $\circ$ je \emph{komutativní}.
+\[
+\forall a,\, b\in M\, a\circ b=b\circ a
+\]
+\end{description}
+\begin{itemize}
+\item Z definice plyne, ¾e ka¾dá grupa je monoid, ka¾dý monoid je pologrupa
+a ka¾dá pologrupa je grupoid.
+\end{itemize}
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Cayleyho tabulka}}
+
+\medskip{}
+
+
+Pokud má mno¾ina $M$ z dvojice $(M,\,\circ)$ koneèný poèet prvkù,
+lze její strukturu (danou operací $\circ$) kompletnì zachytit v tzv.
+\emph{Cayleyho tabulce}.
+\begin{itemize}
+\item \textbf{Neutrální prvek }$e$ se v Cayleyho tabulce pozná tak, ¾e
+,,jeho`` øádek i sloupec je stejný, jako první øádek a sloupec tabulky.
+\item \textbf{Inverzní prvek} k prvku najdeme, tak ¾e v jeho sloupci a øádku
+nalezneme neutrální prvek $e$.
+\item \textbf{Uzavøenost} poznáme tak, ¾e v¹echny buòky tabulky obsahují
+jen prvky z $M$.
+\item \textbf{Asociativitu} operace z tabulky poznáme tì¾ko.
+\end{itemize}
+Cayleyho tabulka ka¾dé grupy tvoøí \emph{magický ètverec}. Magický
+ètverec pro $n$ prvkovou mno¾inu $M$ je matice $n\times n$ taková,
+¾e v ka¾dém øádku i sloupci jsou v¾dy v¹echny prvky mno¾iny $M$.%
+\end{minipage}}
+
+\medskip{}
+
+
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad Cayleyho tabulky}}
+\begin{eqnarray*}
+\mathbb{Z}_{4}^{+} & = & \left\{ 0,\,1,\,2,\,3\right\} 
+\end{eqnarray*}
+
+
+\[
+\begin{array}{c|cccc}
+\mathbf{+_{4}} & \mathbf{0} & \mathbf{1} & \mathbf{2} & \mathbf{3}\\
+\hline \mathbf{0} & {\color{red}0} & {\color{blue}1} & {\color{blue}2} & {\color{blue}3}\\
+\mathbf{1} & {\color{blue}1} & 2 & 3 & {\color{red}0}\\
+\mathbf{2} & {\color{blue}2} & 3 & {\color{red}0} & 1\\
+\mathbf{3} & {\color{blue}3} & {\color{red}0} & 1 & 2
+\end{array}
+\]
+
+
+\begin{center}
+$0$ je neutrální prvek, její øádek i sloupec se rovnají záhlaví.
+\par\end{center}
+
+\vspace{-0.5cm}
+
+
+\begin{eqnarray*}
+1^{-1} & = & 3\\
+2^{-1} & = & 2\\
+3^{-1} & = & 1
+\end{eqnarray*}
+
+
+\vspace{-0.5cm}
+
+
+\begin{center}
+Inverze
+\par\end{center}
+
+\vspace{-0.2cm}
+%
+\end{minipage}}
+
+
+\subsection{Základní pojmy}
+
+\textbf{Øád (pod)grupy} $G=(M,\,\circ)$ nazýváme poèet prvkù mno¾iny
+$M$. Je-li $M$ nekoneèná mno¾ina, je i øád nekoneèný. Podle øádu
+rozli¹ujeme koneèné a nekoneèné grupy.
+
+
+\section{Podgrupy}
+\begin{itemize}
+\item $\mathbb{Z}$ jsou celá èísla $\left\{ -2,\,-1,\,0,\,1,\,2\right\} $,
+$\mathbb{N}$ jsou pøirozená èísla $\left\{ 1,\,2,\,3\right\} $,
+$\mathbb{N}^{0}$ jsou pøirozená èísla vèetnì nuly.
+\item \textbf{Ka¾dý prvek} grupy \textbf{generuje podgrupu} (ty se v¹ak
+mohou pøekrývat).
+\item V ka¾dé grupì $G=\left(M,\,\circ\right)$ (s alespoò dvìma prvky)
+existují v¾dy alespoò dvì \emph{triviální podgrupy}:
+
+\begin{itemize}
+\item grupa obsahující pouze neutrální prvek: $\left(\left\{ e\right\} ,\,\circ\right)$
+\item a grupa samotná: $G=\left(M,\,\circ\right)$.
+\end{itemize}
+\end{itemize}
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Langrangeova vìta}}
+
+\medskip{}
+
+
+Buï $H$ podgrupa koneèné grupy $G$. Potom øád $H$ dìlí øád $G$.
+Grupa s prvoèíselným øádem má pouze triviální podgrupy.
+\begin{itemize}
+\item Vìta neøíká, ¾e existuje podgrupa takového øádu. Pokud v¹ak nìjakou
+podgrupu nalezneme, musí mít právì øád dìlitele.\end{itemize}
+%
+\end{minipage}}
+
+\medskip{}
+
+
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad}}
+\begin{eqnarray*}
+\mathbb{Z}_{15}^{\times} & = & \left\{ 1,\,2,\,4,\,7,\,8,\,11,\,13,\,14\right\} \,\left(G\right)\\
+\#\mathbb{Z}_{15}^{\times} & = & 8
+\end{eqnarray*}
+
+
+Podgrupy $G$ budou:
+\begin{itemize}
+\item Dvì triviální øádu $\#1=e=\left\{ 1\right\} $ a $\#\left(\#\mathbb{Z}_{15}^{\times}\right)=\left\{ \mathbb{Z}_{15}^{\times}\right\} $
+\item A dal¹í (\emph{vlastní}) podgrupy øádù $\#4\,\mathrm{a}\,\#2$, proto¾e
+$\left(\#4\,\mathrm{a}\,\#2\right)|8$:
+\end{itemize}
+\[
+\left\langle 7\right\rangle =\left\langle 13\right\rangle =\left\{ 1,\,4,\,7,\,13\right\} ,\,\left\{ 1,\,2,\,4,\,8\right\} 
+\]
+
+
+\vspace{-0.5cm}
+
+
+\[
+\left\langle 2\right\rangle =\left\langle 3\right\rangle =\left\{ 1,\,14\right\} ,\,\left\{ 1,\,11\right\} 
+\]
+
+
+\vspace{-0.1cm}
+
+
+\begin{center}
+\emph{Generátory podgrupy} $\left\langle 7\right\rangle =\left\langle 13\right\rangle $
+generují stejnou podgrupu a \inputencoding{latin9}\foreignlanguage{english}{$\left\langle 2\right\rangle =\left\langle 3\right\rangle $}\inputencoding{latin2}
+generují stejnou podgrupu.
+\par\end{center}
+
+\vspace{0.1cm}
+%
+\end{minipage}}
+
+
+\section{Cyklické grupy a generátory}
+\begin{itemize}
+\item V cyklické grupì $G=\left(M,\,\circ\right)$ øádu $n$ platí pro v¹echny
+prvky $a\in M$, ¾e $a^{n}=e$, kde $e$ je neutrální prvek.
+\item Neutrální prvek $\neq$ generátor.
+\end{itemize}
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad}}
+\begin{eqnarray*}
+\mathbb{Z}_{4}^{+} & = & \left\{ 0,\,1,\,2,\,3\right\} \\
+\#\mathbb{Z}_{4}^{+} & = & 4\\
+e & = & 0\\
+2^{4} & = & \left(16\right)_{MOD\,4}=0
+\end{eqnarray*}
+
+
+\medskip{}
+%
+\end{minipage}}
+\begin{itemize}
+\item Libovolná podgrupa cyklické grupy je opìt cyklická grupa. 
+\item Je-li $G$ cyklická grupa øádu $n$ a $a$ nìjaký její generátor,
+potom $a^{\ensuremath{k}}$ je také generátor tehdy, a jen tehdy,
+kdy¾ $k$ a $n$ jsou nesoudìlná (tj. $gcd\left(k,\, n\right)=1$).
+\item V cyklické grupì øádu $n$ je poèet generátorù roven $\varphi\left(n\right)$.
+\end{itemize}
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Eulerova funkce}}
+
+\medskip{}
+
+
+Eulerova funkce $\varphi\left(n\right)$, kde $n\geq2$, je definována
+jako poèet kladných celých èísel, která jsou ni¾¹í ne¾ $n$ a jsou
+s $n$ nesoudìlná.
+\begin{eqnarray*}
+\varphi\left(1\right) & = & 1\\
+\varphi\left(p\right) & = & p-1,\, p\in\mathbb{P}
+\end{eqnarray*}
+
+
+\medskip{}
+%
+\end{minipage}}
+
+
+\subsection{Aditivní grupy}
+\begin{itemize}
+\item \textbf{V¹echny aditivní grupy jsou cyklické}
+\item Aditivní grupa modulo $n$ je rovna $\left\langle k\right\rangle $
+(generátoru) tehdy, a jen tehdy, kdy¾ $k$ a $n$ jsou nesoudìlná
+èísla.
+\end{itemize}
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad}}
+\begin{eqnarray*}
+\mathbb{Z}_{15}^{+} & = & \left\{ 0,\,1,\,2,\,3,\ldots,\,14\right\} \\
+\mathbb{Z}_{15}^{+} & = & \left\{ \left\langle 1\right\rangle ,\left\langle 2\right\rangle ,\left\langle 4\right\rangle ,\left\langle 6\right\rangle ,\left\langle 7\right\rangle ,\left\langle 8\right\rangle ,\left\langle 9\right\rangle ,\left\langle 11\right\rangle ,\left\langle 12\right\rangle ,\left\langle 13\right\rangle ,\left\langle 14\right\rangle \right\} 
+\end{eqnarray*}
+
+
+\begin{center}
+Generátorem jsou v¹echna èísla nesoudìlná s $15$.
+\par\end{center}
+
+\medskip{}
+%
+\end{minipage}}
+
+
+\subsection{Multiplikativní grupy}
+
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Multiplikativní cyklická grupa obecnì}}
+
+\medskip{}
+
+
+$\mathbb{Z}_{n}^{\times}$ je cyklická tehdy a jen tehdy, kdy¾ $n=2,\,4,\, p^{k},\,2p^{k}$,
+kde $p$ je liché prvoèíslo a $k\in\mathbb{N}^{+}$. 
+
+\vspace{0.2cm}
+%
+\end{minipage}}
+\begin{itemize}
+\item Multiplikativní grupa modulo $p$, kde $p$ je prvoèíslo, je mno¾ina
+$\left\{ 1,\,2,\ldots,\, p-1\right\} $ s operací násobení modulo
+$p$. Tuto grupu znaèíme $\mathbb{Z}_{p}^{\times}$.
+
+\begin{itemize}
+\item Grupa $\mathbb{Z}_{p}^{\times}$ je v¾dy cyklická.
+\item Øád této grupy $\mathbb{Z}_{p}^{\times}$ je $p-1$ a má tedy $\varphi\left(p-1\right)$
+generátorù. 
+\end{itemize}
+\end{itemize}
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad}}
+\begin{eqnarray*}
+\mathbb{Z}_{3}^{\times} & = & \left\{ 1,\,2\right\} \\
+\mathbb{Z}_{7}^{\times} & = & \left\{ 1,\,2,\,3,\,4,\,5,\,6\right\} \\
+ &  & \left(6*6\right)_{MOD\,7}=1\\
+ &  & \left(6*5\right)_{MOD\,7}=2\\
+ &  & \cdots
+\end{eqnarray*}
+
+
+\medskip{}
+%
+\end{minipage}}
+
+\medskip{}
+
+
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad II.}}
+\begin{eqnarray*}
+\mathbb{Z}_{22}^{\times} & = & \left\{ 1,\,3,\,5,\,7,\,9,\,13,\,15,\,17,\,19,\,21\right\} \,\left(G\right)\\
+\#\mathbb{Z}_{22}^{\times} & = & 10
+\end{eqnarray*}
+
+
+Tato grupa je cyklická, proto¾e
+\begin{eqnarray*}
+22 & = & 11*2\,\left(=2*\mathbb{P}^{1}\right)\\
+\varphi\left(10\right) & = & 4
+\end{eqnarray*}
+
+
+Její podgrupy budou (triviální grupy vynecháme) øádù
+\[
+10=2*5\rightarrow\#2\,\text{a}\,\#5
+\]
+
+
+Podgrupy nalezneme pomocí generátorù podgrupy (ka¾dý prvek grupy G)
+postupným uzavíráním:
+\begin{eqnarray*}
+\left\langle 3\right\rangle  & = & \left\{ 3\right\} \\
+ & = & \left\{ 3,\,3*3\right\} =\left\{ 3,\,9\right\} \\
+ & = & \left\{ 3,\,9,\,\left(9*3\right)_{22}\right\} =\left\{ 3,\,9,\,5\right\} \\
+ & = & \left\{ 3,\,9,\,5,\,5*3\right\} =\left\{ 3,\,9,\,5,\,15\right\} \\
+ & = & \left\{ 3,\,9,\,5,\,15,\,\left(15*3\right)_{22}\right\} =\left\{ 3,\,9,\,5,\,15,\,\boxed{{\color{black}{\color{red}1}}}\right\} 
+\end{eqnarray*}
+
+
+\vspace{-0.5cm}
+
+
+\begin{center}
+Vygenerovaná podgrupa je øádu $5$, co¾ je v poøádku.
+\par\end{center}
+
+\vspace{0.1cm}
+
+
+Stejným zpùsobem pokraèujeme pro v¹echny prvky z $G$. Zjistíme, ¾e
+generátory podgrupy
+\[
+\left\langle 7\right\rangle ,\,\left\langle 13\right\rangle ,\,\left\langle 17\right\rangle \,\text{a}\,\left\langle 19\right\rangle 
+\]
+
+
+vygenerují celou grupu $G$, jsou tedy jejími generátory (jejich poèet
+sedí s $\varphi\left(10\right)$).
+
+\medskip{}
+%
+\end{minipage}}
+
+
+\section{Homomorfismus a izomorfismus}
+\begin{description}
+\item [{Homomorfismus}] Zobrazení, které zachovává operace. Buïte $G=\left(M,\,\circ_{G}\right)$
+a $H=\left(N,\,\circ_{H}\right)$ dva grupoidy. Zobrazení $\varphi:\, M\rightarrow N$
+nazveme homomorfismem $G$ do $H$, jestli¾e
+\[
+\forall x,\, y\in M\,\mathrm{\mathrm{plat\acute{\imath}}}\,\varphi\left(x\circ_{G}y\right)=\varphi\left(x\right)\circ_{H}\varphi\left(y\right).
+\]
+
+\item [{Izomorfismus}] pokud je homomorfismus navíc \emph{bijekcí}, tj.
+\[
+a:\, G\rightarrow H\,\mathrm{a}\, b:\, H\rightarrow G,\,\, a\circ b=id_{H}\, a\, b\circ a=id_{G}.
+\]
+\end{description}
+\begin{itemize}
+\item Oba zachovávají strukturu danou binární operací.
+\item Pro definici vy¾adujeme pouze uzavøenost.
+\end{itemize}
+
+\subsection{Dùle¾ité vlastnosti}
+\begin{itemize}
+\item Izomorfní grupy musí mít stejný øád.
+\item Neutrální prvek jedné grupy se homomorfizmem zobrazí v¾dy na neutrální
+prvek té druhé.
+\item Také inverze se zachovávají ve smyslu toho, ¾e $\varphi\left(x^{-1}\right)=\varphi\left(x\right)^{-1}$.
+\item Je-li $\varphi$ homomorfismus grupy $G$ do $H$, pak $\varphi\left(G\right)$
+je podgrupa v $H$.
+\item Izomorfní grupy jsou toto¾né, mají jen jinak pojmenované prvky.
+\end{itemize}
+
+\subsection{Vìty}
+\begin{itemize}
+\item Neutrální prvek jedné grupy se homomorfismem zobrazí v¾dy na neutrální
+prvek té druhé. 
+\item Je-li $\varphi$ homomorfismus grupy $G$ do $H$, pak $\varphi\left(G\right)$
+je podgrupa v $H$. 
+\item Libovolné dvì nekoneèné cyklické grupy jsou izomorfní. Pro ka¾dé $n\in\mathbb{N}$
+jsou libovolné dvì cyklické grupy øádu $n$ izomorfní.
+\item \textbf{\noun{Cayleyova vìta}}: Libovolná koneèná grupa je izomorfní
+s nìjakou grupou permutací.
+\item Obecnì platí pro kartézský souèin dvou grup $H$ a $G$ øádù $n$
+a $m$ toto: kartézský souèin je cyklická grupa právì kdy¾ $G$ a
+H jsou cyklické a $n$ a $m$ nesoudìlné
+\end{itemize}
+
+\section{Okruhy a tìlesa}
+\begin{description}
+\item [{Okruh}] Buïte $M$ neprázdná mno¾in a $+$ a $*$ binární operace.
+Øeknìme, ¾e $R=\left(M,\,+,\,*\right)$ je okruh, pokud platí:\end{description}
+\begin{itemize}
+\item $\left(M,\,+\right)$ je Abelovská grupa (komutativita)
+\item $\left(M,\,*\right)$ je grupoid
+\item Platí levý a pravý distributivní zákon:
+\[
+\left(\forall a,\, b,\, c\in M\right)\left(a\left(b+c\right)=ab+ac\wedge\left(b+c\right)a=ba+ca\right)
+\]
+\end{itemize}
+\begin{description}
+\item [{Tìleso}] Okruh $T=\left(M,\,+,\,*\right)$ se nazývá tìleso, jestli¾e
+$\left(M\setminus\left\{ 0\right\} ,\,*\right)$ je grupa. Tuto grupu
+nazýváme multiplikativní grupou tìlesa $T$. Nulu musíme vyjmout,
+proto¾e nemá inverzi:
+\[
+0^{-1}=??
+\]
+\end{description}
+\begin{itemize}
+\item Existují pouze tìlesa øádu $p^{n}$, kde $p$ je prvoèíslo a $n$
+je pøirozené èíslo. Prvoèíslo $p$ se nazývá \emph{charakteristika}.
+\end{itemize}
+\begin{figure}[H]
+\centering
+
+\includegraphics[scale=0.6]{images/okruhy_a_telesa_cleneni}
+
+\caption{Okruhy a tìlesa}
+
+
+\end{figure}
+
+
+
+\subsection{Ireducibilní polynom}
+\begin{itemize}
+\item $K$ je okruh, $K\left[x\right]$ je komutativní okruh polynomù nad
+okruhem $K$.
+\end{itemize}
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Ireducibilní polynom}}
+
+\medskip{}
+
+
+Buï $P\left(x\right)\in K\left[x\right]$ stupnì alespoò $1$. Øeknìme,
+¾e $P\left(x\right)$ je ireducibilní nad $K$, jestli¾e pro ka¾dé
+dva polynomy $A\left(x\right)$ a $B\left(x\right)$ z $K\left[x\right]$
+platí
+\[
+A\left(x\right)*B\left(x\right)=P\left(x\right)\,\Rightarrow\,\left(\mathrm{stupe\check{n}}\, A\left(x\right)=0\vee\mathrm{stupe\check{n}}\, B\left(x\right)=0\right).
+\]
+
+\begin{itemize}
+\item Ireducibilní polynomy jsou prvoèísla mezi polynomy.\end{itemize}
+%
+\end{minipage}}
+
+
+\subsubsection{Ireducibilní polynomy v $\mathbb{Z}_{2}$}
+
+\shadowbox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Tip}}
+
+\medskip{}
+
+
+V $\mathbb{Z}_{2}$ testujeme ireducibilitu pro polynomy, které konèí
+$\boxed{\ldots+1}$, v $\mathbb{Z}_{3}$ testujeme polynomy, které
+konèí $\boxed{\ldots+1}$ nebo $\boxed{\ldots+2}$ atd. Toto pravidlo
+neplatí pro polynomy stupnì $1$.
+
+\medskip{}
+%
+\end{minipage}}
+
+\medskip{}
+
+
+\textbf{Stupeò 0}
+
+$\left.\begin{array}{cc}
+0 & \text{NE}\\
+1 & \text{NE}
+\end{array}\right\} \text{Nevyhovují definici}$
+
+\medskip{}
+
+
+\textbf{Stupeò 1}
+
+$\left.\begin{array}{lc}
+\mathbf{{\color{green}x}} & \text{\textbf{ANO}}\\
+\mathbf{{\color{green}x+1}} & \text{\textbf{ANO}}
+\end{array}\right\} \text{V¹echny jejich násobky ji¾ nebudeme brát v úvahu}$
+
+\medskip{}
+
+
+\textbf{Stupeò 2}
+
+$\begin{array}{lr}
+x^{2} & \text{NE (násobek x)}\\
+x^{2}+1 & \text{NE}\\
+x^{2}+x & \text{NE (násobek x)}\\
+\mathbf{{\color{green}x^{2}+x+1}} & \text{\textbf{ANO}}
+\end{array}$
+
+\medskip{}
+
+
+\textbf{Stupeò 3}
+
+$\begin{array}{lr}
+x^{3} & \text{NE}\\
+x^{3}+1 & \text{NE}\\
+{\color{green}\mathbf{x^{3}+x+1}} & \text{\textbf{ANO}}\\
+x^{3}+x^{2} & \text{NE}\\
+{\color{green}\mathbf{x^{3}+x^{2}+1}} & \mathbf{\text{\textbf{ANO}}}\\
+x^{3}+x^{2}+x & \text{NE}\\
+x^{3}+x^{2}+x+1 & \text{NE}\\
+x^{3}+x & \text{NE}
+\end{array}$
+
+\medskip{}
+
+
+\textbf{Stupeò 4}
+
+$\begin{array}{lr}
+{\color{green}\mathbf{x^{4}+x+1}} & \mathbf{\mathbf{\text{\textbf{ANO}}}}\\
+{\color{green}\mathbf{x^{4}+x^{3}+1}} & \mathbf{\mathbf{\mathbf{\mathbf{\text{\textbf{ANO}}}}}}\\
+{\color{green}\mathbf{x^{4}+x^{3}+x^{2}}\mathbf{+x+1}} & \mathbf{\mathbf{\text{\textbf{ANO}}}}
+\end{array}$
+
+
+\subsection{Euklidùv algoritmus}
+
+\framebox{\begin{minipage}[t]{1\columnwidth}%
+\textbf{\uline{Pøíklad}}
+
+\medskip{}
+
+
+Hledáme $5*x\equiv1\, MOD\,7$ tj. inverzi $5$.
+\[
+\begin{array}{c|ccc}
+ &  & \mathbf{5} & \mathbf{17}\\
+ & \mathbf{17} & 0_{A} & 1_{C}\\
+ & \mathbf{5} & 1_{B} & 0_{D}\\
+\hline \frac{17}{5}=3 & \mathrm{zb.}\,2 & -3_{X} & 1_{Y}\\
+\frac{5}{2}=2 & {\color{red}\mathrm{zb.}\,1} & {\color{blue}7} & -2
+\end{array}
+\]
+
+
+\begin{eqnarray*}
+-3_{X} & = & 0_{A}-\left(3*1_{B}\right)\\
+1_{Y} & = & 1_{C}-\left(3*0_{D}\right)\\
+-2 & = & 0_{D}-\left(2*1_{Y}\right)
+\end{eqnarray*}
+
+
+\vspace{-0.4cm}
+
+
+\[
+{\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{v\acute{y}sledn\acute{a}\, inverze}\right)
+\]
+
+
+\vspace{0.1cm}
+%
+\end{minipage}}
+
+
+\subsection{Zápis tìles}
+
+\[
+GF\left(M^{\#}\right)=\left(2^{4}\right)
+\]
+
+
+$\#$ je øád:
+\begin{eqnarray*}
+\# & = & 4\rightarrow a,\, b,\, c,\, d\\
+y & = & ax^{\#-1}+bx^{\#-\ldots}\ldots=ax^{3}+bx^{2}+cx+d
+\end{eqnarray*}
+
+
+$M$ je modulo, ve kterém poèítáme:
+
+\[
+M=2\rightarrow a,\, b,\, c,\, d=\mathbf{\left\{ 0,1\right\} }
+\]
+
+
+
+\subsection{Výpoèet nad tìlesem s ireducibilním polynomem}
+
+
+\subsubsection{A -- Dìlením polynomu}
+
+V tìlese 
+\[
+GF\left(2^{4}\right)
+\]
+vyøe¹te rovnici
+\[
+1111y=0110+0101y\text{,}
+\]
+
+
+kde se poèítá modulo ireducibilní polynom
+\[
+P\left(x\right)=x^{4}+x^{3}+1\text{.}
+\]
+
+
+\begin{center}
+\rule[0.5ex]{0.6\columnwidth}{0.1pt}
+\par\end{center}
+
+\vspace{-0.6cm}
+
+
+\begin{eqnarray*}
+1111y-0101y & = & 0101\\
+y\left(1111-0101\right) & = & 0101
+\end{eqnarray*}
+
+
+Poèítáme v modulo 2, proto:
+\begin{eqnarray*}
+1+1 & =_{MOD} & 0\\
+- & =_{MOD} & +
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+y1010 & = & 0101\\
+y & = & ax^{3}+bx^{2}+cx+d\\
+\left(ax^{3}+bx^{2}+cx+d\right)*\left(x^{3}+0x^{2}+x+0*1\right) & = & 0x^{3}+x^{2}+0x+1\\
+\cdots & = & \cdots
+\end{eqnarray*}
+
+
+Rovnici roznásobíme a vydìlíme (bì¾né dìlení polynomu polynomem) ireducibilním
+polynomem:
+
+\selectlanguage{english}%
+\inputencoding{latin9}\[
+\left(ax^{6}+bx^{5}+ax^{4}+\cdots\right)\div\left(P\left(x\right)=x^{4}+x^{3}+1\right)=0
+\]
+
+
+\selectlanguage{czech}%
+\inputencoding{latin2}%
+Ve zbytku po dìlení odhadneme koeficienty $a,\, b,\, c,\, d$, aby
+rovnice vycházela. V na¹em pøípadì:
+\begin{eqnarray*}
+a & = & 1\\
+b & = & 0\\
+c & = & 0\\
+d & = & 0
+\end{eqnarray*}
+
+
+Koeficienty dosadíme do pøedpisu $y$, èím¾ získáme finální výsledek:
+
+\[
+y=ax^{3}+bx^{2}+cx+d=x^{3}=\mathbf{1000}
+\]
+
+
+
+\subsubsection{B -- Euklidovým algoritmem}
+
+Nejprve osamostatníme v pùvodní rovnici $y$, zde nám nutnì vyjde
+dìlení (resp. násobení inverzí):
+
+\begin{eqnarray*}
+y\left(1010\right) & = & 0110\\
+y & = & 0110*\left(1010\right)^{-1}
+\end{eqnarray*}
+
+
+Nyní vypoèítáme inverzi $1010\left(=x^{3}+x\right)$:
+\[
+\begin{array}{c|c|cc}
+ &  & \mathbf{x^{3}+x} & {\color{blue}\mathbf{x^{4}+x^{3}+1}}\\
+ & {\color{blue}\mathbf{x^{4}+x^{3}+1}} & 0 & 1\\
+ & \mathbf{x^{3}+x} & 1 & 0\\
+\hline \frac{x^{4}+x^{3}+1}{x^{3}+x}=x+1 & x^{2}+x+1 & 0-\left[1*\left(x+1\right)\right]=\boxed{\mathbf{x+1}} & 1-\left[0*\left(x+1\right)\right]=\boxed{\mathbf{1}}\\
+\frac{x^{3}+x}{x^{2}+x+1}=x+1 & x+1 & 1-\left(x+1\right)^{2}=\boxed{\mathbf{x^{2}}} & 0-1*\left(x+1\right)=\boxed{\mathbf{x+1}}\\
+\frac{x^{2}+x+1}{x+1}=x & \boxed{\mathbf{{\color{red}1}}} & \left(x+1\right)-\left(x*x^{2}\right)=\boxed{{\color{green}\mathbf{x^{3}+x+1}}}
+\end{array}
+\]
+
+
+\vspace{0.4cm}
+
+
+S inverzí dopoèítáme x:
+\[
+y=\left(x^{2}+x\right)*\left(x^{3}+x+1\right)=x^{5}+x^{4}+x^{3}+{\color{red}x^{2}+x^{2}}+x
+\]
+
+
+Výsledek vydìlíme ireducibilním polynomem:
+\[
+\left(x^{5}+x^{4}+x^{3}+x\right)\div\left(x^{4}+x^{3}+1\right)=x,\,\text{zb.}\,\boxed{\mathbf{x^{3}}=\mathbf{1000}}
+\]
+
+\end{document}
