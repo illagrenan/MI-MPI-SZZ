@@ -1459,11 +1459,11 @@ Grupa
 
 \end_deeper
 \begin_layout Itemize
-Prvky multiplikativní grupy jsou nesoudělné s jejím modulem, platí tedy,
- že
+Prvky multiplikativní grupy jsou nesoudělné s jejím modulem, řád multiplikativní
+ grupy tedy získáme jako: 
 \begin_inset Formula 
 \[
-\#\mathbb{Z}_{MOD}^{\times}=\varphi\left(MOD\right)
+\#\mathbb{Z}_{MOD}^{\times}=\varphi\left(MOD\right)\text{.}
 \]
 
 \end_inset
@@ -2171,6 +2171,24 @@ grupa
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Počet různých izomorfismů
+\series default
+ se rovná
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Tato vlastnost byla odvozena z pozorování.
+\end_layout
+
+\end_inset
+
+ faktoriálu z počtu generátorů (odpovídá počtu bijektivních zobrazení).
 \end_layout
 
 \begin_layout Subsection
@@ -5908,7 +5926,16 @@ Hessova matice
 \end_layout
 
 \begin_layout Itemize
-Hesseovu maticí zjistíme, zda je kritický bod extrém a případně jaký.
+Hesseovu maticí zjistíme, zda je kritický bod extrém a případně jaký (minimum,
+ maximum nebo sedlový bod).
+\end_layout
+
+\begin_layout Itemize
+Pokud máme 
+\series bold
+více bodů podezřelých z extrémů
+\series default
+, dosadíme je do Hasseovy matice, kterou následně vyšetříme.
 \end_layout
 
 \begin_layout Standard
