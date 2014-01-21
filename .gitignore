@@ -216,3 +216,5 @@ pip-log.txt
 /*.lyx~
 
 /*.lyx#
+
+/skripta/*.lyx#
