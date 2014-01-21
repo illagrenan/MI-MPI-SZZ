@@ -2999,6 +2999,88 @@ Hledáme
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad 
+\begin_inset Quotes gld
+\end_inset
+
+Petrův postup
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\end_inset
+
+ tj.
+ inverzi 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{cc|cc}
+?\times & 17 & 0 & 1\\
+3\times & 5 & 1 & 0\\
+\hline 2\times & 2 & -3 & 1\\
+ & 1 & \uuline{\mathbf{7}} & -2\\
+ & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Zápis těles
 \end_layout
@@ -3654,6 +3736,90 @@ reference "sub:Rozšířený-Euklidův-algoritmus"
 
 \begin_layout Itemize
 GCD je možné vypočítat pomocí Euklidova algoritmu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad 
+\begin_inset Quotes gld
+\end_inset
+
+Petrův postup
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $\alpha*12+\beta*42=6$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cc|cc}
+ &  & \alpha & \beta\\
+?\times & 42 & 0 & 1\\
+3\times & 12 & 1 & 0\\
+\hline 2\times & 6 & \uuline{\mathbf{-3}} & \uuline{\mathbf{1}}\\
+ & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $-3*12+1*42=6\text{.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
