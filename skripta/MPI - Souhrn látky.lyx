@@ -1240,7 +1240,7 @@ Aditivní grupy
 \begin_layout Itemize
 
 \series bold
-Všechny aditivní grupy jsou cyklické
+Všechny aditivní grupy jsou cyklické.
 \end_layout
 
 \begin_layout Itemize
@@ -1261,6 +1261,14 @@ Aditivní grupa modulo
 \end_inset
 
  jsou nesoudělná čísla.
+\end_layout
+
+\begin_layout Itemize
+Počet prvků grupy 
+\begin_inset Formula $\mathbb{Z}_{\text{MOD}}^{+}$
+\end_inset
+
+ je MOD.
 \end_layout
 
 \begin_layout Standard
@@ -4067,6 +4075,46 @@ má řešení, jestliže (
 \begin_inset Quotes grd
 \end_inset
 
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $a|b$
+\end_inset
+
+ znamená 
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ dělí 
+\begin_inset Formula $b$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+ tzn.
+ 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Např.
+ 
+\begin_inset Formula $2|16$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
  -- dělí) 
 \begin_inset Formula 
 \[
@@ -5847,7 +5895,7 @@ Body grafu funkce
 Eukleidovská vzdálenost bodů je
 \begin_inset Formula 
 \[
-\left|AB\right|=\sqrt{\left(A-B\right)^{2}}
+\left|AB\right|=\sqrt{\left(A-B\right)^{2}}=\sqrt{\left(a_{1}-b_{1}\right)^{2}+\left(a_{2}-b_{2}\right)^{2}}
 \]
 
 \end_inset
