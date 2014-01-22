@@ -1240,7 +1240,7 @@ Aditivní grupy
 \begin_layout Itemize
 
 \series bold
-Všechny aditivní grupy jsou cyklické
+Všechny aditivní grupy jsou cyklické.
 \end_layout
 
 \begin_layout Itemize
@@ -1261,6 +1261,14 @@ Aditivní grupa modulo
 \end_inset
 
  jsou nesoudělná čísla.
+\end_layout
+
+\begin_layout Itemize
+Počet prvků grupy 
+\begin_inset Formula $\mathbb{Z}_{\text{MOD}}^{+}$
+\end_inset
+
+ je MOD.
 \end_layout
 
 \begin_layout Standard
@@ -1451,11 +1459,11 @@ Grupa
 
 \end_deeper
 \begin_layout Itemize
-Prvky multiplikativní grupy jsou nesoudělné s jejím modulem, platí tedy,
- že
+Prvky multiplikativní grupy jsou nesoudělné s jejím modulem, řád multiplikativní
+ grupy tedy získáme jako: 
 \begin_inset Formula 
 \[
-\#\mathbb{Z}_{MOD}^{\times}=\varphi\left(MOD\right)
+\#\mathbb{Z}_{MOD}^{\times}=\varphi\left(MOD\right)\text{.}
 \]
 
 \end_inset
@@ -2165,6 +2173,24 @@ grupa
 .
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+Počet různých izomorfismů
+\series default
+ se rovná
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Tato vlastnost byla odvozena z pozorování.
+\end_layout
+
+\end_inset
+
+ faktoriálu z počtu generátorů (odpovídá počtu bijektivních zobrazení).
+\end_layout
+
 \begin_layout Subsection
 Důležité vlastnosti
 \end_layout
@@ -2320,12 +2346,21 @@ Obecně platí pro kartézský součin dvou grup
 
 \begin_layout Subsection
 Skládání permutací
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 \left(\begin{array}[t]{ccc}
-\overset{1}{1} & \overset{2}{3} & \overset{3}{2}\end{array}\right)\circ\left(\begin{array}[t]{ccc}
-\overset{1}{3} & \overset{2}{2} & \overset{3}{1}\end{array}\right)=\left(\begin{array}[t]{ccc}
-2 & 3 & 1\end{array}\right)
+\overset{1}{1} & \overset{2}{3} & \overset{\begin{array}[t]{c}
+\downarrow\left[3\right]\\
+{\color{magenta}3}
+\end{array}}{\boxed{{\color{blue}\mathbf{2}}}}\end{array}\right)\circ\left(\begin{array}[t]{ccc}
+\overset{\begin{array}[t]{c}
+\downarrow\left[1\right]\\
+1
+\end{array}}{{\color{magenta}3}\leftarrow\left[2\right]} & \overset{2}{2} & \overset{3}{1}\end{array}\right)=\left(\begin{array}[t]{ccc}
+\boxed{{\color{blue}\mathbf{2}}} & 3 & 1\end{array}\right)
 \]
 
 \end_inset
@@ -2945,6 +2980,88 @@ Hledáme
 \begin_inset Formula 
 \[
 {\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{výsledná\,\, inverze}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad 
+\begin_inset Quotes gld
+\end_inset
+
+Petrův postup
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\end_inset
+
+ tj.
+ inverzi 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{cc|cc}
+?\times & 17 & 0 & 1\\
+3\times & 5 & 1 & 0\\
+\hline 2\times & 2 & -3 & 1\\
+ & 1 & \uuline{\mathbf{7}} & -2\\
+ & 0
+\end{array}
 \]
 
 \end_inset
@@ -3639,6 +3756,90 @@ status open
 
 \series bold
 \bar under
+Příklad 
+\begin_inset Quotes gld
+\end_inset
+
+Petrův postup
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $\alpha*12+\beta*42=6$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{array}{cc|cc}
+ &  & \alpha & \beta\\
+?\times & 42 & 0 & 1\\
+3\times & 12 & 1 & 0\\
+\hline 2\times & 6 & \uuline{\mathbf{-3}} & \uuline{\mathbf{1}}\\
+ & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $-3*12+1*42=6\text{.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
 Příklad výpočtu GCD
 \end_layout
 
@@ -4056,6 +4257,46 @@ má řešení, jestliže (
 
 
 \begin_inset Quotes grd
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $a|b$
+\end_inset
+
+ znamená 
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $a$
+\end_inset
+
+ dělí 
+\begin_inset Formula $b$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+ tzn.
+ 
+\begin_inset Formula $a<b$
+\end_inset
+
+.
+ Např.
+ 
+\begin_inset Formula $2|16$
+\end_inset
+
+.
+\end_layout
+
 \end_inset
 
  -- dělí) 
@@ -5838,7 +6079,7 @@ Body grafu funkce
 Eukleidovská vzdálenost bodů je
 \begin_inset Formula 
 \[
-\left|AB\right|=\sqrt{\left(A-B\right)^{2}}
+\left|AB\right|=\sqrt{\left(A-B\right)^{2}}=\sqrt{\left(a_{1}-b_{1}\right)^{2}+\left(a_{2}-b_{2}\right)^{2}}
 \]
 
 \end_inset
@@ -5851,7 +6092,16 @@ Hessova matice
 \end_layout
 
 \begin_layout Itemize
-Hesseovu maticí zjistíme, zda je kritický bod extrém a případně jaký.
+Hesseovu maticí zjistíme, zda je kritický bod extrém a případně jaký (minimum,
+ maximum nebo sedlový bod).
+\end_layout
+
+\begin_layout Itemize
+Pokud máme 
+\series bold
+více bodů podezřelých z extrémů
+\series default
+, dosadíme je do Hasseovy matice, kterou následně vyšetříme.
 \end_layout
 
 \begin_layout Standard

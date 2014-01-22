@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -33,13 +33,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -60,15 +60,24 @@
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \branch 5
 \selected 0
@@ -313,12 +322,20 @@ Homomorfizmus, izomorfizmus -- vlastnosti a příklady izomorfních grupy
 \end_layout
 
 \begin_layout Itemize
-Homomorfismus -- zobrazení z jedné struktury do jiné stejného typu, které
- zachovává veškerou důležitou strukturu.
+
+\series bold
+Homomorfismus
+\series default
+ -- zobrazení z jedné struktury do jiné stejného typu, které zachovává veškerou
+ důležitou strukturu.
 \end_layout
 
 \begin_layout Itemize
-Izomorfismus -- bijektivní (prostý a na) homomorfismus.
+
+\series bold
+Izomorfismus
+\series default
+ -- bijektivní (prostý a na) homomorfismus.
 \end_layout
 
 \begin_layout Standard
@@ -481,7 +498,7 @@ centering
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Diffie-Hellman Key Exchange Schema
@@ -590,6 +607,59 @@ Numerika, optimalizace, fuzzy matematika
 
 \begin_layout Section
 Limity a derivace funkcí více proměnných, gradient, Jacobiho matice, Hessián
+\end_layout
+
+\begin_layout Subsection
+Limita funkce více proměnných
+\end_layout
+
+\begin_layout Itemize
+Limitou jedné proměnné můžeme odhalovat spojitost či nespojitost funkcí
+ v určitém bodě
+\end_layout
+
+\begin_layout Itemize
+U funkcí jedné proměnné jsme se k vyšetřovanému bodu přibližovali v jednom
+ směru.
+ U funkcí více proměnných je možné přiblížit se k bodu nekonečně mnoha způsoby
+ (po přímkách, spirálách, výsečích...).
+ 
+\end_layout
+
+\begin_layout Itemize
+Funkce má limitu v hromadném bodě 
+\begin_inset Formula $a$
+\end_inset
+
+ limitu 
+\begin_inset Formula $b$
+\end_inset
+
+, jestliže pro každé okolí bodu 
+\begin_inset Formula $b$
+\end_inset
+
+ existuje prstencové okolí bodu 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Gradient
+\end_layout
+
+\begin_layout Standard
+Vektorové pole určující směr a velikost největšího růstu skalárního pole.
+\end_layout
+
+\begin_layout Subsection
+Jacobiho matice
+\end_layout
+
+\begin_layout Subsection
+Hessián
 \end_layout
 
 \begin_layout Section

@@ -216,3 +216,7 @@ pip-log.txt
 /*.lyx~
 
 /*.lyx#
+
+/skripta/*.lyx#
+
+/priprava_na_ustni/*.lyx#
