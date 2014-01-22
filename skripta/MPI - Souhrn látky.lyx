@@ -6866,6 +6866,7 @@ status open
 
 \begin_layout Plain Layout
 
+
 \backslash
 centering
 \end_layout
@@ -6907,8 +6908,85 @@ Dva typy integrálů přes obecnou oblast
 
 \end_layout
 
+\begin_layout Standard
+Poznámka k příkladu 2.2 ve cvičení 12: Vypočítejte 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula $\iint_{D}f\left(x+y\right)^{2}\text{d}x\text{d}y$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang czech
+.
+ Zde budeme vyjadřovat 
+\begin_inset Formula $y$
+\end_inset
+
+ pomocí 
+\begin_inset Formula $x$
+\end_inset
+
+ (tj.
+ 
+\begin_inset Formula $f\left(y\right)=x\ldots$
+\end_inset
+
+ -- funkce ohraničující 
+\begin_inset Quotes gld
+\end_inset
+
+shora
+\begin_inset Quotes grd
+\end_inset
+
+ a 
+\begin_inset Quotes gld
+\end_inset
+
+zdola
+\begin_inset Quotes grd
+\end_inset
+
+ trojúhelník), poté se budeme automaticky omezovat na ose 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+\intop_{x_{1}}^{x_{2}}\left(\,\intop_{y_{1}}^{y_{2}}\left(\ldots\right)\text{d}y\right)\text{d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Fuzzy matematika
+Fuzzy matematika 
 \end_layout
 
 \begin_layout Subsection
