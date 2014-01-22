@@ -146,6 +146,16 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -739,10 +749,26 @@ Riemannův integrál vychází z faktu, že snadno vypočteme obsah obdélníka.
 aproximovat oblast pod grafem
 \series default
  funkce pomocí vhodných obdélníků.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "http://math.feld.cvut.cz/mt/txtd/1/txc3da1a.htm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Výpočet Riemannova integrálu funkce jedné a více proměnných
+Výpočet Riemannova integrálu funkce jedné proměnné
 \end_layout
 
 \begin_layout Section
@@ -781,8 +807,147 @@ Optimalizace s omezeními
 Vzdálenost a další míry podobnosti
 \end_layout
 
+\begin_layout Standard
+Vzdálenosti číselných vektorů:
+\end_layout
+
+\begin_layout Subsection
+Minkovského
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\begin{Vmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{Vmatrix}=\sqrt[p]{\sum_{i=1}^{n}\left|x_{i}\right|^{p}},~p\in\left[1,~\infty\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Eukleidovská
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\sqrt{\left\langle x,~x\right\rangle }=\sqrt{x^{T}x}=\sqrt{\sum_{i=1}^{n}x_{i}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Manhattanská
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\sum_{i=1}^{n}\left|x_{i}\right|,~p=\infty:~\left\Vert x\right\Vert =\underset{i=1,\ldots,n}{max}\left|x_{i}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Další míry podobnosti
+\end_layout
+
+\begin_layout Standard
+Podobnost náhodných veličin dle 
+\series bold
+korelačních koeficientů
+\series default
+:
+\end_layout
+
+\begin_layout Itemize
+Pearsonův (=lineární)
+\end_layout
+
+\begin_layout Itemize
+Spearmanův
+\end_layout
+
+\begin_layout Itemize
+Kendallův
+\end_layout
+
+\begin_layout Standard
+Podobnost 
+\series bold
+binárních
+\series default
+ vektorů
+\end_layout
+
+\begin_layout Itemize
+Hammingova vzdálenost
+\end_layout
+
 \begin_layout Section
 Fuzzy množiny a operace s nimi
+\end_layout
+
+\begin_layout Standard
+Fuzzy matematika -- matematika neurčitost nějakého prvku 
+\begin_inset Formula $u$
+\end_inset
+
+ z universa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+universum
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ k množině 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+U klasických množin buď nějaký prvek do množiny patří nebo do ní nepatří.
+ Toto je možné definovat jednoznačným výčtem prvků nebo definicí vlastností.
+\end_layout
+
+\begin_layout Itemize
+V teorii fuzzy množin existuje 
+\emph on
+funkce příslušnosti
+\emph default
+, která přiřazuje nějakému prvku 
+\begin_inset Formula $u$
+\end_inset
+
+ jeho stupeň příslušnosti k 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Využití v informatice: shlukování dat, hledání podobných obrázků.
 \end_layout
 
 \begin_layout Section
