@@ -767,6 +767,151 @@ target "http://math.feld.cvut.cz/mt/txtd/1/txc3da1a.htm"
 
 \end_layout
 
+\begin_layout Itemize
+Mějme 
+\begin_inset Formula $a,~b\in\mathbb{R},~a<b$
+\end_inset
+
+, pak množina 
+\begin_inset Formula $\sigma=\left\{ x_{0},~x_{1},\ldots,x_{n}\right\} $
+\end_inset
+
+ (
+\begin_inset Formula $a=x_{0}<x_{1}<\ldots<x_{n}=b$
+\end_inset
+
+) se nazývá rozdělení intervalu, který je ekvidistantní (zachovává konstantní
+ vzdálenost mezi prvky).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\intop_{a}^{\underline{b}}$
+\end_inset
+
+ je horní integrální součet, 
+\begin_inset Formula $\intop_{\underline{b}}^{a}$
+\end_inset
+
+ je dolní integrální součet.
+ Navíc platí, že 
+\begin_inset Formula $\intop_{\underline{b}}^{a}\leq\intop_{a}^{\underline{b}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+Pokud je funkce na intervalu integrovatelná, je možné integraci vyjádřit
+ pomocí primitivní funkce (Newtonova formule)
+\begin_inset Formula 
+\[
+\intop_{a}^{b}f\left(x\right)\text{d}x=\left[F\left(x\right)\right]_{a}^{b}=F\left(b\right)-F\left(a\right)\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Počítání s určitými integrály:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+per partes,
+\end_layout
+
+\begin_layout Itemize
+substituce.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Místo intervalu můžeme mít např.
+ pravoúhelník
+\begin_inset Formula 
+\[
+D=\left[a,~b\right]\times\left[c,~d\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Vlastnosti dvojného integrálu:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Linearita -- pokud jsou 
+\begin_inset Formula $f,~g$
+\end_inset
+
+ integrovatelné na 
+\begin_inset Formula $D$
+\end_inset
+
+, pak jsou na 
+\begin_inset Formula $D$
+\end_inset
+
+ integrovatelné 
+\begin_inset Formula $f+g$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Nerovnosti -- pokud jsou 
+\begin_inset Formula $f,~g$
+\end_inset
+
+ integrovatelné na 
+\begin_inset Formula $D$
+\end_inset
+
+ a 
+\begin_inset Formula $f\leq g$
+\end_inset
+
+, pak 
+\begin_inset Formula $\iint_{D}f\left(x\right)\leq\iint_{D}g\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Věta:
+\begin_inset Formula $\iint_{D}f\left(x,~y\right)$
+\end_inset
+
+ je možné rozepsat jako 
+\begin_inset Formula $\int_{a}^{b}\left(\int_{c}^{d}f\left(x,~y\right)\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Můžeme integrovat i nad obecnější oblastí:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+typ 1 -- shora a zdola,
+\end_layout
+
+\begin_layout Itemize
+typ 2 -- zleva a zprava.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Výpočet Riemannova integrálu funkce jedné proměnné
 \end_layout
@@ -896,7 +1041,7 @@ Hammingova vzdálenost
 \end_layout
 
 \begin_layout Section
-Fuzzy množiny a operace s nimi
+Fuzzy množiny
 \end_layout
 
 \begin_layout Standard
@@ -948,6 +1093,58 @@ funkce příslušnosti
 
 \begin_layout Itemize
 Využití v informatice: shlukování dat, hledání podobných obrázků.
+\end_layout
+
+\begin_layout Subsection
+Operace s fuzzy množinami
+\end_layout
+
+\begin_layout Itemize
+Průnik
+\end_layout
+
+\begin_layout Itemize
+Sjednocení
+\end_layout
+
+\begin_layout Itemize
+Doplněk
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Klíčová slova:
+\series default
+\bar default
+ T-normy, T-konormy.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
