@@ -161,7 +161,11 @@ Značíme
 \begin_inset Formula $G=(M,\circ)$
 \end_inset
 
+, kde M je množina a 
+\begin_inset Formula $\circ$
+\end_inset
 
+nějaká binární operace
 \end_layout
 
 \begin_layout Itemize
