@@ -22,6 +22,10 @@
 \makeatletter
 \let\old@start@align\start@align
 \def\start@align{\setcounter{equation}{0}\old@start@align}
+
+% \usepackage[backend=biber]{biblatex}
+% http://wiki.lyx.org/BibTeX/Biblatex.
+
 \makeatother
 \end_preamble
 \use_default_options true
@@ -43,7 +47,7 @@
 \graphics default
 \default_output_format default
 \output_sync 1
-\bibtex_command default
+\bibtex_command biber
 \index_command default
 \float_placement H
 \paperfontsize default
@@ -72,7 +76,7 @@
 \use_package undertilde 0
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style 
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -2481,7 +2485,7 @@ Každý obor integrity je je zároveň okruh.
 \end_layout
 
 \begin_layout Subsection
-Těleso
+Konečné (Galoisovo) těleso
 \end_layout
 
 \begin_layout Standard
@@ -2489,7 +2493,11 @@ Okruh
 \begin_inset Formula $T=\left(M,\,+,\,*\right)$
 \end_inset
 
- se nazývá těleso, jestliže 
+ se 
+\series bold
+nazývá těleso
+\series default
+, jestliže 
 \begin_inset Formula $\left(M\setminus\left\{ 0\right\} ,\,*\right)$
 \end_inset
 
@@ -2533,6 +2541,28 @@ Existují pouze tělesa řádu
 charakteristika
 \emph default
 .
+\end_layout
+
+\begin_layout Itemize
+V tělesech je neutrálním prvkem číslo 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ V tělese 
+\begin_inset Formula $GF\left(2^{3}\right)$
+\end_inset
+
+ je např.
+ neutrální číslo binární řetězec 
+\begin_inset Formula $001$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Tělesa mají konečný počet prvků.
 \end_layout
 
 \begin_layout Subsection
@@ -6670,6 +6700,26 @@ Newtonova formule
 \end_layout
 
 \begin_layout Standard
+Platí, pokud je funkce 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ spojitá na intervalu 
+\begin_inset Formula $\left\langle a,~b\right\rangle $
+\end_inset
+
+ a funkce 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ je k ní na intervalu 
+\begin_inset Formula $\left\langle a,~b\right\rangle $
+\end_inset
+
+ primitivní.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 \intop_{a}^{b}f\left(x\right)\text{d}x=\left[F\left(x\right)\right]_{a}^{b}=F\left(b\right)-F\left(a\right)
@@ -6687,7 +6737,7 @@ Integrály přes obdélníkovou oblast
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\, y\right)\text{d}y\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\, y\right)\text{d}y\right)\text{d}x
+\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\, y\right)\text{d}y\right)\text{d}x
 \]
 
 \end_inset
@@ -6697,6 +6747,87 @@ Integrály přes obdélníkovou oblast
 
 \begin_layout Subsection
 Integrály přes obecnou oblast
+\end_layout
+
+\begin_layout Standard
+Uvažujeme dva typy oblastí
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Typ 1:
+\series default
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ je z intervalu 
+\begin_inset Formula $\left\langle a,~b\right\rangle $
+\end_inset
+
+ a 
+\begin_inset Formula $y$
+\end_inset
+
+ je omezené spojitými funkcemi 
+\begin_inset Formula $\varphi_{1}\left(x\right)$
+\end_inset
+
+ a 
+\begin_inset Formula $\varphi_{2}\left(x\right)$
+\end_inset
+
+ .
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+
+\begin_inset Formula 
+\[
+\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\,\intop_{\varphi_{1}\left(x\right)}^{\varphi_{2}\left(x\right)}f\left(x,\, y\right)\text{d}y\right)\text{d}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Typ 2:
+\series default
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ je z intervalu 
+\begin_inset Formula $\left\langle c,~d\right\rangle $
+\end_inset
+
+ a 
+\begin_inset Formula $x$
+\end_inset
+
+ je omezené spojitými funkcemi 
+\begin_inset Formula $\psi_{1}\left(y\right)$
+\end_inset
+
+ a 
+\begin_inset Formula $\psi_{2}\left(y\right)$
+\end_inset
+
+ .
 \end_layout
 
 \begin_layout Standard
@@ -6715,8 +6846,61 @@ Integrály přes obecnou oblast
 \lang english
 \begin_inset Formula 
 \[
-\intop_{a}^{b}\left(\,\intop_{\varphi_{1}\left(x\right)}^{\varphi_{2}\left(x\right)}f\left(x,\, y\right)\text{d}y\right)\text{d}x
+\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{c}^{d}\left(\,\intop_{\psi_{1}\left(y\right)}^{\psi_{2}\left(y\right)}f\left(x,\, y\right)\text{d}x\right)\text{d}y
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/dva_typy_integralu_pres_obecnou_oblast.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dva typy integrálů přes obecnou oblast
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
