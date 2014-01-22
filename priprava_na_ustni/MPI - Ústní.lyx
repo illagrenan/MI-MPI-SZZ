@@ -911,17 +911,17 @@ typ 1 -- shora a zdola,
 typ 2 -- zleva a zprava.
 \end_layout
 
+\begin_layout Itemize
+Lagrangeova funkce
+\end_layout
+
 \end_deeper
 \begin_layout Section
-Výpočet Riemannova integrálu funkce jedné proměnné
-\end_layout
-
-\begin_layout Section
-Výpočet Riemannova integrálu funkce více proměnných
-\end_layout
-
-\begin_layout Section
 Strojová čísla a reprezentace s pohyblivou řádovou čárkou
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section

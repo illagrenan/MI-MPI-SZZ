@@ -4851,7 +4851,7 @@ Struktura strojově zapsaného čísla
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\underbrace{\boxed{1b}}_{\text{znaménko}}1,\underbrace{\boxed{\,\,\,\,\,\,\,\,\,\,\,\,\,\,23b\,\,\,\,\,\,\,\,\,\,\,\,\,\,}}_{\text{mantisa}}\underbrace{\boxed{\,\,\,\,\,\,\,\,8b\,\,\,\,\,\,\,\,}}_{\text{exponent}}
+\underbrace{\boxed{1b}}_{\text{znaménko (s)}}1,\underbrace{\boxed{\,\,\,\,\,\,\,\,\,\,\,\,\,\,23b\,\,\,\,\,\,\,\,\,\,\,\,\,\,}}_{\text{mantisa (m)}}\underbrace{\boxed{\,\,\,\,\,\,\,\,8b\,\,\,\,\,\,\,\,}}_{\text{exponent (e)}}
 \]
 
 \end_inset
@@ -5139,6 +5139,356 @@ Příklad
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+IEEE-754
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Přesnost
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Délka mantisy (
+\begin_inset Quotes gld
+\end_inset
+
+m
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Délka exponentu (
+\begin_inset Quotes gld
+\end_inset
+
+d
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\begin_inset Quotes gld
+\end_inset
+
+b
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+binary32
+\series default
+ (single)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+127
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+binary64
+\series default
+ (double)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+1023
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+binary128
+\series default
+ (quadruple)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+112
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+16383
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Počty cifer standardu IEEE-754
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ve standardu jsou popsány i situace 
+\family typewriter
+NaN
+\family default
+, 
+\family typewriter
++Inf
+\family default
+, 
+\family typewriter
+-Inf
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+Pokud reprezentujeme čísla mimo rozsah, dochází k přetečení (overflow) resp.
+ podtečení (underflow).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Absolutní chyba
+\end_layout
+
+\end_inset
+
+Absolutní chyba
+\series default
+ je 
+\begin_inset Formula $\left|\alpha-a\right|$
+\end_inset
+
+, kde 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ je reprezentace čísla 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Pro 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ se 
+\series bold
+relativní chyba
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+relativní chyba
+\end_layout
+
+\end_inset
+
+
+\series default
+ rovná 
+\begin_inset Formula $\frac{\left|\alpha-a\right|}{\left|a\right|}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
