@@ -5880,13 +5880,25 @@ Jacobiho matice
 \end_layout
 
 \begin_layout Itemize
-Matice parciálních derivací
+Matice parciálních derivací.
 \end_layout
 
 \begin_layout Itemize
 Determinant Jacobiho matice se nazývá 
 \emph on
 jakobián
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+jakobián
+\end_layout
+
+\end_inset
+
+
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -6179,6 +6191,16 @@ Definice Hessovy matice
 
 \emph on
 Hessián
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Hessián
+\end_layout
+
+\end_inset
+
+
 \emph default
  je zkrácené pojmenování pro Hessovu matici.
 \end_layout
@@ -6673,6 +6695,27 @@ Přehled tabulkových integrálů
 \end_layout
 
 \begin_layout Plain Layout
+Integrace 
+\series bold
+\emph on
+per partes
+\emph default
+ 
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+per partes 
+\end_layout
+
+\end_inset
+
+ 
+\series default
+(integrace po částech):
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 \int u*v'=uv-\int u'*v
@@ -6700,7 +6743,16 @@ Newtonova formule
 \end_layout
 
 \begin_layout Standard
-Platí, pokud je funkce 
+Vyjádření integrálu na intervalu 
+\begin_inset Formula $\left\langle a,~b\right\rangle $
+\end_inset
+
+ pomocí primitivní funkce 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ se nazývá Newtonova formule.
+ Platí, pokud je funkce 
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 

@@ -658,16 +658,87 @@ Vektorové pole určující směr a velikost největšího růstu skalárního p
 Jacobiho matice
 \end_layout
 
+\begin_layout Standard
+Matice parciálních derivací, jejíž determinant se nazývá 
+\emph on
+jakobián
+\emph default
+.
+\begin_inset Formula 
+\[
+J_{f}=\left(\begin{array}{ccc}
+\frac{\partial f_{1}}{\partial x_{1}} & \cdots & \frac{\partial f_{1}}{\partial x_{n}}\\
+\vdots & \ddots & \vdots\\
+\frac{\partial f_{m}}{\partial x_{1}} & \cdots & \frac{\partial f_{m}}{\partial x_{n}}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Hessián
+\end_layout
+
+\begin_layout Standard
+Nebo-li Hessova matice je matice parciálních derivací druhých řádů.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\nabla^{2}f\left(x_{1},\,\ldots,\, x_{n}\right)=\left(\begin{array}{cccc}
+\frac{\partial^{2}f}{\partial x_{1}^{\,\,2}} & \frac{\partial^{2}f}{\partial x_{1}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{1}\partial x_{n}}\\
+\frac{\partial^{2}f}{\partial x_{2}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{2}^{\,\,2}} & \cdots & \frac{\partial^{2}f}{\partial x_{2}\partial x_{n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+\frac{\partial^{2}f}{\partial x_{n}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{n}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{n}^{\,\,2}}
+\end{array}\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Lokální a globální extrémy funkcí více proměnných
 \end_layout
 
+\begin_layout Standard
+Každé 
+\begin_inset Formula $x$
+\end_inset
+
+ splňující 
+\begin_inset Formula $\nabla f\left(x\right)=0$
+\end_inset
+
+ nazýváme 
+\series bold
+kritický bod
+\series default
+ 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ Dle definitnosti Hessovy matici zjistíme (Sylvestrovým kritériem nebo kvadratic
+kou formou matice), jaké typu tento kritický bod je.
+\end_layout
+
 \begin_layout Section
 Konstrukce Riemannova integrálu funkce jedné a více proměnných
+\end_layout
+
+\begin_layout Itemize
+Riemannův integrál vychází z faktu, že snadno vypočteme obsah obdélníka.
+ Budeme tedy 
+\series bold
+aproximovat oblast pod grafem
+\series default
+ funkce pomocí vhodných obdélníků.
 \end_layout
 
 \begin_layout Section
