@@ -2435,12 +2435,28 @@ Buďte
 \begin_inset Formula $M$
 \end_inset
 
- neprázdná množin a 
+ neprázdná množina a 
+\begin_inset Quotes gld
+\end_inset
+
+
 \begin_inset Formula $+$
 \end_inset
 
+
+\begin_inset Quotes grd
+\end_inset
+
  a 
+\begin_inset Quotes gld
+\end_inset
+
+
 \begin_inset Formula $*$
+\end_inset
+
+
+\begin_inset Quotes grd
 \end_inset
 
  binární operace.
@@ -2503,7 +2519,17 @@ nazývá těleso
 \end_inset
 
  je grupa.
- Tuto grupu nazýváme multiplikativní grupou tělesa 
+ Tuto grupu nazýváme multiplikativní grupou tělesa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+multiplikativní grupa tělesa
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $T$
 \end_inset
 
@@ -2538,9 +2564,22 @@ Existují pouze tělesa řádu
 \end_inset
 
  se nazývá 
+\series bold
 \emph on
 charakteristika
 \emph default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+charakteristika
+\end_layout
+
+\end_inset
+
+
+\series default
 .
 \end_layout
 
@@ -2566,554 +2605,8 @@ V tělesech je neutrálním prvkem číslo
 Tělesa mají konečný počet prvků.
 \end_layout
 
-\begin_layout Subsection
-Ireducibilní polynom
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $K$
-\end_inset
-
- je okruh, 
-\begin_inset Formula $K\left[x\right]$
-\end_inset
-
- je komutativní okruh polynomů nad okruhem 
-\begin_inset Formula $K$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Shadowbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-\bar under
-Ireducibilní polynom
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Buď 
-\begin_inset Formula $P\left(x\right)\in K\left[x\right]$
-\end_inset
-
- stupně alespoň 
-\begin_inset Formula $1$
-\end_inset
-
-.
- Řekněme, že 
-\begin_inset Formula $P\left(x\right)$
-\end_inset
-
- je ireducibilní nad 
-\begin_inset Formula $K$
-\end_inset
-
-, jestliže pro každé dva polynomy 
-\begin_inset Formula $A\left(x\right)$
-\end_inset
-
- a 
-\begin_inset Formula $B\left(x\right)$
-\end_inset
-
- z 
-\begin_inset Formula $K\left[x\right]$
-\end_inset
-
- platí
-\begin_inset Formula 
-\[
-A\left(x\right)*B\left(x\right)=P\left(x\right)\,\Rightarrow\,\left(\mathrm{stupeň}\, A\left(x\right)=0\vee\mathrm{stupeň}\, B\left(x\right)=0\right).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Ireducibilní polynomy jsou prvočísla mezi polynomy.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection
-Ireducibilní polynomy v 
-\begin_inset Formula $\mathbb{Z}_{2}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Shadowbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-\bar under
-Tip
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-V 
-\begin_inset Formula $\mathbb{Z}_{2}$
-\end_inset
-
- testujeme ireducibilitu pro polynomy, které končí 
-\begin_inset Formula $\boxed{\ldots+1}$
-\end_inset
-
-, v 
-\begin_inset Formula $\mathbb{Z}_{3}$
-\end_inset
-
- testujeme polynomy, které končí 
-\begin_inset Formula $\boxed{\ldots+1}$
-\end_inset
-
- nebo 
-\begin_inset Formula $\boxed{\ldots+2}$
-\end_inset
-
- atd.
- Toto pravidlo neplatí pro polynomy stupně 
-\begin_inset Formula $1$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Stupeň 0
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left.\begin{array}{cc}
-0 & \text{NE}\\
-1 & \text{NE}
-\end{array}\right\} \text{Nevyhovují definici}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Stupeň 1
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\left.\begin{array}{lc}
-\mathbf{x} & \text{\textbf{ANO}}\\
-\mathbf{x+1} & \text{\textbf{ANO}}
-\end{array}\right\} \text{Všechny jejich násobky již nebudeme brát v úvahu}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Stupeň 2
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{array}{lr}
-x^{2} & \text{NE (násobek x)}\\
-x^{2}+1 & \text{NE}\\
-x^{2}+x & \text{NE (násobek x)}\\
-\mathbf{x^{2}+x+1} & \text{\textbf{ANO}}
-\end{array}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Stupeň 3
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{array}{lr}
-x^{3} & \text{NE}\\
-x^{3}+1 & \text{NE}\\
-\mathbf{x^{3}+x+1} & \text{\textbf{ANO}}\\
-x^{3}+x^{2} & \text{NE}\\
-\mathbf{x^{3}+x^{2}+1} & \mathbf{\text{\textbf{ANO}}}\\
-x^{3}+x^{2}+x & \text{NE}\\
-x^{3}+x^{2}+x+1 & \text{NE}\\
-x^{3}+x & \text{NE}
-\end{array}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Stupeň 4
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\begin{array}{lr}
-\mathbf{x^{4}+x+1} & \mathbf{\mathbf{\text{\textbf{ANO}}}}\\
-\mathbf{x^{4}+x^{3}+1} & \mathbf{\mathbf{\mathbf{\mathbf{\text{\textbf{ANO}}}}}}\\
-\mathbf{x^{4}+x^{3}+x^{2}}\mathbf{+x+1} & \mathbf{\mathbf{\text{\textbf{ANO}}}}
-\end{array}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Rozšířený Euklidův algoritmus
-\begin_inset CommandInset label
-LatexCommand label
-name "sub:Rozšířený-Euklidův-algoritmus"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Shadowbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\begin{array}{c|ccc}
- &  & \mathbf{X} & \mathbf{ireduc.}\\
- & \mathbf{ireduc.} & \boxed{} & \boxed{}\\
- & \mathbf{X} & \boxed{} & \boxed{}\\
-\hline \div & \text{zbytek} & \boxed{} & \boxed{}\\
-\boxed{} & GCD & \boxed{} & \boxed{✔}
-\end{array}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace smallskip
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-\bar under
-Příklad
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Hledáme 
-\begin_inset Formula $5*x\equiv1\, MOD\,17$
-\end_inset
-
- tj.
- inverzi 
-\begin_inset Formula $5$
-\end_inset
-
-.
-\begin_inset Formula 
-\[
-\begin{array}{c|ccc}
- &  & \mathbf{5} & \mathbf{17}\\
- & \mathbf{17} & 0_{A} & 1_{C}\\
- & \mathbf{5} & 1_{B} & 0_{D}\\
-\hline \frac{17}{5}=3 & \mathrm{zb.}\,2 & -3_{X} & 1_{Y}\\
-\frac{5}{2}=2 & {\color{red}\mathrm{zb.}\,1} & {\color{blue}7} & -2
-\end{array}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{eqnarray*}
--3_{X} & = & 0_{A}-\left(3*1_{B}\right)\\
-1_{Y} & = & 1_{C}-\left(3*0_{D}\right)\\
--2 & = & 0_{D}-\left(2*1_{Y}\right)
-\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace -0.4cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-{\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{výsledná\,\, inverze}\right)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0.1cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-\bar under
-Příklad 
-\begin_inset Quotes gld
-\end_inset
-
-Petrův postup
-\begin_inset Quotes grd
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Hledáme 
-\begin_inset Formula $5*x\equiv1\, MOD\,17$
-\end_inset
-
- tj.
- inverzi 
-\begin_inset Formula $5$
-\end_inset
-
-.
-\begin_inset Formula 
-\[
-\begin{array}{cc|cc}
-?\times & 17 & 0 & 1\\
-3\times & 5 & 1 & 0\\
-\hline 2\times & 2 & -3 & 1\\
- & 1 & \uuline{\mathbf{7}} & -2\\
- & 0
-\end{array}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace 0.1cm
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Zápis těles
+Zápis konečných těles
 \end_layout
 
 \begin_layout Standard
@@ -3685,6 +3178,558 @@ Výsledná inverze
 \[
 \uuline{x+1\,\left(=11\right)}\text{.}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Ireducibilní polynom
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K$
+\end_inset
+
+ je okruh, 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+ je komutativní okruh polynomů nad okruhem 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Ireducibilní polynom
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Buď 
+\begin_inset Formula $P\left(x\right)\in K\left[x\right]$
+\end_inset
+
+ stupně alespoň 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Řekněme, že 
+\begin_inset Formula $P\left(x\right)$
+\end_inset
+
+ je ireducibilní nad 
+\begin_inset Formula $K$
+\end_inset
+
+, jestliže pro každé dva polynomy 
+\begin_inset Formula $A\left(x\right)$
+\end_inset
+
+ a 
+\begin_inset Formula $B\left(x\right)$
+\end_inset
+
+ z 
+\begin_inset Formula $K\left[x\right]$
+\end_inset
+
+ platí
+\begin_inset Formula 
+\[
+A\left(x\right)*B\left(x\right)=P\left(x\right)\,\Rightarrow\,\left(\mathrm{stupeň}\, A\left(x\right)=0\vee\mathrm{stupeň}\, B\left(x\right)=0\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Slovy: Ireducibilní polynom je polynom, který nelze rozložit na součin jiných
+ polynomů s nižším stupněm (vyjma polynomů stupně nula).
+ Ireducibilní polynomy jsou 
+\series bold
+prvočísla mezi polynomy
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Ireducibilní polynomy v 
+\begin_inset Formula $\mathbb{Z}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Tip
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+V 
+\begin_inset Formula $\mathbb{Z}_{2}$
+\end_inset
+
+ testujeme ireducibilitu pro polynomy, které končí 
+\begin_inset Formula $\boxed{\ldots+1}$
+\end_inset
+
+, v 
+\begin_inset Formula $\mathbb{Z}_{3}$
+\end_inset
+
+ testujeme polynomy, které končí 
+\begin_inset Formula $\boxed{\ldots+1}$
+\end_inset
+
+ nebo 
+\begin_inset Formula $\boxed{\ldots+2}$
+\end_inset
+
+ atd.
+ Toto pravidlo neplatí pro polynomy stupně 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Stupeň 0
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.\begin{array}{cc}
+0 & \text{NE}\\
+1 & \text{NE}
+\end{array}\right\} \text{Nevyhovují definici}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Stupeň 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left.\begin{array}{lc}
+\mathbf{x} & \text{\textbf{ANO}}\\
+\mathbf{x+1} & \text{\textbf{ANO}}
+\end{array}\right\} \text{Všechny jejich násobky již nebudeme brát v úvahu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Stupeň 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{lr}
+x^{2} & \text{NE (násobek x)}\\
+x^{2}+1 & \text{NE}\\
+x^{2}+x & \text{NE (násobek x)}\\
+\mathbf{x^{2}+x+1} & \text{\textbf{ANO}}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Stupeň 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{lr}
+x^{3} & \text{NE}\\
+x^{3}+1 & \text{NE}\\
+\mathbf{x^{3}+x+1} & \text{\textbf{ANO}}\\
+x^{3}+x^{2} & \text{NE}\\
+\mathbf{x^{3}+x^{2}+1} & \mathbf{\text{\textbf{ANO}}}\\
+x^{3}+x^{2}+x & \text{NE}\\
+x^{3}+x^{2}+x+1 & \text{NE}\\
+x^{3}+x & \text{NE}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Stupeň 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{array}{lr}
+\mathbf{x^{4}+x+1} & \mathbf{\mathbf{\text{\textbf{ANO}}}}\\
+\mathbf{x^{4}+x^{3}+1} & \mathbf{\mathbf{\mathbf{\mathbf{\text{\textbf{ANO}}}}}}\\
+\mathbf{x^{4}+x^{3}+x^{2}}\mathbf{+x+1} & \mathbf{\mathbf{\text{\textbf{ANO}}}}
+\end{array}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Rozšířený Euklidův algoritmus
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Rozšířený-Euklidův-algoritmus"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\begin{array}{c|ccc}
+ &  & \mathbf{X} & \mathbf{ireduc.}\\
+ & \mathbf{ireduc.} & \boxed{} & \boxed{}\\
+ & \mathbf{X} & \boxed{} & \boxed{}\\
+\hline \div & \text{zbytek} & \boxed{} & \boxed{}\\
+\boxed{} & GCD & \boxed{} & \boxed{✔}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\end_inset
+
+ tj.
+ inverzi 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{c|ccc}
+ &  & \mathbf{5} & \mathbf{17}\\
+ & \mathbf{17} & 0_{A} & 1_{C}\\
+ & \mathbf{5} & 1_{B} & 0_{D}\\
+\hline \frac{17}{5}=3 & \mathrm{zb.}\,2 & -3_{X} & 1_{Y}\\
+\frac{5}{2}=2 & {\color{red}\mathrm{zb.}\,1} & {\color{blue}7} & -2
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+-3_{X} & = & 0_{A}-\left(3*1_{B}\right)\\
+1_{Y} & = & 1_{C}-\left(3*0_{D}\right)\\
+-2 & = & 0_{D}-\left(2*1_{Y}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace -0.4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+{\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{výsledná\,\, inverze}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Příklad 
+\begin_inset Quotes gld
+\end_inset
+
+Petrův postup
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hledáme 
+\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\end_inset
+
+ tj.
+ inverzi 
+\begin_inset Formula $5$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\begin{array}{cc|cc}
+?\times & 17 & 0 & 1\\
+3\times & 5 & 1 & 0\\
+\hline 2\times & 2 & -3 & 1\\
+ & 1 & \uuline{\mathbf{7}} & -2\\
+ & 0
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 0.1cm
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -4611,7 +4656,11 @@ Jsou dána přirozená čísla
 \begin_inset Formula $m_{1},\, m_{2},\,\ldots,\, m_{k}$
 \end_inset
 
- po dvou nesoudělná.
+, která jsou mezi sebou nesoudělná a 
+\begin_inset Formula $m\geq2$
+\end_inset
+
+.
  Pak pro libovolná celá čísla 
 \begin_inset Formula $a_{1},\, a_{2},\,\ldots,\, a_{k}$
 \end_inset
@@ -4880,11 +4929,25 @@ Obsahuje skrytou
 \end_layout
 
 \begin_layout Itemize
-V jednoduché přesnosti má exponent rozsah 
-\begin_inset Formula $-127,\,+127$
+V jednoduché přesnosti má exponent 
+\series bold
+rozsah
+\series default
+ 
+\begin_inset Formula $-128,\,+127$
 \end_inset
 
+ a je zapsán v aditivním kódu
+\begin_inset Index idx
+status open
 
+\begin_layout Plain Layout
+aditivní kód
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_deeper
@@ -4942,6 +5005,79 @@ Všechna ostatní čísla, mají binární reprezentaci nekonečnou a periodicko
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Při převodu dochází k chybám (vlivem zaokrouhlování nebo krácení).
+ Nechť 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ je přibližnou reprezentací čísla a 
+\begin_inset Formula $a$
+\end_inset
+
+ je skutečná hodnota čísla.
+ 
+\series bold
+Absolutní chybu
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Absolutní chyba
+\end_layout
+
+\end_inset
+
+
+\series default
+ spočítáme jako 
+\begin_inset Formula 
+\[
+\left|\alpha-a\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a 
+\series bold
+relativní chybu
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+relativní chyba
+\end_layout
+
+\end_inset
+
+
+\series default
+ pro 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ jako
+\begin_inset Formula 
+\[
+\frac{\left|\alpha-a\right|}{\left|a\right|}\text{.}
+\]
 
 \end_inset
 
@@ -5136,6 +5272,52 @@ Příklad
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pokud převádíme zlomek, který je strojovým číslem, nemusíme používat hladový
+ algoritmus, ale pomůžeme si rozkladem na mocniny 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ Např.
+ chceme-li rozložit číslo
+\begin_inset Formula 
+\[
+\frac{49}{512}=\frac{32+16+1}{2^{9}}=\underbrace{\frac{2^{5}}{2^{9}}}_{9-5=\boxed{4}}+\underbrace{\frac{2^{4}}{2^{9}}}_{9-4=\boxed{5}}+\underbrace{\frac{2^{0}}{2^{9}}}_{9-0=\boxed{9}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Číslo bude ve tvaru 
+\begin_inset Formula $0,$
+\end_inset
+
+ a následovat bude 
+\begin_inset Formula $9\times$
+\end_inset
+
+ nula:
+\begin_inset Formula 
+\[
+0,\underline{0}\underline{0}\underline{0}\underset{\left[4\right]}{\underline{1}}\underset{\left[5\right]}{\underline{1}}\underline{0}\underline{0}\underline{0}\underset{\left[9\right]}{\underline{1}\text{.}}
+\]
 
 \end_inset
 
@@ -5626,6 +5808,361 @@ l'=\left|l\right|={\color{blue}\mathbf{4}}
 \end_layout
 
 \begin_layout Section
+Párování v grafu
+\end_layout
+
+\begin_layout Subsection
+Bipartitní graf
+\end_layout
+
+\begin_layout Standard
+Bipartitní graf je takový graf, jehož množinu vrcholů je možné rozdělit
+ na dvě disjunktní množiny tak, že žádné dva vrcholy ze stejné množiny nejsou
+ spojeny hranou.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+G & = & \left(W,~E\right)\\
+W & = & V\cup U
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ a 
+\begin_inset Formula $U$
+\end_inset
+
+ jsou neprázdné disjunktní množiny a pro každou hranu platí, že jeden její
+ vrchol je z 
+\begin_inset Formula $V$
+\end_inset
+
+ a druhý z 
+\begin_inset Formula $W$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Úplný bipartitní graf
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+úplný graf
+\end_layout
+
+\end_inset
+
+
+\series default
+ je, jestliže z každého vrcholu jedné množiny vedou hrany do všech vrcholů
+ druhé množiny.
+ Tedy platí
+\begin_inset Formula 
+\[
+E=U\times W
+\]
+
+\end_inset
+
+nebo-li v grafu existují všechny hrany s touto vlastností.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/uplny_bipartitni_graf.svg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Úplný bipartitní graf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+(Bipartitní) graf je 
+\series bold
+regulární
+\series default
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+regulární graf
+\end_layout
+
+\end_inset
+
+, jestliže všechny jeho vrcholy mají stejný stupeň.
+ 
+\series bold
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+stupeň vrcholu
+\end_layout
+
+\end_inset
+
+Stupeň vrcholu
+\series default
+ je počet hran, které z daného vrcholu vedou.
+\end_layout
+
+\begin_layout Subsection
+Párování v grafu
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Párování v grafu -- definice
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Buď 
+\begin_inset Formula $G=\left(W,~E\right)$
+\end_inset
+
+ graf.
+ 
+\begin_inset Formula $M\subset E$
+\end_inset
+
+ (podmnožina hran grafu 
+\begin_inset Formula $G$
+\end_inset
+
+) se nazývá párování v grafu 
+\begin_inset Formula $G$
+\end_inset
+
+, jestliže žádné dvě hrany z 
+\begin_inset Formula $M$
+\end_inset
+
+ nemají společný vrchol.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Jinými slovy: Vrcholy grafů dáváme do párů.
+ Pár může vzniknout jen tam, kde byla hrana.
+ Přitom každý vrchol může být jen v jednom páru.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Maximální párování 
+\series default
+-- žádné jiné párování nemá více hran (nebo-li párování obsahuje nejvyšší
+ možný počet hran).
+ Graf může mít více maximálních párování.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Párování je rovněž maximální, jestliže v grafu neexistuje 
+\begin_inset Formula $M$
+\end_inset
+
+-zlepšující cesta.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Maximum-matching-labels.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Možná maximální párování v grafu, více hran už žádné jiné párování nemá
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $M$
+\end_inset
+
+-saturovanost 
+\series default
+vrcholu (též nasycenost vrcholu) -- vrchol je již obsažen v nějakém párování.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Perfektní párování
+\series default
+ (někdy též úplné) znamená, že jsou všechny vrcholy 
+\begin_inset Formula $M$
+\end_inset
+
+-saturované (tj.
+ všechny vrcholy grafu jsou součástí nějakého párování / páru).
+ Perfektní párování je vždy maximální.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $M$
+\end_inset
+
+-střídající cesta
+\series default
+ je taková cesta, jejíž vrcholy střídavě leží a neleží v párování.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $M$
+\end_inset
+
+-zlepšující cesta
+\series default
+ je taková 
+\begin_inset Formula $M$
+\end_inset
+
+-střídající cesta, jejíž koncové body nejsou saturované (přidáním hrany,
+ která je spojuje, získáme opět párování, které bude mít však o jednu cestu
+ více).
+\end_layout
+
+\begin_layout Subsection
 Stabilní párování
 \end_layout
 
@@ -5694,11 +6231,11 @@ spárováním
 \end_layout
 
 \begin_layout Itemize
-
+V úplném bipartitním grafu 
 \series bold
-Stabilní
+stabilní
 \series default
- párování vždy alespoň jedno existuje
+ párování vždy alespoň jedno existuje.
 \end_layout
 
 \begin_layout Standard
@@ -6291,7 +6828,7 @@ Značení:
 \end_layout
 
 \begin_layout Subsection
-Derivace ve směru v bodě
+Gradient ve směru a v bodě
 \end_layout
 
 \begin_layout Standard
@@ -6312,7 +6849,7 @@ status open
 
 \series bold
 \bar under
-Velikost vektoru
+Norma (velikost) vektoru
 \end_layout
 
 \begin_layout Plain Layout
@@ -6376,7 +6913,7 @@ Mějme funkci
 
 \series bold
 \noun on
-Derivace v bodě:
+Gradient v bodě:
 \series default
 \noun default
  Spočteme 
@@ -6396,7 +6933,7 @@ Derivace v bodě:
 
 \begin_deeper
 \begin_layout Itemize
-Další možný zápis derivace v bodě: 
+Další možný zápis gradientu v bodě: 
 \begin_inset Formula $\frac{\partial f}{\partial x}\left(a,\, b\right)=\ldots,\,\frac{\partial f}{\partial y}\left(a,\, b\right)=\ldots,\,$
 \end_inset
 
@@ -6405,7 +6942,7 @@ Další možný zápis derivace v bodě:
 
 \end_deeper
 \begin_layout Itemize
-Výsledná derivace ve směru v bodě je (
+Výsledný gradient v bodě a ve směru je (
 \begin_inset Quotes gld
 \end_inset
 
@@ -6420,12 +6957,27 @@ Výsledná derivace ve směru v bodě je (
  je skalární součin):
 \begin_inset Formula 
 \[
-\nabla f\left(B\right)*\overrightarrow{n}
+\nabla f\left(B\right)*\overrightarrow{n}\text{.}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Dále nás může zajímat v 
+\series bold
+jakém směru či směrech funkce v daném bodě klesá či roste
+\series default
+.
+ Gradient v bodě skalárně vynásobíme obecným vektorem 
+\begin_inset Formula $\left(x,~y\right)$
+\end_inset
+
+, a ptáme se, kdy je výsledek menší než nula (směrnice klesá) či větší než
+ nula (směrnice roste).
+ 
 \end_layout
 
 \begin_layout Section
@@ -6978,7 +7530,7 @@ Rovnice tečné roviny ke grafu funkce
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\frac{\partial f}{\partial x}\left(a,\, b\right)\left(a-x\right)+\frac{\partial f}{\partial y}\left(a,\, b\right)\left(b-y\right)-z+f\left(a,\, b\right)=0
+\frac{\partial f}{\partial x}\left(a,\, b\right)\left(x-a\right)+\frac{\partial f}{\partial y}\left(a,\, b\right)\left(y-b\right)-z+f\left(a,\, b\right)=0
 \]
 
 \end_inset
@@ -7168,6 +7720,27 @@ Integrály přes obecnou oblast
 Uvažujeme dva typy oblastí
 \end_layout
 
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
 \begin_layout Itemize
 
 \series bold
@@ -7217,6 +7790,75 @@ Typ 1:
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/oblast_typ_1.png
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dva typy integrálů přes obecnou oblast
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
 \begin_layout Itemize
 
 \series bold
@@ -7245,7 +7887,7 @@ Typ 2:
  .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \family roman
 \series medium
@@ -7269,7 +7911,7 @@ Typ 2:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -7293,9 +7935,9 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/dva_typy_integralu_pres_obecnou_oblast.png
+	filename images/oblast_typ_2.png
 	lyxscale 50
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -7314,10 +7956,18 @@ Dva typy integrálů přes obecnou oblast
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
 \end_inset
 
 
@@ -7397,11 +8047,307 @@ zdola
 
 \end_inset
 
+.
+ 
+\end_layout
 
+\begin_layout Section
+Numerické metody řešení soustav lineárních rovnic
+\end_layout
+
+\begin_layout Itemize
+Přímá metoda -- počítá řešení v konečném počtu kroků tak, že v teoretické
+ absolutní přesnosti dává přesné řešení.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Např.
+ Gaussova eliminace (se složitostí 
+\begin_inset Formula $\mathcal{O}\left(n^{3}\right)$
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Iterační metoda -- hledají přibližná řešení problému tak, že konstruují
+ posloupnost přibližných řešení (vektorů) 
+\begin_inset Formula $x_{0},~x_{1},\ldots$
+\end_inset
+
+ tak, že každé další řešení je odvození z předchozího.
+ Další členy vypočítáme z předpisu
+\begin_inset Formula 
+\[
+Qx_{k}=\left(Q-A\right)x_{k-1}+b
+\]
+
+\end_inset
+
+pro všechna 
+\begin_inset Formula $k>0$
+\end_inset
+
+.
+ Na začátku (kdy ještě nemáme předchozí výsledek) se volí 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ náhodně.
+ Předpis pro řešený problém je
+\begin_inset Formula 
+\[
+Ax=b\text{.}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+V iterační metodě počítáme chybu (odchylku) jako 
+\begin_inset Formula $\left\Vert Ax_{k}-b\right\Vert $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Konkrétní zvolené 
+\begin_inset Formula $Q$
+\end_inset
+
+ závisí na zvolené metodě:
+\end_layout
+
+\begin_layout Itemize
+Richardsonova metoda 
+\begin_inset Formula 
+\[
+Q=I=\begin{pmatrix}1 & 0 & 0 & \cdots\\
+0 & 1 & 0 & \cdots\\
+0 & 0 & 1 & \cdots\\
+\vdots & \vdots & \vdots & \ddots
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Jacobiho metoda
+\begin_inset Formula 
+\[
+Q=D=\begin{pmatrix}a_{1,1} & 0 & \cdots & 0\\
+0 & a_{2,2} & \ddots & \cdots\\
+\vdots & \vdots & \ddots & 0\\
+0 & \cdots & 0 & a_{n,n}
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+superrelaxační metoda (SOR metoda)
+\begin_inset Formula 
+\[
+Q=\frac{1}{\omega}D+L\text{, kde }\omega\in\mathbb{R}\setminus\left\{ 0\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Značení matic:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L$
+\end_inset
+
+ je dolní trojúhelníková matice s prvky matice 
+\begin_inset Formula $A$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D$
+\end_inset
+
+ je diagonální matice s prvky matice 
+\begin_inset Formula $A$
+\end_inset
+
+ na diagonále,
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I$
+\end_inset
+
+ je jednotková matice.
 \end_layout
 
 \begin_layout Section
 Fuzzy matematika 
+\end_layout
+
+\begin_layout Standard
+Fuzzy matematika -- matematika neurčitost nějakého prvku 
+\begin_inset Formula $u$
+\end_inset
+
+ z universa
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+universum
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $U$
+\end_inset
+
+ k množině 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+U klasických množin buď nějaký prvek do množiny patří nebo do ní nepatří.
+ Toto je možné definovat jednoznačným výčtem prvků nebo definicí vlastností.
+\end_layout
+
+\begin_layout Itemize
+V teorii fuzzy množin existuje 
+\emph on
+funkce příslušnosti
+\emph default
+, která přiřazuje nějakému prvku 
+\begin_inset Formula $u$
+\end_inset
+
+ jeho stupeň příslušnosti k 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Využití v informatice: shlukování dat, hledání podobných obrázků.
+\end_layout
+
+\begin_layout Subsection
+Vzdálenost a podobnost
+\end_layout
+
+\begin_layout Standard
+Vzdálenost 
+\begin_inset Formula $\downarrow$
+\end_inset
+
+ ~ podobnost 
+\begin_inset Formula $\uparrow$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vzdálenosti založené na normě vektoru:
+\end_layout
+
+\begin_layout Itemize
+Minkovského
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\begin{Vmatrix}x_{1}\\
+\vdots\\
+x_{n}
+\end{Vmatrix}=\sqrt[p]{\sum_{i=1}^{n}\left|x_{i}\right|^{p}},~p\in\left[1,~\infty\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Eukleidovská
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\sqrt{\left\langle x,~x\right\rangle }=\sqrt{x^{T}x}=\sqrt{\sum_{i=1}^{n}x_{i}^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Manhatannská
+\begin_inset Formula 
+\[
+\left\Vert x\right\Vert =\sum_{i=1}^{n}\left|x_{i}\right|,~p=\infty:~\left\Vert x\right\Vert =\underset{i=1,\ldots,n}{max}\left|x_{i}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Mahalanobisova vzdálenost -- vzdálenost realizací x,y náhodných vektorů
+ X,Y splňujících varX=varY.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+- Jde o obecné měřítko vzdálenosti beroucí v úvahu korelaci mezi parametry
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Další míry podobnosti náhodných veličin dle korelačních koeficientů:
+\end_layout
+
+\begin_layout Itemize
+Pearsonův 
+\end_layout
+
+\begin_layout Itemize
+Spearmanův
+\end_layout
+
+\begin_layout Itemize
+Kendallův
+\end_layout
+
+\begin_layout Standard
+Podobnost binárních vektorů:
+\end_layout
+
+\begin_layout Itemize
+Hammingova vzdálenost
 \end_layout
 
 \begin_layout Subsection
@@ -7417,14 +8363,47 @@ Fuzzy logika může operovat se všemi hodnotami z intervalu
 \end_layout
 
 \begin_layout Subsubsection
+Průnik (součin) fuzzy množin (
 \begin_inset Formula $T$
 \end_inset
 
--normy
+-normy)
+\end_layout
+
+\begin_layout Standard
+Průnik je definován jako binární operace
+\begin_inset Formula 
+\[
+T:~\left\langle 0,~1\right\rangle ^{2}\rightarrow\left\langle 0,~1\right\rangle 
+\]
+
+\end_inset
+
+, která splňuje následující operace
 \end_layout
 
 \begin_layout Itemize
-Gödelova konorma
+komutativita ,
+\end_layout
+
+\begin_layout Itemize
+asociativita
+\end_layout
+
+\begin_layout Itemize
+monotonie
+\end_layout
+
+\begin_layout Itemize
+okrajová podmínka
+\end_layout
+
+\begin_layout Standard
+Příklady norem
+\end_layout
+
+\begin_layout Itemize
+Gödelova (drastická) norma
 \begin_inset Formula 
 \[
 \mu_{A\cup B}\left(x\right)=max\left(\mu_{A}\left(x\right);\,\mu_{B}\left(x\right)\right)
@@ -7436,7 +8415,7 @@ Gödelova konorma
 \end_layout
 
 \begin_layout Itemize
-Łukasiewiczova konorma
+Łukasiewiczova norma
 \begin_inset Formula 
 \[
 \mu_{A\cup B}\left(x\right)=min\left(\mu_{A}\left(x\right)+\mu_{B}\left(x\right);\,1\right)
@@ -7448,7 +8427,7 @@ Gödelova konorma
 \end_layout
 
 \begin_layout Itemize
-Součinová konorma
+Součinová norma
 \begin_inset Formula 
 \[
 \mu_{A\cup B}\left(x\right)=\left(\mu_{A}\left(x\right)+\mu_{B}\left(x\right);\,1\right)-\left(\mu_{A}\left(x\right)*\mu_{B}\left(x\right);\,1\right)
@@ -7464,7 +8443,7 @@ De Morganovy zákony a
 \begin_inset Formula $T$
 \end_inset
 
--konormy
+-konormy (součet -- sjednocení)
 \end_layout
 
 \begin_layout Itemize
@@ -7513,6 +8492,92 @@ Identický element
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Kopule
+\end_layout
+
+\begin_layout Itemize
+Kopule je pojítko mezi fuzzy matikou a pravděpodobností.
+\end_layout
+
+\begin_layout Itemize
+Kopule se hodí v pravděpodobnosti, kde ukazují závislost mezi dvěma náhodnými
+ veličinami.
+\end_layout
+
+\begin_layout Subsection
+Defuzzifikace
+\end_layout
+
+\begin_layout Itemize
+Defuzzifikace - zobrazení fuzzy množiny do jejího univerza.
+ 
+\end_layout
+
+\begin_layout Itemize
+K čemu to je - mám přístroj řízený fuzzy množinou, ale abych ho nastavil,
+ potřebuju znát jednu konkrétní hodnotu.
+ 
+\end_layout
+
+\begin_layout Section
+Optimalizace
+\end_layout
+
+\begin_layout Subsection
+Typy optimalizačních úloh
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diskrétní (==kombinatorické)
+\series default
+ -- proměnné z konečné, často velmi velké, množiny.
+ Např.
+ požadavek, proměnné xi celá čísla či xi ∈ {0, 1} → integer programming
+ problems.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Spojité
+\series default
+ -- proměnné reálná čísla či prvky z nespočetných množin.
+ Jednodušší řešení - lze použít spojitost a hladkost funkce, napoví hodně
+ o chování funkce v okolí daného bodu.
+ 
+\end_layout
+
+\begin_layout Standard
+Algoritmy mohou být:
+\end_layout
+
+\begin_layout Itemize
+Deterministické
+\end_layout
+
+\begin_layout Itemize
+Stochastické -- každý běh jiný
+\end_layout
+
+\begin_layout Subsection
+typy optimalizačních metod
+\end_layout
+
+\begin_layout Itemize
+Hladká optimalizace - Využívá parciální derivace cílové funkce - Gradient
+ f – směr nejprudšího růstu do lokálního maxima - -Gradient f – směr nejprudšího
+ poklesu - Někdy se používá i 2.
+ Parciální derivace – Hessova matice 
+\end_layout
+
+\begin_layout Itemize
+Stochastická -- evoluční a genetické algoritmy
 \end_layout
 
 \end_body

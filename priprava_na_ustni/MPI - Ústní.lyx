@@ -1,5 +1,5 @@
 #LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -33,6 +33,7 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
@@ -59,15 +60,24 @@
 \pdf_pdfusetitle true
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mathdots 1
-\use_mhchem 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \branch 5
 \selected 0
@@ -498,7 +508,7 @@ centering
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Diffie-Hellman Key Exchange Schema
@@ -590,7 +600,61 @@ Prvočísla a testování prvočíselnosti
 \end_layout
 
 \begin_layout Section
-Bipartitní grafy, párování v bipartitním grafu
+Bipartitní grafy
+\end_layout
+
+\begin_layout Standard
+Pojmem bipartitní graf se v teorii grafů označuje takový graf, jehož množinu
+ vrcholů je možné rozdělit na dvě disjunktní množiny tak, že žádné dva vrcholy
+ ze stejné množiny nejsou spojeny hranou.
+ 
+\end_layout
+
+\begin_layout Standard
+Bipartitní grafy slouží často jako modely pro situace „nabídka–poptávka“:
+ jedna množina vrcholů reprezentuje zákazníky (klienty, žadatele o místo,
+ .
+ .
+ .
+ ) a druhá jimi poptávané zboží (servery, volná místa, .
+ .
+ .
+ ), hrana pak znamená „zákazník poptává toto zboží.“ Maximální párování pak
+ znamená maximální možné uspokojení poptávky.
+\end_layout
+
+\begin_layout Itemize
+Párování v grafu G, jestliže žádné dvě hrany nemají společný vrchol.
+\end_layout
+
+\begin_layout Itemize
+Jesliže žádné párování nemá více hran, jedná se o maximální párování (tj.
+ všechny vrcholy jsou spárované).
+ Zároveň nesmí v grafu existovat zlepšující cesta.
+\end_layout
+
+\begin_layout Itemize
+Vrchol je M-saturovaný, jestliže je vrcholem nějaké hrany z M.
+\end_layout
+
+\begin_layout Itemize
+M je perfektní párování, jestliže každý vrchol je M-saturovaný.
+\end_layout
+
+\begin_layout Itemize
+Úplné párování je vždy maximální.
+\end_layout
+
+\begin_layout Itemize
+Stabilní párování alespoň vždy jedno existuje.
+\end_layout
+
+\begin_layout Itemize
+Dvořící algoritmus vede k perfektnímu a stabilnímu párování.
+\end_layout
+
+\begin_layout Subsection
+Párování v bipartitním grafu
 \end_layout
 
 \begin_layout Section
@@ -598,9 +662,136 @@ Stabilní párování
 \end_layout
 
 \begin_layout Section
-Bioinformatika: problémy spojené se sekvencováním DNA
+Bioinformatika
 \end_layout
 
+\begin_layout Standard
+Řešení problémů vzniklých při správě a analýze biologických dat zejména
+ těch, vzniklých při práci s DNA apod.: tvorba efektivních databází a algoritmů
+ všeho druhu.
+\end_layout
+
+\begin_layout Subsection
+Sekvencování DNA (Deoxyribonukleová kyselina)
+\end_layout
+
+\begin_layout Itemize
+DNA je nositelka genetické informace všech organismů s výjimkou některých
+ nebuněčných organismů (např.
+ virů).
+\end_layout
+
+\begin_layout Standard
+DNA je prvek množiny 
+\begin_inset Formula 
+\[
+\left\{ A,~C,~G,~T\right\} ^{+}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Písmena značí nukleové báze
+\end_layout
+
+\begin_layout Itemize
+Adenin,
+\end_layout
+
+\begin_layout Itemize
+Cytosin,
+\end_layout
+
+\begin_layout Itemize
+Guanin,
+\end_layout
+
+\begin_layout Itemize
+Thymien.
+\end_layout
+
+\begin_layout Standard
+Báze tvoří páry: A-T, G-C, tak vzniká dvojitá šroubovice.
+ Lidská šroubovice má 3 miliardy těchto párů.
+\end_layout
+
+\begin_layout Itemize
+Při čtení DNA je vzorek rozsekán na několik náhodných částí -- problém je,
+ jak je přečíst a složit zpět dohromady (mohou se překrývat).
+\end_layout
+
+\begin_layout Itemize
+Druhým problémem je postupná evoluce, při které permutuje pořadí genů --
+ evoluční vzdálenost.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Evoluční vzdálenost = počet reverzí nutných pro transformaci jedná DNA na
+ druhou.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Hamiltonovská cesta 
+\series default
+v grafu G je cesta, která obsahuje každý uzel grafu G právě jednou.
+\end_layout
+
+\begin_layout Standard
+V teorii grafů se termínem 
+\series bold
+eulerovský tah
+\series default
+ označuje takový tah, který obsahuje každou hranu grafu právě jednou.
+\end_layout
+
+\begin_layout Standard
+Metody:
+\end_layout
+
+\begin_layout Itemize
+Shotgun sequencing (problém rekonstrukce DNA) -- Touto metodou je možné
+ přečíst řetězce délky 500 až 700.
+ Proto je třeba nejdříve celou DNA (resp.
+ jejích mnoho kopií) na takto malé kousky rozsekat.
+ Jelikož toto rozsekání je zcela náhodné, nevíme, v jakém pořadí přečtené
+ řetězce poskládat a navíc se tyto řetězce mohou překrývat.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lze tedy přeformulovat jako problém hledání cesty v orientovaném grafu,
+ která projde všemi vrcholy tak, že každý navštíví právě jednou a součet
+ ohodnocení hran (tj.
+ překryv řetězců) v této cestě je co největší.
+\end_layout
+
+\begin_layout Itemize
+Problém obchodního cestujícího je bohužel NP-těžký, takže lze jen těžko
+ očekávat efektivní použitelný algoritmus.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sekvenování pomocí hybridizace (DNA chip / DNA array)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lze předělat na problém hledání Eulerovské cesty.
+\end_layout
+
+\begin_layout Itemize
+V praxi se zatím moc nepoužívá.
+\end_layout
+
+\end_deeper
 \begin_layout Part
 Numerika, optimalizace, fuzzy matematika
 \end_layout
@@ -809,11 +1000,15 @@ Počítání s určitými integrály:
 
 \begin_deeper
 \begin_layout Itemize
-per partes,
+per partes -- vychází z násobení derivace 
+\begin_inset Formula $(uv)'=u'v+v'u$
+\end_inset
+
+,
 \end_layout
 
 \begin_layout Itemize
-substituce.
+substituce -- vychází z derivace složené funkce.
 \end_layout
 
 \end_deeper
@@ -922,12 +1117,220 @@ Chyby vznikající při výpočtech s pohyblivou řádovou čárkou
 Numerické metody řešení soustav lineárních rovnic
 \end_layout
 
+\begin_layout Subsection
+Přímé metody -- Gausova, hornerova
+\end_layout
+
+\begin_layout Standard
+Máme vzorec, podle kterého vypočteme výsledek.
+ Počítá s řešením nějakého problému v konečném počtu kroků -- v teoretické
+ absolutní přesnosti dává přesné řešení.
+\end_layout
+
+\begin_layout Itemize
+Hornerova metoda -- hodnota polynomu v bodě,
+\end_layout
+
+\begin_layout Itemize
+Gaussova eliminace -- má složitost 
+\begin_inset Formula $O(n^{3})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Iterační metody
+\end_layout
+
+\begin_layout Standard
+Konstruujeme 
+\series bold
+posloupnost přibližných řešení
+\series default
+ (používáme předchozí výsledky) a hledáme celkové přibližné řešení matematického
+ problému.
+\end_layout
+
+\begin_layout Standard
+Chceme-li řešit soustavu 
+\begin_inset Formula $n$
+\end_inset
+
+ lineárních rovnic, zapíšeme ji v maticovém tvaru
+\begin_inset Formula 
+\[
+Ax=b\text{,}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+kde 
+\begin_inset Formula $A$
+\end_inset
+
+ je nesingulární (singulární matice je čtvercová matice jejíž determinant
+ je roven nule).
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b$
+\end_inset
+
+ je vstup úlohy a 
+\begin_inset Formula $x$
+\end_inset
+
+ je řešení.
+\end_layout
+
+\begin_layout Itemize
+Norma je funkce, která každému nenulovému vektoru přiřazuje kladné reálné
+ číslo (tzv.
+ délku nebo velikost), nulový vektor jako jediný má délku 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Musí být zaručeno, že celá iterační metoda bude konvergovat ke správnému
+ výsledku.
+\end_layout
+
+\begin_layout Standard
+Jednotlivé vektory posloupnosti (jednotlivá řešení) budeme počítat předpisem
+\begin_inset Formula 
+\[
+Qx_{k}=\left(Q-A\right)x_{k}+b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+pro všechna 
+\begin_inset Formula $k>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Vektor chyby je 
+\begin_inset Formula 
+\[
+e_{k}=x_{k}-x\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kdy ukončit? Iterační metodu ukončíme v kroku 
+\begin_inset Formula $k$
+\end_inset
+
+, dosáhne-li 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ požadované přesnosti (ta je většinou dána v zadání).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+V praxi mají algoritmy ještě jako parametr maximální počet iterací.
+ Pokud po jeho překročení nenalezneme řešení s danou chybou, metoda selhala.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Normy:
+\end_layout
+
+\begin_layout Itemize
+Eukleidovská norma,
+\end_layout
+
+\begin_layout Itemize
+Maticová norma.
+\end_layout
+
+\begin_layout Standard
+Metody (konkrétní volby 
+\begin_inset Formula $Q$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+Richardsonova metoda 
+\begin_inset Formula $Q=I$
+\end_inset
+
+ (jednotková matice),
+\end_layout
+
+\begin_layout Itemize
+Jacobiho metoda 
+\begin_inset Formula 
+\[
+Q=D=\begin{pmatrix}a_{1,1} & 0 & \ldots & 0\\
+0 & a_{2,2} & \ddots & \vdots\\
+\vdots & \ddots & \ddots & 0\\
+0 & \ldots & 0 & a_{n,n}
+\end{pmatrix}\text{,}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+superrelaxační metoda.
+\end_layout
+
 \begin_layout Section
 Vlastní čísla a mocninná metoda
 \end_layout
 
 \begin_layout Section
 Typy optimalizačních úloh a optimalizačních metod
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diskrétní
+\series default
+ -- proměnné z konečné, často velmi velké, množiny.
+ Např.
+ požadavek, proměnné xi celá čísla či xi ∈ {0, 1} → integer programming
+ problems.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Spojité
+\series default
+ -- proměnné reálná čísla či prvky z nespočetných množin.
+ Jednodušší řešení - lze použít spojitost a hladkost funkce, napoví hodně
+ o chování funkce v okolí daného bodu.
+ 
 \end_layout
 
 \begin_layout Section
@@ -940,6 +1343,10 @@ Optimalizace s omezeními
 
 \begin_layout Section
 Vzdálenost a další míry podobnosti
+\end_layout
+
+\begin_layout Standard
+Vzdálenost klesá a podobnost roste.
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140" height="140" viewBox="0 0 140 140">
+<desc id="en">Graph K3-3</desc>
+<g style="fill:none; stroke:black; stroke-width:1.5;">
+	<path d="M7,7 L133,7 M7,7 L133,70 M7,7 L133,133"/>
+	<path d="M7,70 L133,7 M7,70 L133,70 M7,70 L133,133"/>
+	<path d="M7,133 L133,7 M7,133 L133,70 M7,133 L133,133"/>
+</g>
+<g fill="red">
+	<circle r="5" cx="7" cy="7"/>
+	<circle r="5" cx="7" cy="70"/>
+	<circle r="5" cx="7" cy="133"/>
+</g>
+<g fill="blue">
+	<circle r="5" cx="133" cy="7"/>
+	<circle r="5" cx="133" cy="70"/>
+	<circle r="5" cx="133" cy="133"/>
+</g>
+</svg>
