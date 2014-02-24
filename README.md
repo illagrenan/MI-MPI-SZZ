@@ -1,5 +1,17 @@
-mi-mpi_souhrn
-=============
+# Souhrn látky na MI-TES #
 
-- [Souhrn látky (PDF)](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/skripta/MPI%20-%20Souhrn%20l%C3%A1tky.pdf)
-- [Souhrn na ústní (PDF)](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/priprava_na_ustni/MPI%20-%20%C3%9Astn%C3%AD.pdf)
+
+[![](http://i.imgur.com/sYrdHnq.png) **Stáhnout generované PDF**](https://github.com/illagrenan/mi-tes_sourhn/blob/master/TES%20-%20Souhrn%20l%C3%A1tky.pdf?raw=true)
+
+
+## Jak editovat ##
+
+- Vytvořeno v editoru LYX ([http://www.lyx.org/](http://www.lyx.org/)).
+- Automaty jsou v Graphvizu ([http://www.graphviz.org/](http://www.graphviz.org/)).
+- Pro převod `SVG` do `PDF` v LYXu [nainstalujte Inkscape](http://www.inkscape.org/en/ "Inkscape") a spárujte ho s LYXem ([http://wiki.lyx.org/Tips/UseInkscapeSVGImages](http://wiki.lyx.org/Tips/UseInkscapeSVGImages)).
+
+## Graphviz: převod automatu do svg ##
+
+```
+$ dot -Tsvg INPUT.gv -o OUTPUT.svg
+```

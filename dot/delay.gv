@@ -1,0 +1,21 @@
+digraph finite_state_machine {
+    rankdir=LR;
+    size="8,5"
+
+    node [shape = point];
+	qi;	
+	
+	node [shape = circle];
+    qi -> init;
+	
+	init ->	OFF [ label = "stay/init" ];
+	init ->	ON [ label = "stay/init" ];
+	
+	
+	OFF -> OFF [ label = "stay/off" ];
+	OFF -> ON [ label = "switch/off" ];
+	ON -> OFF [ label = "switch/on" ];
+	
+	ON -> ON [ label = "stay/on" ];
+
+}
