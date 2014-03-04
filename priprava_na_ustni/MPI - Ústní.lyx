@@ -5,6 +5,7 @@
 \textclass article
 \begin_preamble
 \usepackage{lmodern}
+
 \exhyphenpenalty=10000\hyphenpenalty=10000
 \usepackage{colortbl}
 \definecolor{lightgray}{gray}{0.8}
@@ -25,6 +26,9 @@
 \makeatother
 \end_preamble
 \use_default_options true
+\begin_modules
+biblatex
+\end_modules
 \maintain_unincluded_children false
 \language czech
 \language_package babel
@@ -43,7 +47,7 @@
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command bibtex8
 \index_command default
 \float_placement H
 \paperfontsize default
@@ -117,11 +121,11 @@ Matematika pro informatiku
 \end_layout
 
 \begin_layout Author
-Ústní zkouška
+Souhrn látky k ústní části zkoušky
 \end_layout
 
 \begin_layout Date
-leden 2014
+březen 2014
 \end_layout
 
 \begin_layout Standard
@@ -797,7 +801,7 @@ Numerika, optimalizace, fuzzy matematika
 \end_layout
 
 \begin_layout Section
-Limity a derivace funkcí více proměnných, gradient, Jacobiho matice, Hessián
+Limity a derivace funkcí více proměnných
 \end_layout
 
 \begin_layout Subsection
@@ -806,32 +810,95 @@ Limita funkce více proměnných
 
 \begin_layout Itemize
 Limitou jedné proměnné můžeme odhalovat spojitost či nespojitost funkcí
- v určitém bodě
+ v určitém bodě.
 \end_layout
 
 \begin_layout Itemize
 U funkcí jedné proměnné jsme se k vyšetřovanému bodu přibližovali v jednom
  směru.
  U funkcí více proměnných je možné přiblížit se k bodu nekonečně mnoha způsoby
- (po přímkách, spirálách, výsečích...).
+ (po přímkách, spirálách, výsečích...)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tiser_diferencialni_2005"
+
+\end_inset
+
+.
  
 \end_layout
 
-\begin_layout Itemize
-Funkce má limitu v hromadném bodě 
-\begin_inset Formula $a$
+\begin_layout Standard
+Funkce 
+\begin_inset Formula $f:~D\subset\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+ má v 
+\begin_inset Formula $x_{0}\in\mathbb{R}^{n}$
 \end_inset
 
  limitu 
-\begin_inset Formula $b$
+\begin_inset Formula $y_{0}\in\mathbb{R}^{m}$
 \end_inset
 
-, jestliže pro každé okolí bodu 
-\begin_inset Formula $b$
+, když 
+\begin_inset Formula $\lim_{k\rightarrow\infty}f\left(x_{k}\right)=y_{0}$
 \end_inset
 
- existuje prstencové okolí bodu 
+ pro každou posloupnost splňující 
+\begin_inset Formula $\lim_{k\rightarrow\infty}x_{k}=x_{0}$
+\end_inset
+
+.
+ Značíme
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow x_{0}}f\left(x_{k}\right)=x_{0}\text{.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spojitost funkce
+\end_layout
+
+\begin_layout Standard
+Funkce 
+\begin_inset Formula $f:~D\subset\mathbb{R}^{n}\rightarrow\mathbb{R}^{m}$
+\end_inset
+
+ je v 
+\begin_inset Formula $x_{0}\in\mathbb{R}^{n}$
+\end_inset
+
+ spojitá, když 
+\begin_inset Formula $\lim_{x\rightarrow x_{0}}f\left(x_{k}\right)=f\left(x_{0}\right)\text{.}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Parciální derivace v bodě 
 \begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a=\left(a_{1},~\ldots,~a_{k}\right)\in D_{f}:~\frac{\partial f}{\partial x_{1}}=\lim_{x_{1}\rightarrow a_{1}}\frac{f\left(x_{1},~a_{2},~\ldots,~a_{k}\right)}{x_{1}-a_{1}}
+\]
+
+\end_inset
+
+a dále pro 
+\begin_inset Formula $\frac{\partial f}{\partial x_{2}},~\cdots,~\frac{\partial f}{\partial x_{k}}$
 \end_inset
 
 .
@@ -870,11 +937,19 @@ J_{f}=\left(\begin{array}{ccc}
 \end_layout
 
 \begin_layout Subsection
-Hessián
+Hessova matice
 \end_layout
 
 \begin_layout Standard
-Nebo-li Hessova matice je matice parciálních derivací druhých řádů.
+Nebo-li Hessián je matice parciálních derivací druhých řádů (
+\begin_inset Quotes gld
+\end_inset
+
+parciální derivace parciálních derivací
+\begin_inset Quotes grd
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -893,34 +968,60 @@ Nebo-li Hessova matice je matice parciálních derivací druhých řádů.
 
 \end_layout
 
+\begin_layout Itemize
+Použití: vyšetření lokálních extrémů (definitnost).
+\end_layout
+
 \begin_layout Section
 Lokální a globální extrémy funkcí více proměnných
 \end_layout
 
 \begin_layout Standard
-Každé 
-\begin_inset Formula $x$
-\end_inset
-
- splňující 
+V bodě, kde se gradient rovná nule (
 \begin_inset Formula $\nabla f\left(x\right)=0$
 \end_inset
 
- nazýváme 
-\series bold
-kritický bod
-\series default
- 
-\begin_inset Formula $f$
+) je tečná rovina funkce rovnoběžná s osami 
+\begin_inset Formula $x$
+\end_inset
+
+ a 
+\begin_inset Formula $y$
 \end_inset
 
 .
- Dle definitnosti Hessovy matici zjistíme (Sylvestrovým kritériem nebo kvadratic
-kou formou matice), jaké typu tento kritický bod je.
+ Je zde podezření na extrém nebo sedlový bod
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+sedlový bod
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Atraktor
+\end_layout
+
+\begin_layout Standard
+Oblasti, ze kterých cesta sledující gradient končí ve stejném lokálním maximu.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Alternativní atraktor
+\series default
+ -- cesta sledují opačný směr gradientu (končí tedy ve stejném lokálním
+ minimu).
 \end_layout
 
 \begin_layout Section
-Konstrukce Riemannova integrálu funkce jedné a více proměnných
+Riemannův integrál funkce jedné a více proměnných
 \end_layout
 
 \begin_layout Itemize
@@ -1551,6 +1652,24 @@ Přístupy k neurčitosti založené na pravděpodobnostních rozděleních: kop
 
 \begin_layout Section
 Kombinování neurčitosti pomocí fuzzy pravidlových systémů a fuzzy integrálů
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "mpi_bibtex"
+options "csn690"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
