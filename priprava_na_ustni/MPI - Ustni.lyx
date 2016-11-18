@@ -28,9 +28,6 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-biblatex
-\end_modules
 \maintain_unincluded_children false
 \language czech
 \language_package babel
