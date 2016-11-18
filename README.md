@@ -5,8 +5,8 @@ Souhrn látky pro MI-MPI na ČVUT FIT
 
 Aktuální build PDF je ve složce `pdf/`:
 
-- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/skripta/MPI%20-%20Souhrn%20l%C3%A1tky.pdf)** 
-- :blue_book: **[Stáhnout Souhrn látky na ústní zkoušku [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/priprava_na_ustni/MPI%20-%20%C3%9Astn%C3%AD.pdf)** 
+- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/skripta/MPI%20-%20Souhrn%20latky.pdf)** 
+- :blue_book: **[Stáhnout Souhrn látky na ústní zkoušku [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/priprava_na_ustni/MPI%20-%20Ustni.pdf)** 
 
 ## Chci přispět ##
 
