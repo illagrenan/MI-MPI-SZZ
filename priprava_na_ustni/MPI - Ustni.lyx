@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \begin_preamble
 \usepackage{lmodern}
@@ -34,16 +36,16 @@ biblatex
 \language_package babel
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -125,7 +127,7 @@ Souhrn látky k ústní části zkoušky
 \end_layout
 
 \begin_layout Date
-březen 2014
+vytvořeno březen 2014, revize listopad 2016
 \end_layout
 
 \begin_layout Standard
@@ -175,7 +177,7 @@ Grupoidy, pologrupy, monoid a grupy, základní vlastnosti a definice
 \end_layout
 
 \begin_layout Itemize
-Všechny mají společnou strukturu -- neprázdnou množinu objektu a binární
+Všechny mají společnou strukturu – neprázdnou množinu objektu a binární
  operaci
 \end_layout
 
@@ -203,6 +205,10 @@ dědí
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -216,11 +222,11 @@ Hierarchie struktur:
 \end_layout
 
 \begin_layout Itemize
-Grupoid -- uzavřenost nad operací
+Grupoid – uzavřenost nad operací
 \end_layout
 
 \begin_layout Itemize
-Pologrupa -- asociativita (
+Pologrupa – asociativita (
 \begin_inset Formula $\left(x\circ y\right)\circ z=x\circ\left(y\circ z\right)$
 \end_inset
 
@@ -228,7 +234,11 @@ Pologrupa -- asociativita (
 \end_layout
 
 \begin_layout Itemize
-Monoid -- neutrální prvek
+Monoid – neutrální prvek
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -241,7 +251,11 @@ Monoid -- neutrální prvek
 
 \end_deeper
 \begin_layout Itemize
-Grupa -- inverzní prvek
+Grupa – inverzní prvek
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -254,7 +268,7 @@ Grupa -- inverzní prvek
 
 \end_deeper
 \begin_layout Itemize
-Abelovská grupa -- komutativita (
+Abelovská grupa – komutativita (
 \begin_inset Formula $x\circ y=y\circ x$
 \end_inset
 
@@ -298,6 +312,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -332,7 +351,7 @@ Cyklické grupy, generátory
 \end_layout
 
 \begin_layout Section
-Homomorfizmus, izomorfizmus -- vlastnosti a příklady izomorfních grupy
+Homomorfizmus, izomorfizmus – vlastnosti a příklady izomorfních grupy
 \end_layout
 
 \begin_layout Itemize
@@ -340,7 +359,7 @@ Homomorfizmus, izomorfizmus -- vlastnosti a příklady izomorfních grupy
 \series bold
 Homomorfismus
 \series default
- -- zobrazení z jedné struktury do jiné stejného typu, které zachovává veškerou
+ – zobrazení z jedné struktury do jiné stejného typu, které zachovává veškerou
  důležitou strukturu.
 \end_layout
 
@@ -349,11 +368,11 @@ Homomorfismus
 \series bold
 Izomorfismus
 \series default
- -- bijektivní (prostý a na) homomorfismus.
+ – bijektivní (prostý a na) homomorfismus.
 \end_layout
 
 \begin_layout Standard
-Kleinova grupa -- nejmenší necyklická grupa.
+Kleinova grupa – nejmenší necyklická grupa.
  Jedná se o direktní součin dvou kopií cyklické grupy řádu 2.
 \begin_inset Formula 
 \[
@@ -377,6 +396,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -410,7 +434,7 @@ Problém diskrétního logaritmu v různých grupách, Diffie-Hellman Key Exchan
 \series bold
 Diskrétní
 \series default
- -- celá čísla a konečné objekty.
+ – celá čísla a konečné objekty.
  Diskrétní objekty jsou prezentovány pomocí konečných grafů a množin.
  
 \begin_inset Quotes gld
@@ -436,7 +460,7 @@ spojitého
 \series bold
 Logaritmus
 \series default
- -- matematická funkce, která je inverzní k exponenciální funkci.
+ – matematická funkce, která je inverzní k exponenciální funkci.
  
 \end_layout
 
@@ -562,6 +586,10 @@ je jednoduché, pokud známe
 
  je velmi obtížné.
  (Jinak řečeno: násobení a mocnění prvočísel je velmi rychlé a snadné).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -723,13 +751,17 @@ Báze tvoří páry: A-T, G-C, tak vzniká dvojitá šroubovice.
 \end_layout
 
 \begin_layout Itemize
-Při čtení DNA je vzorek rozsekán na několik náhodných částí -- problém je,
+Při čtení DNA je vzorek rozsekán na několik náhodných částí – problém je,
  jak je přečíst a složit zpět dohromady (mohou se překrývat).
 \end_layout
 
 \begin_layout Itemize
-Druhým problémem je postupná evoluce, při které permutuje pořadí genů --
+Druhým problémem je postupná evoluce, při které permutuje pořadí genů –
  evoluční vzdálenost.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -760,12 +792,16 @@ Metody:
 \end_layout
 
 \begin_layout Itemize
-Shotgun sequencing (problém rekonstrukce DNA) -- Touto metodou je možné
- přečíst řetězce délky 500 až 700.
+Shotgun sequencing (problém rekonstrukce DNA) – Touto metodou je možné přečíst
+ řetězce délky 500 až 700.
  Proto je třeba nejdříve celou DNA (resp.
  jejích mnoho kopií) na takto malé kousky rozsekat.
  Jelikož toto rozsekání je zcela náhodné, nevíme, v jakém pořadí přečtené
  řetězce poskládat a navíc se tyto řetězce mohou překrývat.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -784,6 +820,10 @@ Problém obchodního cestujícího je bohužel NP-těžký, takže lze jen těž
 \end_deeper
 \begin_layout Itemize
 Sekvenování pomocí hybridizace (DNA chip / DNA array)
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -955,7 +995,7 @@ parciální derivace parciálních derivací
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\nabla^{2}f\left(x_{1},\,\ldots,\, x_{n}\right)=\left(\begin{array}{cccc}
+\nabla^{2}f\left(x_{1},\,\ldots,\,x_{n}\right)=\left(\begin{array}{cccc}
 \frac{\partial^{2}f}{\partial x_{1}^{\,\,2}} & \frac{\partial^{2}f}{\partial x_{1}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{1}\partial x_{n}}\\
 \frac{\partial^{2}f}{\partial x_{2}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{2}^{\,\,2}} & \cdots & \frac{\partial^{2}f}{\partial x_{2}\partial x_{n}}\\
 \vdots & \vdots & \ddots & \vdots\\
@@ -1016,8 +1056,7 @@ Oblasti, ze kterých cesta sledující gradient končí ve stejném lokálním m
 \series bold
 Alternativní atraktor
 \series default
- -- cesta sledují opačný směr gradientu (končí tedy ve stejném lokálním
- minimu).
+ – cesta sledují opačný směr gradientu (končí tedy ve stejném lokálním minimu).
 \end_layout
 
 \begin_layout Section
@@ -1097,11 +1136,15 @@ Pokud je funkce na intervalu integrovatelná, je možné integraci vyjádřit
 
 \begin_layout Itemize
 Počítání s určitými integrály:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-per partes -- vychází z násobení derivace 
+per partes – vychází z násobení derivace 
 \begin_inset Formula $(uv)'=u'v+v'u$
 \end_inset
 
@@ -1109,7 +1152,7 @@ per partes -- vychází z násobení derivace
 \end_layout
 
 \begin_layout Itemize
-substituce -- vychází z derivace složené funkce.
+substituce – vychází z derivace složené funkce.
 \end_layout
 
 \end_deeper
@@ -1128,11 +1171,15 @@ D=\left[a,~b\right]\times\left[c,~d\right]
 
 \begin_layout Itemize
 Vlastnosti dvojného integrálu:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Linearita -- pokud jsou 
+Linearita – pokud jsou 
 \begin_inset Formula $f,~g$
 \end_inset
 
@@ -1152,7 +1199,7 @@ Linearita -- pokud jsou
 \end_layout
 
 \begin_layout Itemize
-Nerovnosti -- pokud jsou 
+Nerovnosti – pokud jsou 
 \begin_inset Formula $f,~g$
 \end_inset
 
@@ -1186,15 +1233,19 @@ Věta:
 \end_deeper
 \begin_layout Itemize
 Můžeme integrovat i nad obecnější oblastí:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-typ 1 -- shora a zdola,
+typ 1 – shora a zdola,
 \end_layout
 
 \begin_layout Itemize
-typ 2 -- zleva a zprava.
+typ 2 – zleva a zprava.
 \end_layout
 
 \begin_layout Itemize
@@ -1219,21 +1270,21 @@ Numerické metody řešení soustav lineárních rovnic
 \end_layout
 
 \begin_layout Subsection
-Přímé metody -- Gausova, hornerova
+Přímé metody – Gausova, hornerova
 \end_layout
 
 \begin_layout Standard
 Máme vzorec, podle kterého vypočteme výsledek.
- Počítá s řešením nějakého problému v konečném počtu kroků -- v teoretické
+ Počítá s řešením nějakého problému v konečném počtu kroků – v teoretické
  absolutní přesnosti dává přesné řešení.
 \end_layout
 
 \begin_layout Itemize
-Hornerova metoda -- hodnota polynomu v bodě,
+Hornerova metoda – hodnota polynomu v bodě,
 \end_layout
 
 \begin_layout Itemize
-Gaussova eliminace -- má složitost 
+Gaussova eliminace – má složitost 
 \begin_inset Formula $O(n^{3})$
 \end_inset
 
@@ -1346,6 +1397,10 @@ Kdy ukončit? Iterační metodu ukončíme v kroku
 \end_inset
 
  požadované přesnosti (ta je většinou dána v zadání).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1416,7 +1471,7 @@ Typy optimalizačních úloh a optimalizačních metod
 \series bold
 Diskrétní
 \series default
- -- proměnné z konečné, často velmi velké, množiny.
+ – proměnné z konečné, často velmi velké, množiny.
  Např.
  požadavek, proměnné xi celá čísla či xi ∈ {0, 1} → integer programming
  problems.
@@ -1428,7 +1483,7 @@ Diskrétní
 \series bold
 Spojité
 \series default
- -- proměnné reálná čísla či prvky z nespočetných množin.
+ – proměnné reálná čísla či prvky z nespočetných množin.
  Jednodušší řešení - lze použít spojitost a hladkost funkce, napoví hodně
  o chování funkce v okolí daného bodu.
  
@@ -1543,7 +1598,7 @@ Fuzzy množiny
 \end_layout
 
 \begin_layout Standard
-Fuzzy matematika -- matematika neurčitost nějakého prvku 
+Fuzzy matematika – matematika neurčitost nějakého prvku 
 \begin_inset Formula $u$
 \end_inset
 
@@ -1621,6 +1676,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout

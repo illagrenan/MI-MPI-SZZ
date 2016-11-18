@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass article
 \begin_preamble
 \usepackage{lmodern}
@@ -35,16 +37,16 @@
 \language_package babel
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 1
@@ -126,7 +128,7 @@ Souhrn látky
 \end_layout
 
 \begin_layout Date
-leden 2014
+vytvořeno leden 2014, revize listopad 2016
 \end_layout
 
 \begin_layout Standard
@@ -175,7 +177,7 @@ Množiny s jednou binární operací
 Hierarchie množin
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Hierarchie-množin"
+name "subsec:Hierarchie-množin"
 
 \end_inset
 
@@ -194,6 +196,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -245,7 +252,7 @@ uzavřená
  
 \begin_inset Formula 
 \[
-\forall a,\, b\in M\, a\circ b\in M
+\forall a,\,b\in M\,a\circ b\in M
 \]
 
 \end_inset
@@ -265,7 +272,7 @@ asociativní
 .
 \begin_inset Formula 
 \[
-\forall a,\, b,\, c\in M\,\left(a\circ b\right)\circ c=a\circ\left(b\circ c\right)
+\forall a,\,b,\,c\in M\,\left(a\circ b\right)\circ c=a\circ\left(b\circ c\right)
 \]
 
 \end_inset
@@ -279,7 +286,7 @@ Monoid Existuje právě jeden (v každém monoidu)
 status open
 
 \begin_layout Plain Layout
-Přednáška 3 -- handout, věta 11.
+Přednáška 3 – handout, věta 11.
 \end_layout
 
 \end_inset
@@ -291,7 +298,7 @@ neutrální prvek
 .
 \begin_inset Formula 
 \[
-\exists e\in M\,\forall a\in M\, e\circ a=a\circ e=a
+\exists e\in M\,\forall a\in M\,e\circ a=a\circ e=a
 \]
 
 \end_inset
@@ -305,7 +312,7 @@ Grupa Všechny prvky (každý prvek) mají právě
 status open
 
 \begin_layout Plain Layout
-Přednáška 3 -- handout, věta 12.
+Přednáška 3 – handout, věta 12.
 \end_layout
 
 \end_inset
@@ -317,7 +324,7 @@ inverzní prvek
 .
 \begin_inset Formula 
 \[
-\forall a\in M\,\exists a^{-1}\in M\, a\circ a^{-1}=a^{-1}\circ a=e
+\forall a\in M\,\exists a^{-1}\in M\,a\circ a^{-1}=a^{-1}\circ a=e
 \]
 
 \end_inset
@@ -341,7 +348,7 @@ komutativní
 .
 \begin_inset Formula 
 \[
-\forall a,\, b\in M\, a\circ b=b\circ a
+\forall a,\,b\in M\,a\circ b=b\circ a
 \]
 
 \end_inset
@@ -374,6 +381,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -523,6 +535,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -807,6 +824,10 @@ V každé grupě
 triviální podgrupy
 \emph default
 :
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -865,6 +886,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -932,6 +958,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1156,7 +1187,7 @@ cyklická multiplikativní
 
  jsou nesoudělná (tj.
  
-\begin_inset Formula $gcd\left(k,\, n\right)=1$
+\begin_inset Formula $gcd\left(k,\,n\right)=1$
 \end_inset
 
 ).
@@ -1186,13 +1217,18 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
 
 \series bold
 \bar under
-Příklad -- základní ukázka grupy
+Příklad – základní ukázka grupy
 \series default
 \bar default
 
@@ -1288,6 +1324,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1363,6 +1404,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1384,7 +1430,7 @@ Multiplikativní cyklická grupa
 \end_inset
 
  je cyklická tehdy a jen tehdy, když 
-\begin_inset Formula $n=2,\,4,\, p^{k},\,2p^{k}$
+\begin_inset Formula $n=2,\,4,\,p^{k},\,2p^{k}$
 \end_inset
 
 , kde 
@@ -1421,7 +1467,7 @@ Multiplikativní grupa modulo
 \end_inset
 
  je prvočíslo, je množina 
-\begin_inset Formula $\left\{ 1,\,2,\ldots,\, p-1\right\} $
+\begin_inset Formula $\left\{ 1,\,2,\ldots,\,p-1\right\} $
 \end_inset
 
  s operací násobení modulo 
@@ -1434,6 +1480,10 @@ Multiplikativní grupa modulo
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1488,6 +1538,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1543,6 +1598,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1706,9 +1766,9 @@ Eulerova funkce
 \begin_inset Formula 
 \begin{eqnarray*}
 \varphi\left(1\right) & = & 1;\,\varphi\left(2\right)=1\\
-\varphi\left(p\right) & = & p-1,\, p\in\mathbb{P}\\
-\varphi\left(p^{k}\right) & = & \left(p-1\right)*p^{k-1},\, p\in\mathbb{P}\\
-\varphi\left(n*m\right) & = & \varphi\left(n\right)*\varphi\left(m\right),\, n,\, m\in\mathbb{N}\,\,\text{a}\,\, n,\, m\,\,\text{jsou nesoudělná}
+\varphi\left(p\right) & = & p-1,\,p\in\mathbb{P}\\
+\varphi\left(p^{k}\right) & = & \left(p-1\right)*p^{k-1},\,p\in\mathbb{P}\\
+\varphi\left(n*m\right) & = & \varphi\left(n\right)*\varphi\left(m\right),\,n,\,m\in\mathbb{N}\,\,\text{a}\,\,n,\,m\,\,\text{jsou nesoudělná}
 \end{eqnarray*}
 
 \end_inset
@@ -1732,6 +1792,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -1940,7 +2005,7 @@ Pokud je
 \end_inset
 
  generátor grupy (řečeno v zadání), musí dle předchozího platit, že 
-\begin_inset Formula $a^{1},\, a^{2},\,\ldots,\, a^{n-1}$
+\begin_inset Formula $a^{1},\,a^{2},\,\ldots,\,a^{n-1}$
 \end_inset
 
  se 
@@ -2006,8 +2071,8 @@ C)
 \begin_inset Formula $\mathbf{A=\left\{ 4,\,6\right\} }$
 \end_inset
 
- -- jinými slovy jestliže 
-\begin_inset Formula $a^{4}\neq1\,\wedge\, a^{6}\neq1$
+ – jinými slovy jestliže 
+\begin_inset Formula $a^{4}\neq1\,\wedge\,a^{6}\neq1$
 \end_inset
 
 , pak 
@@ -2049,7 +2114,7 @@ Homomorfismus Zobrazení, které zachovává operace.
 
  dva grupoidy.
  Zobrazení 
-\begin_inset Formula $\varphi:\, M\rightarrow N$
+\begin_inset Formula $\varphi:\,M\rightarrow N$
 \end_inset
 
  nazveme homomorfismem 
@@ -2063,9 +2128,13 @@ Homomorfismus Zobrazení, které zachovává operace.
 , jestliže
 \begin_inset Formula 
 \[
-\forall x,\, y\in M~\mathrm{\text{platí}}~\varphi\left(x\circ_{G}y\right)=\varphi\left(x\right)\circ_{H}\varphi\left(y\right).
+\forall x,\,y\in M~\mathrm{\text{platí}}~\varphi\left(x\circ_{G}y\right)=\varphi\left(x\right)\circ_{H}\varphi\left(y\right).
 \]
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -2117,7 +2186,7 @@ bijekcí
 , tj.
 \begin_inset Formula 
 \[
-a:\, G\rightarrow H~\text{a}~b:\, H\rightarrow G,~a\circ b=id_{H}~\text{a}~b\circ a=id_{G}.
+a:\,G\rightarrow H~\text{a}~b:\,H\rightarrow G,~a\circ b=id_{H}~\text{a}~b\circ a=id_{G}.
 \]
 
 \end_inset
@@ -2130,7 +2199,7 @@ Oba
 \series bold
 zachovávají strukturu danou binární operací
 \series default
- -- je jedno, jestli nejdříve aplikujeme operaci a pak zobrazíme.
+ – je jedno, jestli nejdříve aplikujeme operaci a pak zobrazíme.
  nebo nejdříve zobrazíme a pak aplikujeme operaci.
 \end_layout
 
@@ -2144,11 +2213,11 @@ pouze uzavřenost množiny
  V kapitole 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "sub:Hierarchie-množin"
+reference "subsec:Hierarchie-množin"
 
 \end_inset
 
- jsme ukázali, že jednotlivé struktury od sebe dědí -- definice homomorfismu
+ jsme ukázali, že jednotlivé struktury od sebe dědí – definice homomorfismu
  se tedy přenáší i na grupy.
 \end_layout
 
@@ -2485,7 +2554,7 @@ Buďte
 Platí levý a pravý distributivní zákon:
 \begin_inset Formula 
 \[
-\left(\forall a,\, b,\, c\in M\right)\left(a\left(b+c\right)=ab+ac\wedge\left(b+c\right)a=ba+ca\right)
+\left(\forall a,\,b,\,c\in M\right)\left(a\left(b+c\right)=ab+ac\wedge\left(b+c\right)a=ba+ca\right)
 \]
 
 \end_inset
@@ -2621,6 +2690,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -2706,7 +2780,7 @@ GF\left(M^{\#}\right)=\left(2^{4}\right)
  je řád:
 \begin_inset Formula 
 \begin{eqnarray*}
-\# & = & 4\rightarrow a,\, b,\, c,\, d\\
+\# & = & 4\rightarrow a,\,b,\,c,\,d\\
 y & = & ax^{\#-1}+bx^{\#-\ldots}\ldots=ax^{3}+bx^{2}+cx+d
 \end{eqnarray*}
 
@@ -2725,7 +2799,7 @@ y & = & ax^{\#-1}+bx^{\#-\ldots}\ldots=ax^{3}+bx^{2}+cx+d
 \begin_layout Standard
 \begin_inset Formula 
 \[
-M=2\rightarrow a,\, b,\, c,\, d=\mathbf{\left\{ 0,1\right\} }
+M=2\rightarrow a,\,b,\,c,\,d=\mathbf{\left\{ 0,1\right\} }
 \]
 
 \end_inset
@@ -2738,7 +2812,7 @@ Výpočet nad tělesem s ireducibilním polynomem
 \end_layout
 
 \begin_layout Subsubsection
-A -- Dělením polynomu
+A – Dělením polynomu
 \end_layout
 
 \begin_layout Standard
@@ -2768,6 +2842,10 @@ kde se počítá modulo ireducibilní polynom
 P\left(x\right)=x^{4}+x^{3}+1\text{.}
 \]
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -2863,7 +2941,7 @@ Rovnici roznásobíme a vydělíme (běžné dělení polynomu polynomem) ireduc
 
 \begin_layout Standard
 Ve zbytku po dělení odhadneme koeficienty 
-\begin_inset Formula $a,\, b,\, c,\, d$
+\begin_inset Formula $a,\,b,\,c,\,d$
 \end_inset
 
 , aby rovnice vycházela.
@@ -2901,7 +2979,7 @@ y=ax^{3}+bx^{2}+cx+d=x^{3}=\mathbf{1000}
 \end_layout
 
 \begin_layout Subsubsection
-B -- Rozšířeným Euklidovým algoritmem
+B – Rozšířeným Euklidovým algoritmem
 \end_layout
 
 \begin_layout Standard
@@ -3058,7 +3136,7 @@ Musíme nalézt takové koeficienty polynomu, aby platil výraz
 Výraz roznásobíme a vydělíme ireducibilním polynomem
 \begin_inset Formula 
 \[
-\left(ax^{2}+bx+2ax+2b\right)\div\left(x^{2}+1\right)=a,\,\text{zbytek:}\, x(2a+b)+2b-a\text{.}
+\left(ax^{2}+bx+2ax+2b\right)\div\left(x^{2}+1\right)=a,\,\text{zbytek:}\,x(2a+b)+2b-a\text{.}
 \]
 
 \end_inset
@@ -3140,7 +3218,7 @@ dosadíme
 \begin_inset Formula 
 \begin{eqnarray*}
 2a-a & = & 1\\
-\mathbf{a} & \mathbf{=} & \mathbf{1\,\Rightarrow\, b=1\text{.}}
+\mathbf{a} & \mathbf{=} & \mathbf{1\,\Rightarrow\,b=1\text{.}}
 \end{eqnarray*}
 
 \end_inset
@@ -3156,7 +3234,7 @@ Tyto koeficienty dosadíme do polynomu
 
 \begin_inset Formula 
 \[
-ax+b;\, a=b=1\text{.}
+ax+b;\,a=b=1\text{.}
 \]
 
 \end_inset
@@ -3215,6 +3293,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3264,7 +3347,7 @@ Buď
  platí
 \begin_inset Formula 
 \[
-A\left(x\right)*B\left(x\right)=P\left(x\right)\,\Rightarrow\,\left(\mathrm{stupeň}\, A\left(x\right)=0\vee\mathrm{stupeň}\, B\left(x\right)=0\right).
+A\left(x\right)*B\left(x\right)=P\left(x\right)\,\Rightarrow\,\left(\mathrm{stupeň}\,A\left(x\right)=0\vee\mathrm{stupeň}\,B\left(x\right)=0\right).
 \]
 
 \end_inset
@@ -3307,6 +3390,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3492,7 +3580,7 @@ Stupeň 4
 Rozšířený Euklidův algoritmus
 \begin_inset CommandInset label
 LatexCommand label
-name "sub:Rozšířený-Euklidův-algoritmus"
+name "subsec:Rozšířený-Euklidův-algoritmus"
 
 \end_inset
 
@@ -3511,6 +3599,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3568,6 +3661,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3586,7 +3684,7 @@ Příklad
 
 \begin_layout Plain Layout
 Hledáme 
-\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\begin_inset Formula $5*x\equiv1\,MOD\,17$
 \end_inset
 
  tj.
@@ -3634,7 +3732,7 @@ Hledáme
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-{\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{výsledná\,\, inverze}\right)
+{\color{blue}7}=1_{B}-\left[2*\left(-3_{X}\right)\right]\,\left(\mathrm{výsledná\,\,inverze}\right)
 \]
 
 \end_inset
@@ -3673,6 +3771,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3699,7 +3802,7 @@ Petrův postup
 
 \begin_layout Plain Layout
 Hledáme 
-\begin_inset Formula $5*x\equiv1\, MOD\,17$
+\begin_inset Formula $5*x\equiv1\,MOD\,17$
 \end_inset
 
  tj.
@@ -3756,6 +3859,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3803,7 +3911,7 @@ Bézoutovy koeficienty
 Koeficienty je možné vypočítat pomocí 
 \begin_inset CommandInset ref
 LatexCommand nameref
-reference "sub:Rozšířený-Euklidův-algoritmus"
+reference "subsec:Rozšířený-Euklidův-algoritmus"
 
 \end_inset
 
@@ -3826,6 +3934,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3910,6 +4023,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -3971,7 +4089,7 @@ GCD\left(27,\,45\right)=\uuline{9}
 \begin_layout Plain Layout
 \align center
 Pokud 
-\begin_inset Formula $gcd\left(m,\, n\right)=1$
+\begin_inset Formula $gcd\left(m,\,n\right)=1$
 \end_inset
 
 , pak říkáme, že 
@@ -4120,6 +4238,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4222,6 +4345,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4375,10 +4503,10 @@ status open
 
 \end_inset
 
- -- dělí) 
+ – dělí) 
 \begin_inset Formula 
 \[
-GCD\left(a,\, M\right)|b\text{.}
+GCD\left(a,\,M\right)|b\text{.}
 \]
 
 \end_inset
@@ -4392,7 +4520,7 @@ GCD\left(a,\, M\right)|b\text{.}
 Řešení:
 \begin_inset Formula 
 \[
-\text{Najdi}\,\upalpha\in\mathbb{Z}\,\text{tak, že}\,\,\upalpha*a+\beta*M=GCD\left(a,\, M\right)\text{, pak}
+\text{Najdi}\,\upalpha\in\mathbb{Z}\,\text{tak, že}\,\,\upalpha*a+\beta*M=GCD\left(a,\,M\right)\text{, pak}
 \]
 
 \end_inset
@@ -4400,7 +4528,7 @@ GCD\left(a,\, M\right)|b\text{.}
 
 \begin_inset Formula 
 \[
-x\equiv\frac{\upalpha*b}{GCD\left(a,\, M\right)}\,\left(\mathrm{mod}\frac{M}{GCD\left(a,\, M\right)}\right)
+x\equiv\frac{\upalpha*b}{GCD\left(a,\,M\right)}\,\left(\mathrm{mod}\frac{M}{GCD\left(a,\,M\right)}\right)
 \]
 
 \end_inset
@@ -4415,7 +4543,7 @@ Malá Fermatova věta
 \begin_layout Standard
 \begin_inset Formula 
 \[
-a^{p-1}\equiv1\,\mathrm{mod}\, p
+a^{p-1}\equiv1\,\mathrm{mod}\,p
 \]
 
 \end_inset
@@ -4426,7 +4554,7 @@ a^{p-1}\equiv1\,\mathrm{mod}\, p
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p\in\mathbb{P},\, GCD\left(a,\, p\right)=1
+p\in\mathbb{P},\,GCD\left(a,\,p\right)=1
 \]
 
 \end_inset
@@ -4446,6 +4574,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4469,7 +4602,7 @@ Spočítejte
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-381^{152}\mathrm{\, mod}\,13
+381^{152}\mathrm{\,mod}\,13
 \]
 
 \end_inset
@@ -4532,7 +4665,7 @@ Zobecnění Malé Fermatovy věty
 \begin_layout Standard
 \begin_inset Formula 
 \[
-a^{\varphi\left(n\right)}\equiv1\,\mathrm{mod}\, n
+a^{\varphi\left(n\right)}\equiv1\,\mathrm{mod}\,n
 \]
 
 \end_inset
@@ -4543,7 +4676,7 @@ a^{\varphi\left(n\right)}\equiv1\,\mathrm{mod}\, n
 \begin_layout Standard
 \begin_inset Formula 
 \[
-n\in\mathbb{N},\, GCD\left(a,\, n\right)=1
+n\in\mathbb{N},\,GCD\left(a,\,n\right)=1
 \]
 
 \end_inset
@@ -4563,6 +4696,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4586,7 +4724,7 @@ Spočítejte
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-3^{15}\mathrm{\, mod}\,28\text{.}
+3^{15}\mathrm{\,mod}\,28\text{.}
 \]
 
 \end_inset
@@ -4601,7 +4739,7 @@ Modulo není prvočíslo, můžeme tedy použít Eulerovu větu
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-GCD\left(3,\,28\right)=1,\, p\notin\mathbb{P}
+GCD\left(3,\,28\right)=1,\,p\notin\mathbb{P}
 \]
 
 \end_inset
@@ -4653,7 +4791,7 @@ GCD\left(3,\,28\right)=1,\, p\notin\mathbb{P}
 
 \begin_layout Standard
 Jsou dána přirozená čísla 
-\begin_inset Formula $m_{1},\, m_{2},\,\ldots,\, m_{k}$
+\begin_inset Formula $m_{1},\,m_{2},\,\ldots,\,m_{k}$
 \end_inset
 
 , která jsou mezi sebou nesoudělná a 
@@ -4662,7 +4800,7 @@ Jsou dána přirozená čísla
 
 .
  Pak pro libovolná celá čísla 
-\begin_inset Formula $a_{1},\, a_{2},\,\ldots,\, a_{k}$
+\begin_inset Formula $a_{1},\,a_{2},\,\ldots,\,a_{k}$
 \end_inset
 
  existuje celé číslo 
@@ -4672,10 +4810,10 @@ Jsou dána přirozená čísla
  takové, že 
 \begin_inset Formula 
 \begin{eqnarray*}
-x & \equiv & a_{1}\left(\text{mod}\, m_{1}\right)\\
-x & \equiv & a_{2}\left(\text{mod}\, m_{2}\right)\\
+x & \equiv & a_{1}\left(\text{mod}\,m_{1}\right)\\
+x & \equiv & a_{2}\left(\text{mod}\,m_{2}\right)\\
 \vdots &  & \vdots\\
-x & \equiv & a_{k}\left(\text{mod}\, m_{k}\right)\text{.}
+x & \equiv & a_{k}\left(\text{mod}\,m_{k}\right)\text{.}
 \end{eqnarray*}
 
 \end_inset
@@ -4715,6 +4853,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4846,7 +4989,7 @@ Soustavu rovnic tedy řeší tato celá čísla:
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-x=137+k*312,\, k\in\mathbb{Z}
+x=137+k*312,\,k\in\mathbb{Z}
 \]
 
 \end_inset
@@ -4882,6 +5025,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -4912,7 +5060,7 @@ Struktura strojově zapsaného čísla
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\text{resp.:}\,\left(-1\right)^{z}*\left(1,\, m\right)_{2}*2^{e-b}
+\text{resp.:}\,\left(-1\right)^{z}*\left(1,\,m\right)_{2}*2^{e-b}
 \]
 
 \end_inset
@@ -4948,6 +5096,10 @@ aditivní kód
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4991,6 +5143,10 @@ Do strojového formátu je možné zapsat pouze zlomky ve tvaru
 \end_inset
 
  jsou celá čísla
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -5103,6 +5259,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -5353,7 +5514,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="4">
-<features rotate="0" tabularvalignment="middle">
+<features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -5695,6 +5856,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -5981,13 +6147,18 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
 
 \series bold
 \bar under
-Párování v grafu -- definice
+Párování v grafu – definice
 \end_layout
 
 \begin_layout Plain Layout
@@ -6046,9 +6217,13 @@ Jinými slovy: Vrcholy grafů dáváme do párů.
 \series bold
 Maximální párování 
 \series default
--- žádné jiné párování nemá více hran (nebo-li párování obsahuje nejvyšší
+– žádné jiné párování nemá více hran (nebo-li párování obsahuje nejvyšší
  možný počet hran).
  Graf může mít více maximálních párování.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -6117,7 +6292,7 @@ Možná maximální párování v grafu, více hran už žádné jiné párován
 
 -saturovanost 
 \series default
-vrcholu (též nasycenost vrcholu) -- vrchol je již obsažen v nějakém párování.
+vrcholu (též nasycenost vrcholu) – vrchol je již obsažen v nějakém párování.
 \end_layout
 
 \begin_layout Itemize
@@ -6168,7 +6343,7 @@ Stabilní párování
 
 \begin_layout Itemize
 Pár 
-\begin_inset Formula $\left(z,\, p\right),\, z\in P,\, p\in P$
+\begin_inset Formula $\left(z,\,p\right),\,z\in P,\,p\in P$
 \end_inset
 
  je 
@@ -6180,6 +6355,10 @@ nestabilní
 \end_inset
 
 , jestliže
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -6250,6 +6429,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -6343,6 +6527,10 @@ definiční obor
 Průsečíky
 \series default
  s:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -6395,9 +6583,13 @@ Body podezřelé z extrémů
  získáme pomocí rovnice
 \begin_inset Formula 
 \[
-f'\left(x\right)=0\,\rightarrow\, x_{1}=A,\, x_{2}=B,\,\ldots
+f'\left(x\right)=0\,\rightarrow\,x_{1}=A,\,x_{2}=B,\,\ldots
 \]
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -6423,9 +6615,13 @@ Pro ověření, zda body podezřelé z extrémů jsou maximum nebo minimum, dosa
  do vztahu
 \begin_inset Formula 
 \[
-f''\left(x\leftarrow A,\, x\leftarrow B,\,\ldots\right)\text{.}
+f''\left(x\leftarrow A,\,x\leftarrow B,\,\ldots\right)\text{.}
 \]
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -6485,6 +6681,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -6501,7 +6702,7 @@ Definice parciální derivace v bodě
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-a=\left(a_{1},\,\ldots,\, a_{k}\right)\in D_{f}
+a=\left(a_{1},\,\ldots,\,a_{k}\right)\in D_{f}
 \]
 
 \end_inset
@@ -6512,7 +6713,7 @@ a=\left(a_{1},\,\ldots,\, a_{k}\right)\in D_{f}
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\frac{\partial f}{\partial x_{1}}=\lim_{x_{1}\rightarrow a_{1}}\frac{f\left(x_{1},\, a_{2},\,\ldots,\, a_{k}\right)-f\left(a\right)}{x_{1}-a_{1}}
+\frac{\partial f}{\partial x_{1}}=\lim_{x_{1}\rightarrow a_{1}}\frac{f\left(x_{1},\,a_{2},\,\ldots,\,a_{k}\right)-f\left(a\right)}{x_{1}-a_{1}}
 \]
 
 \end_inset
@@ -6522,7 +6723,7 @@ a=\left(a_{1},\,\ldots,\, a_{k}\right)\in D_{f}
 
 \begin_layout Plain Layout
 a podobně pro 
-\begin_inset Formula $x_{2},\,\ldots,\, x_{k}$
+\begin_inset Formula $x_{2},\,\ldots,\,x_{k}$
 \end_inset
 
 .
@@ -6606,6 +6807,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -6701,6 +6907,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -6843,6 +7054,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -6895,7 +7111,7 @@ Normalizace vektoru
 
 \begin_layout Itemize
 Mějme funkci 
-\begin_inset Formula $f\left(x,\, y\right)$
+\begin_inset Formula $f\left(x,\,y\right)$
 \end_inset
 
 , směr 
@@ -6903,7 +7119,7 @@ Mějme funkci
 \end_inset
 
  a bod 
-\begin_inset Formula $B\left[a,\, b\right]$
+\begin_inset Formula $B\left[a,\,b\right]$
 \end_inset
 
 
@@ -6925,7 +7141,11 @@ Gradient v bodě:
 \end_inset
 
 , tedy 
-\begin_inset Formula $\nabla f\left(x\leftarrow a,\, y\leftarrow b\right)$
+\begin_inset Formula $\nabla f\left(x\leftarrow a,\,y\leftarrow b\right)$
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -6934,7 +7154,7 @@ Gradient v bodě:
 \begin_deeper
 \begin_layout Itemize
 Další možný zápis gradientu v bodě: 
-\begin_inset Formula $\frac{\partial f}{\partial x}\left(a,\, b\right)=\ldots,\,\frac{\partial f}{\partial y}\left(a,\, b\right)=\ldots,\,$
+\begin_inset Formula $\frac{\partial f}{\partial x}\left(a,\,b\right)=\ldots,\,\frac{\partial f}{\partial y}\left(a,\,b\right)=\ldots,\,$
 \end_inset
 
 
@@ -6991,12 +7211,16 @@ Funkce více proměnných
 Kritický bod
 \series default
 \noun default
- -- Bod, ve kterém je gradient (všechny derivace) roven nulovému vektoru
+ – Bod, ve kterém je gradient (všechny derivace) roven nulovému vektoru
  
 \begin_inset Formula $\nabla f=\left(0,\,0,\,0\right)$
 \end_inset
 
 .
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -7007,13 +7231,13 @@ Nalezneme vyřešením soustavy lineárních rovnic.
 \end_deeper
 \begin_layout Itemize
 Body grafu funkce 
-\begin_inset Formula $f\left(x,\, y\right)=z$
+\begin_inset Formula $f\left(x,\,y\right)=z$
 \end_inset
 
  mají souřadnice
 \begin_inset Formula 
 \[
-\left(x,\, y,\, f\left(x,\, y\right)\right)\text{.}
+\left(x,\,y,\,f\left(x,\,y\right)\right)\text{.}
 \]
 
 \end_inset
@@ -7062,6 +7286,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -7074,7 +7303,7 @@ Definice Hessovy matice
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\nabla^{2}f\left(x_{1},\,\ldots,\, x_{n}\right)=\left(\begin{array}{cccc}
+\nabla^{2}f\left(x_{1},\,\ldots,\,x_{n}\right)=\left(\begin{array}{cccc}
 \frac{\partial^{2}f}{\partial x_{1}^{\,\,2}} & \frac{\partial^{2}f}{\partial x_{1}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{1}\partial x_{n}}\\
 \frac{\partial^{2}f}{\partial x_{2}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{2}^{\,\,2}} & \cdots & \frac{\partial^{2}f}{\partial x_{2}\partial x_{n}}\\
 \vdots & \vdots & \ddots & \vdots\\
@@ -7158,6 +7387,10 @@ y
 
 \begin_layout Itemize
 Pokud je výsledek po vynásobení libovolným vektorem
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -7228,7 +7461,7 @@ Vyhodnocení výsledků
 
 \begin_layout Itemize
 Pokud 
-\begin_inset Formula $\forall i:\, det\left(M_{i}\right)>0\,\Leftrightarrow$
+\begin_inset Formula $\forall i:\,det\left(M_{i}\right)>0\,\Leftrightarrow$
 \end_inset
 
  matice 
@@ -7244,7 +7477,7 @@ pozitivně definitní
 
 \begin_layout Itemize
 Pokud 
-\begin_inset Formula $\forall j:\, det\left(M_{2j+1}\right)<0\,\text{a}\, det\left(M_{2j}\right)>0\,\Leftrightarrow$
+\begin_inset Formula $\forall j:\,det\left(M_{2j+1}\right)<0\,\text{a}\,det\left(M_{2j}\right)>0\,\Leftrightarrow$
 \end_inset
 
  matice 
@@ -7254,6 +7487,12 @@ Pokud
  je 
 \series bold
 negativně definitní
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -7339,6 +7578,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -7382,7 +7626,7 @@ Kvadratická forma matice
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\overrightarrow{v} & = & \left(x,\, y,\, z\right):\\
+\overrightarrow{v} & = & \left(x,\,y,\,z\right):\\
  &  & \left(\begin{array}{ccc}
 x & y & z\end{array}\right)\underbrace{\left(\begin{array}{ccc}
 a & b & c\\
@@ -7408,6 +7652,10 @@ z
 \begin_layout Itemize
 Do výsledku dosazujeme libovolné vektory a zjišťujeme, zda je celý výraz
  kladný nebo záporný:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -7510,6 +7758,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -7517,11 +7770,11 @@ status open
 \series bold
 \bar under
 Rovnice tečné roviny ke grafu funkce 
-\begin_inset Formula $f\left(x,\, y\right)$
+\begin_inset Formula $f\left(x,\,y\right)$
 \end_inset
 
  v bodě 
-\begin_inset Formula $\left[a,\, b\right]$
+\begin_inset Formula $\left[a,\,b\right]$
 \end_inset
 
 
@@ -7530,7 +7783,7 @@ Rovnice tečné roviny ke grafu funkce
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-\frac{\partial f}{\partial x}\left(a,\, b\right)\left(x-a\right)+\frac{\partial f}{\partial y}\left(a,\, b\right)\left(y-b\right)-z+f\left(a,\, b\right)=0
+\frac{\partial f}{\partial x}\left(a,\,b\right)\left(x-a\right)+\frac{\partial f}{\partial y}\left(a,\,b\right)\left(y-b\right)-z+f\left(a,\,b\right)=0
 \]
 
 \end_inset
@@ -7542,7 +7795,7 @@ Rovnice tečné roviny ke grafu funkce
 Jedná se tedy o rovinu s normálovým vektorem
 \begin_inset Formula 
 \[
-\vec{n}=\left(\frac{\partial f}{\partial x}\left(a,\, b\right),\,\frac{\partial f}{\partial y}\left(a,\, b\right),\,-1\right)\text{.}
+\vec{n}=\left(\frac{\partial f}{\partial x}\left(a,\,b\right),\,\frac{\partial f}{\partial y}\left(a,\,b\right),\,-1\right)\text{.}
 \]
 
 \end_inset
@@ -7582,6 +7835,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Plain Layout
@@ -7596,10 +7854,10 @@ Přehled tabulkových integrálů
 \begin{eqnarray*}
 \int0\,\text{d}x & = & c\\
 \int a\,\text{d}x & = & ax+c\\
-\int x^{n}\,\text{d}x & = & \frac{1}{n+1}x^{n+1}+c\,\text{pro }\, x>0,\, n\in R\,\,\text{a}\,\, n\neq-1\\
-\int\frac{1}{x}\,\text{d}x & = & \ln\left|x\right|+c\,\,\text{pro}\,\, x\neq0\\
+\int x^{n}\,\text{d}x & = & \frac{1}{n+1}x^{n+1}+c\,\text{pro }\,x>0,\,n\in R\,\,\text{a}\,\,n\neq-1\\
+\int\frac{1}{x}\,\text{d}x & = & \ln\left|x\right|+c\,\,\text{pro}\,\,x\neq0\\
 \int e^{x}\,\text{d}x & = & e^{x}+c\\
-\int a^{x}\,\text{d}x & = & \frac{a^{x}}{\ln\left(a\right)}+c\,\,\text{pro}\,\, a>0,\,\,\text{a}\,\, a\neq1\\
+\int a^{x}\,\text{d}x & = & \frac{a^{x}}{\ln\left(a\right)}+c\,\,\text{pro}\,\,a>0,\,\,\text{a}\,\,a\neq1\\
 \int\sin x\,\text{d}x & = & -\cos x+c\\
 \int\cos x\,\text{d}x & = & \sin x+c
 \end{eqnarray*}
@@ -7704,7 +7962,7 @@ Integrály přes obdélníkovou oblast
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\, y\right)\text{d}y\right)\text{d}x
+\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\,y\right)\text{d}y\right)\text{d}x
 \]
 
 \end_inset
@@ -7739,6 +7997,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Itemize
@@ -7782,7 +8045,7 @@ Typ 1:
 
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\,\intop_{\varphi_{1}\left(x\right)}^{\varphi_{2}\left(x\right)}f\left(x,\, y\right)\text{d}y\right)\text{d}x
+\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\,\intop_{\varphi_{1}\left(x\right)}^{\varphi_{2}\left(x\right)}f\left(x,\,y\right)\text{d}y\right)\text{d}x
 \]
 
 \end_inset
@@ -7857,6 +8120,11 @@ width "100col%"
 special "none"
 height "1in"
 height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
 status open
 
 \begin_layout Itemize
@@ -7903,7 +8171,7 @@ Typ 2:
 \lang english
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\, y\right)\text{d}x\text{d}y=\intop_{c}^{d}\left(\,\intop_{\psi_{1}\left(y\right)}^{\psi_{2}\left(y\right)}f\left(x,\, y\right)\text{d}x\right)\text{d}y
+\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{c}^{d}\left(\,\intop_{\psi_{1}\left(y\right)}^{\psi_{2}\left(y\right)}f\left(x,\,y\right)\text{d}x\right)\text{d}y
 \]
 
 \end_inset
@@ -8018,7 +8286,7 @@ Poznámka k příkladu 2.2 ve cvičení 12: Vypočítejte
 \begin_inset Formula $f\left(y\right)=x\ldots$
 \end_inset
 
- -- funkce ohraničující 
+ – funkce ohraničující 
 \begin_inset Quotes gld
 \end_inset
 
@@ -8056,8 +8324,12 @@ Numerické metody řešení soustav lineárních rovnic
 \end_layout
 
 \begin_layout Itemize
-Přímá metoda -- počítá řešení v konečném počtu kroků tak, že v teoretické
+Přímá metoda – počítá řešení v konečném počtu kroků tak, že v teoretické
  absolutní přesnosti dává přesné řešení.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -8072,8 +8344,8 @@ Např.
 
 \end_deeper
 \begin_layout Itemize
-Iterační metoda -- hledají přibližná řešení problému tak, že konstruují
- posloupnost přibližných řešení (vektorů) 
+Iterační metoda – hledají přibližná řešení problému tak, že konstruují posloupno
+st přibližných řešení (vektorů) 
 \begin_inset Formula $x_{0},~x_{1},\ldots$
 \end_inset
 
@@ -8205,7 +8477,7 @@ Fuzzy matematika
 \end_layout
 
 \begin_layout Standard
-Fuzzy matematika -- matematika neurčitost nějakého prvku 
+Fuzzy matematika – matematika neurčitost nějakého prvku 
 \begin_inset Formula $u$
 \end_inset
 
@@ -8315,8 +8587,12 @@ Manhatannská
 \end_layout
 
 \begin_layout Itemize
-Mahalanobisova vzdálenost -- vzdálenost realizací x,y náhodných vektorů
- X,Y splňujících varX=varY.
+Mahalanobisova vzdálenost – vzdálenost realizací x,y náhodných vektorů X,Y
+ splňujících varX=varY.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -8443,14 +8719,14 @@ De Morganovy zákony a
 \begin_inset Formula $T$
 \end_inset
 
--konormy (součet -- sjednocení)
+-konormy (součet – sjednocení)
 \end_layout
 
 \begin_layout Itemize
 Komutativita
 \begin_inset Formula 
 \[
-\perp\left(a,\, b\right)=\perp\left(b,\, a\right)
+\perp\left(a,\,b\right)=\perp\left(b,\,a\right)
 \]
 
 \end_inset
@@ -8462,7 +8738,7 @@ Komutativita
 Monotonie
 \begin_inset Formula 
 \[
-\perp\left(a,\, b\right)\leq\perp\left(c,\, d\right)\,\,\text{když}\,\, a\leq c\,\,\text{a}\,\, b\leq d
+\perp\left(a,\,b\right)\leq\perp\left(c,\,d\right)\,\,\text{když}\,\,a\leq c\,\,\text{a}\,\,b\leq d
 \]
 
 \end_inset
@@ -8474,7 +8750,7 @@ Monotonie
 Asociativita
 \begin_inset Formula 
 \[
-\perp\left(a,\,\perp\left(b,\, c\right)\right)=\perp\left(\perp\left(a,\, b\right),\, c\right)
+\perp\left(a,\,\perp\left(b,\,c\right)\right)=\perp\left(\perp\left(a,\,b\right),\,c\right)
 \]
 
 \end_inset
@@ -8535,7 +8811,7 @@ Typy optimalizačních úloh
 \series bold
 Diskrétní (==kombinatorické)
 \series default
- -- proměnné z konečné, často velmi velké, množiny.
+ – proměnné z konečné, často velmi velké, množiny.
  Např.
  požadavek, proměnné xi celá čísla či xi ∈ {0, 1} → integer programming
  problems.
@@ -8547,7 +8823,7 @@ Diskrétní (==kombinatorické)
 \series bold
 Spojité
 \series default
- -- proměnné reálná čísla či prvky z nespočetných množin.
+ – proměnné reálná čísla či prvky z nespočetných množin.
  Jednodušší řešení - lze použít spojitost a hladkost funkce, napoví hodně
  o chování funkce v okolí daného bodu.
  
@@ -8562,7 +8838,7 @@ Deterministické
 \end_layout
 
 \begin_layout Itemize
-Stochastické -- každý běh jiný
+Stochastické – každý běh jiný
 \end_layout
 
 \begin_layout Subsection
@@ -8577,7 +8853,7 @@ Hladká optimalizace - Využívá parciální derivace cílové funkce - Gradien
 \end_layout
 
 \begin_layout Itemize
-Stochastická -- evoluční a genetické algoritmy
+Stochastická – evoluční a genetické algoritmy
 \end_layout
 
 \end_body
