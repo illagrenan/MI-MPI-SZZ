@@ -2052,7 +2052,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../MPI/skripta/images/struktura_obory.svg
+	filename images/struktura_obory.svg
 	width 20text%
 
 \end_inset
@@ -4678,10 +4678,6 @@ aditivní kód
 \end_inset
 
 .
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -5647,7 +5643,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../MPI/skripta/images/uplny_bipartitni_graf.svg
+	filename images/uplny_bipartitni_graf.svg
 	scale 65
 
 \end_inset
@@ -5834,7 +5830,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../MPI/skripta/images/Maximum-matching-labels.svg
+	filename images/Maximum-matching-labels.svg
 
 \end_inset
 
@@ -6163,10 +6159,6 @@ f'\left(x\right)=0\,\rightarrow\,x_{1}=A,\,x_{2}=B,\,\ldots
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -6192,10 +6184,6 @@ Pro ověření, zda body podezřelé z extrémů jsou maximum nebo minimum, dosa
 f''\left(x\leftarrow A,\,x\leftarrow B,\,\ldots\right)\text{.}
 \]
 
-\end_inset
-
-
-\begin_inset Separator latexpar
 \end_inset
 
 
@@ -7651,7 +7639,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../MPI/skripta/images/oblast_typ_1.png
+	filename images/oblast_typ_1.eps
 	lyxscale 50
 	scale 60
 
@@ -7777,7 +7765,7 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../MPI/skripta/images/oblast_typ_2.png
+	filename images/oblast_typ_2.eps
 	lyxscale 50
 	scale 60
 
