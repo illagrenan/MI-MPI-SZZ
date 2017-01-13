@@ -120,7 +120,7 @@ Matematika pro informatiku
 \end_layout
 
 \begin_layout Author
-Souhrn látky k ústní části zkoušky
+(deprecated) Souhrn látky k ústní části zkoušky
 \end_layout
 
 \begin_layout Date
@@ -202,10 +202,6 @@ dědí
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -232,10 +228,6 @@ Pologrupa – asociativita (
 
 \begin_layout Itemize
 Monoid – neutrální prvek
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -249,10 +241,6 @@ Monoid – neutrální prvek
 \end_deeper
 \begin_layout Itemize
 Grupa – inverzní prvek
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -1133,10 +1121,6 @@ Pokud je funkce na intervalu integrovatelná, je možné integraci vyjádřit
 
 \begin_layout Itemize
 Počítání s určitými integrály:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -1168,10 +1152,6 @@ D=\left[a,~b\right]\times\left[c,~d\right]
 
 \begin_layout Itemize
 Vlastnosti dvojného integrálu:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
