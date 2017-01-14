@@ -6705,6 +6705,56 @@ Přesnou hodnotu získáme tak, že v limitě „pošleme“ šířku výše uve
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/deleni intervalu 2017-01-14 13_40_36-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dělení intervalu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Definice.
@@ -6731,6 +6781,10 @@ M_{i}=\underset{\left\langle x_{i-1},x_{i}\right\rangle }{\max}f\text{\,\,\,a\,\
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 pro každé 
 \begin_inset Formula $i=1,2,\ldots n$
 \end_inset
@@ -6828,6 +6882,110 @@ existují, jsou si rovny a nezáleží na konkrétní volbě posloupnosti
 \[
 \int_{a}^{b}f\text{\,\,\,nebo\,\,\,}\int_{a}^{b}f\left(x\right)\text{d}x\text{.}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/dolni soucet 2017-01-14 13_37_52-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dolní součet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/horni soucet 2017-01-14 13_38_26-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Horní součet
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -7009,8 +7167,109 @@ Lagrangeova funkce
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Vlastnosti Riemannova integrálu
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Aditivita integrálu.
+
+\series default
+ Nechť 
+\begin_inset Formula $f$
+\end_inset
+
+ a 
+\begin_inset Formula $g$
+\end_inset
+
+ jsou spojité funkce na intervalu 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+.
+ Potom pro Riemannův integrál funkce 
+\begin_inset Formula $f+g$
+\end_inset
+
+, která je také automaticky spojitá na 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+, platí
+\begin_inset Formula 
+\[
+{\displaystyle \intop_{a}^{b}\left(f+g\right)\left(x\right)\text{d}x=\intop_{a}^{b}f\left(x\right)\text{d}x+\intop_{a}^{b}g\left(x\right)\text{d}x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Multiplikativita integrálu.
+
+\series default
+ Nechť 
+\begin_inset Formula $f$
+\end_inset
+
+ je spojitá na intervalu 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+ a 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ je konstanta.
+ Potom pro Riemannův integrál funkce 
+\begin_inset Formula $cf$
+\end_inset
+
+ platí
+\begin_inset Formula 
+\[
+{\displaystyle \intop_{a}^{b}\left(cf\right)\left(x\right)\text{d}x=c\intop_{a}^{b}f\left(x\right)\text{d}x}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Tabulkové integrály
+Newtonův integrál
+\end_layout
+
+\begin_layout Subsection
+Primitivní funkce
+\end_layout
+
+\begin_layout Standard
+Primitivní funkce k funkci 
+\begin_inset Formula $f$
+\end_inset
+
+ je taková funkce 
+\begin_inset Formula $F$
+\end_inset
+
+, pro kterou platí, že 
+\begin_inset Formula $f=F'$
+\end_inset
+
+.
+ Hledání primitivní funkce je tedy něco jako inverzní proces k derivování.
+\end_layout
+
+\begin_layout Subsection
+Primitivní funkce elementárních funkcí
 \end_layout
 
 \begin_layout Standard
@@ -7101,8 +7360,8 @@ per partes
 
 \end_layout
 
-\begin_layout Section
-Newtonova formule
+\begin_layout Subsection
+Newtonova-Leibnizova formule
 \end_layout
 
 \begin_layout Standard
@@ -7139,36 +7398,21 @@ Tento vztah bývá též označován jako Newton-Leibnizova formule, popř.
  se o něm také hovoří jako o základní větě integrálního počtu.
 \end_layout
 
-\begin_layout Standard
-Primitivní funkce k funkci 
-\begin_inset Formula $f$
-\end_inset
-
- je taková funkce 
-\begin_inset Formula $F$
-\end_inset
-
-, pro kterou platí, že 
-\begin_inset Formula $f=F'$
-\end_inset
-
-.
- Hledání primitivní funkce je tedy něco jako inverzní proces k derivování.
-\end_layout
-
 \begin_layout Section
-Integrály přes obdélníkovou oblast
+Dvojný integrál nad obdélníkovou oblastí
 \end_layout
 
 \begin_layout Standard
-Dvojný integrál přes obdélníkovou oblast 
+Následující věta nám říká, jak převést problém výpočtu dvojného integrálu
+ na dva jednodimenzionální podproblémy.
+ Dvojný integrál přes obdélníkovou oblast 
 \begin_inset Formula $D$
 \end_inset
 
  definujeme jako
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\,y\right)\text{d}y\right)\text{d}x
+\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\,y\right)\text{d}y\right)\text{d}x\text{\,\,nebo\,\,}\intop_{c}^{d}\left(\intop_{a}^{b}f\left(x,\,y\right)\text{d}x\right)\text{d}y
 \]
 
 \end_inset
@@ -7192,11 +7436,13 @@ eme vzhledem k jedné proměnné a druhou považujeme za konstantu.
 \end_layout
 
 \begin_layout Section
-Integrály přes obecnou oblast
+Dvojný integrál nad obecnou oblastí
 \end_layout
 
 \begin_layout Standard
-Uvažujeme dva typy oblastí
+Nyní si ukážeme, jak integrovat i přes oblasti, které jsou vymezené spojitými
+ funkcemi.
+ Uvažujeme dva typy oblastí
 \end_layout
 
 \begin_layout Standard
@@ -7205,25 +7451,6 @@ Uvažujeme dva typy oblastí
 
 
 \end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
 
 \begin_layout Itemize
 
@@ -7246,7 +7473,11 @@ Typ 1:
 \begin_inset Formula $\varphi_{1}\left(x\right)$
 \end_inset
 
- a 
+ a
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Formula $\varphi_{2}\left(x\right)$
 \end_inset
 
@@ -7274,7 +7505,7 @@ Typ 1:
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -7298,9 +7529,9 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/oblast_typ_1.eps
-	lyxscale 50
-	scale 60
+	filename images/obecna oblast typ 1 2017-01-14 14_39_27-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
 
 \end_inset
 
@@ -7311,12 +7542,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dva typy integrálů přes obecnou oblast
-\end_layout
-
-\end_inset
-
-
+Obecná oblast typu 1
 \end_layout
 
 \end_inset
@@ -7330,23 +7556,110 @@ Dva typy integrálů přes obecnou oblast
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
+Myšlenka:
+\end_layout
+
+\begin_layout Itemize
+Pro oblast typu 1 zafixujme hodnotu 
+\begin_inset Formula $x$
+\end_inset
+
+ (na obrázku 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+), nad vzniklým řezem oblasti 
+\begin_inset Formula $D$
+\end_inset
+
+ (na obrázku tučná červená čára) nám vznikne funkce 
+\begin_inset Formula $f\left(x_{0},y\right)$
+\end_inset
+
+ jedné proměnné 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Plocha nad tímto řezem je rovna 
+\begin_inset Formula $\intop_{\varphi_{1}\left(x_{0}\right)}^{\varphi_{2}\left(x_{0}\right)}f\left(x_{0},\,y\right)\text{d}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Nyní „posčítáme“ takto získané jednorozměrné plochy přes všechna 
+\begin_inset Formula $x$
+\end_inset
+
+ od 
+\begin_inset Formula $a$
+\end_inset
+
+ do 
+\begin_inset Formula $b$
+\end_inset
+
+ a dostaneme 
+\begin_inset Formula $\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\ldots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/obecna oblast typu 1 2017-01-14 14_37_56-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Obecná oblast typu 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Itemize
 
@@ -7376,7 +7689,7 @@ Typ 2:
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \family roman
 \series medium
@@ -7400,7 +7713,7 @@ Typ 2:
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -7424,9 +7737,9 @@ centering
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/oblast_typ_2.eps
-	lyxscale 50
-	scale 60
+	filename images/obecna oblast typ 2 2017-01-14 14_39_53-mpi-prednaska-integral-2012-2013-handout.pdf - SumatraPDF.png
+	lyxscale 30
+	width 80text%
 
 \end_inset
 
@@ -7437,7 +7750,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dva typy integrálů přes obecnou oblast
+Obecná oblast typu 2
 \end_layout
 
 \end_inset
@@ -7445,18 +7758,6 @@ Dva typy integrálů přes obecnou oblast
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace defskip
 \end_inset
 
 
@@ -7536,8 +7837,46 @@ zdola
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Section
+Trojný integrál a aplikace
+\end_layout
+
+\begin_layout Standard
+Pomocí trojného integrálu můžeme spočítat několik užitečných čísel charakterizuj
+ících daný objem pod grafem funkce 
+\begin_inset Formula $f$
+\end_inset
+
+ nad oblastí 
+\begin_inset Formula $D$
+\end_inset
+
 .
- 
+\end_layout
+
+\begin_layout Standard
+Konstrukce trojného integrálu je naprosto analogická konstrukci integrálu
+ dvojného, pouze integrujeme funkci tří proměnných 
+\begin_inset Formula $f\left(x,y,z\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iiint_{D}f\left(x,y,z\right)\text{d}x\text{d}y\text{d}z
+\]
+
+\end_inset
+
+Výpočet lze opět převést na tři výpočty jednorozměrného integrálu, existuje
+ ovšem 
+\begin_inset Formula $3!$
+\end_inset
+
+ možných pořadí integrování.
 \end_layout
 
 \begin_layout Standard
