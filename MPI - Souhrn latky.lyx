@@ -5548,6 +5548,48 @@ Funkce více proměnných
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tcolorbox}[colback=gray!10, colframe=black!30!black!50, colbacktitle=gray!
+15, coltitle=black, fonttitle=
+\backslash
+bfseries]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+Tématem se zabývá 8.
+ handout.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tcolorbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
@@ -5601,6 +5643,93 @@ K čemu je Jacobiho matice?
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Definice limity
+\end_layout
+
+\begin_layout Standard
+Zde uvedeme jeden z nejdůležitějších pojmů spojených s funkcemi: limitu
+ funkce.
+ Než ukážeme formální definici, zkusíme získat představu, co je to limita.
+ V zásadě je to pokus zodpovědět následující otázky: Je-li dána funkce 
+\begin_inset Formula $f$
+\end_inset
+
+ a nějaký bod 
+\begin_inset Formula $a$
+\end_inset
+
+, co se stane s hodnotami 
+\begin_inset Formula $f$
+\end_inset
+
+, jestliže do ní začneme dosazovat čísla blízká 
+\begin_inset Formula $a$
+\end_inset
+
+? Další možná otázka je tato: Jestliže zůstaneme blízko 
+\begin_inset Formula $a$
+\end_inset
+
+, je možné aproximovat hodnoty 
+\begin_inset Formula $f$
+\end_inset
+
+ nějakým číslem s dostatečnou přesností?
+\end_layout
+
+\begin_layout Standard
+Za prvé, bod 
+\begin_inset Formula $a$
+\end_inset
+
+ se nebere v úvahu, když sledujeme hodnoty při hledání limity; je to jen
+ cílový bod pro 
+\begin_inset Formula $x$
+\end_inset
+
+, ty se k a přibližují libovolně blízko, ale nikdy se mu přesně nerovnají.
+ Je dokonce možné hledat limitu v 
+\begin_inset Formula $a$
+\end_inset
+
+, aniž by tam funkce vůbec existovala.
+\end_layout
+
+\begin_layout Standard
+Aby měla otázka na limitu v bodě 
+\begin_inset Formula $a$
+\end_inset
+
+ vůbec smysl, požadujeme, aby byla 
+\begin_inset Formula $f$
+\end_inset
+
+ definovaná na
+\begin_inset space ~
+\end_inset
+
+nějakém prstencovém okolí bodu 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align right
+[
+\begin_inset CommandInset href
+LatexCommand href
+name "math.feld.cvut.cz"
+target "http://math.feld.cvut.cz/mt/txtb/5/txc3ba5a.htm"
+
+\end_inset
+
+]
 \end_layout
 
 \begin_layout Subsection
@@ -5765,10 +5894,99 @@ Parciální derivace v bodě
 \end_layout
 
 \begin_layout Standard
-Parciální derivace funkce o více proměnných je její derivace vzhledem k
- jedné z těchto proměnných, přičemž s ostatními proměnnými se zachází jako
- s konstantami (v tomto kontextu je tedy opakem úplné derivace, kde mohou
- všechny proměnné měnit své hodnoty).
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+DOTAZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Jak se liší definice parciální derivace od té níže?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Parciální derivace 
+\begin_inset Formula $\partial$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $\partial$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+ je 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+partial
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ nebo také 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+old-style Greek delta
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+, značí parciální derivaci.
+\end_layout
+
+\end_inset
+
+ funkce o více proměnných je její derivace vzhledem k jedné z těchto proměnných,
+ přičemž s ostatními proměnnými se zachází jako s konstantami (v tomto kontextu
+ je tedy opakem úplné derivace, kde mohou všechny proměnné měnit své hodnoty).
  Totální (úplná) derivace je derivace funkce více proměnných, která na rozdíl
  od parciální derivace zohledňuje závislosti mezi jednotlivými proměnnými.
  
@@ -5819,49 +6037,10 @@ V předchozím výrazu jsou všechny proměnné kromě
 \end_inset
 
  pevně dané.
-\end_layout
-
-\begin_layout Standard
-Pozn.:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes gld
-\end_inset
-
-
-\begin_inset Formula $\partial$
-\end_inset
-
-
-\begin_inset Quotes grd
-\end_inset
-
- je 
-\begin_inset Quotes gld
-\end_inset
-
-
-\emph on
-partial
-\emph default
-
-\begin_inset Quotes grd
-\end_inset
-
- nebo také 
-\begin_inset Quotes gld
-\end_inset
-
-
-\emph on
-old-style Greek delta
-\emph default
-
-\begin_inset Quotes grd
-\end_inset
-
-, značí parciální derivaci
+ Již samotná definice poskytuje návod, jak parciální derivace počítat.
+ Parciální derivaci funkce podle pevně zvolené proměnné vypočítáme tak,
+ že funkci derivujeme jen podle této proměnné, přičemž ostatní proměnné
+ považujeme za konstanty.
 \end_layout
 
 \begin_layout Standard
@@ -5980,6 +6159,10 @@ faGraduationCap}{(*)}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Funkce jedné proměnné
 \end_layout
 
 \begin_layout Itemize
@@ -6118,6 +6301,120 @@ lokální minimum
 \end_layout
 
 \end_deeper
+\begin_layout Subsection
+Funkce více proměnných
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Saddle_point.svg
+	lyxscale 30
+	width 75text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sedlový bod.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Postup je obdobný jako při vyšetřování lokálních extrémů pro funkce jedné
+ proměnné.
+ Nalezneme kandidáty pomocí první derivace – tedy vyřešíme soustavu rovnic
+ takovou, že gradient se rovná nule.
+ Poté pomocí druhé derivace (Hessova matice) tyto extrémy posoudíme.
+\end_layout
+
+\begin_layout Standard
+Vyšetřování extrémů pro 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Řešíme soustavu rovnic 
+\begin_inset Formula $\nabla f\left(x,y\right)=\overrightarrow{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial f}{\partial x}\left(x,y\right)= & 0\\
+\frac{\partial f}{\partial y}\left(x,y\right)= & 0
+\end{align*}
+
+\end_inset
+
+a najdeme tak stacionární body
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Body podezřelé z extrémů.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\overrightarrow{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Pro každý stacionární bod najdeme odpovídající Hessovu matici
+\begin_inset Formula 
+\[
+H=H\left(\overrightarrow{a}\right)
+\]
+
+\end_inset
+
+V těchto bodech může být minimum, maximum nebo sedlový bod, který z nich
+ to je se zjišťuje určením definitnosti Hessovy matice v těchto bodech extrémů.
+\end_layout
+
 \begin_layout Section
 Gradient
 \begin_inset space ~
@@ -6158,6 +6455,57 @@ Vektor nejrychlejšího růstu.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Gradient2.svg
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gradient dvou funkcí.
+ Černě jsou označeny vyšší hodnoty funkce.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Vektor značící směr nejrychlejšího růstu funkce 
 \begin_inset Formula $f$
@@ -6175,7 +6523,11 @@ Gradient v bodě
 \begin_inset Formula $f$
 \end_inset
 
- z tohoto bodu.
+ 
+\series bold
+z tohoto bodu
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
@@ -6370,6 +6722,10 @@ Mějme funkci
 \begin_inset Formula $B\left[a,\,b\right]$
 \end_inset
 
+, tedy 
+\begin_inset Formula $B\in\mathbb{R}^{n}$
+\end_inset
+
 
 \end_layout
 
@@ -6495,6 +6851,47 @@ status open
 texorpdfstring{
 \backslash
 faGraduationCap}{(*)}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Shaded
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+DOTAZ
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+K čemu to je?
 \end_layout
 
 \end_inset
@@ -6639,6 +7036,12 @@ faGraduationCap}{(*)}
 \end_layout
 
 \begin_layout Standard
+Vyšetřování lokálních extrémů funkce více proměnných vede na úlohu rozhodnout
+ o typu definitnosti Hessovy matice.
+ 
+\end_layout
+
+\begin_layout Standard
 Hessián je determinant Hessovy matice, někdy se tak taky označuje sama matice.
  Hessova matice je matice parciálních derivací druhých řádů (
 \begin_inset Quotes gld
@@ -6780,28 +7183,78 @@ Pokud má výsledek po vynásobení různými vektory různá znaménka, je mati
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
+—
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+\color purple
+Pozitivní minimum; negativní maximum.
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-Jestliže je matice pozitivně definitní, pak je v bodě lokální ostré minimum,
- pokud je semidefinitní, pak minimum není ostré 
+Jestliže je matice 
+\series bold
+pozitivně definitní
+\series default
+, pak je v bodě 
+\series bold
+lokální ostré minimum
+\series default
+, pokud je semidefinitní, pak minimum není ostré 
 \end_layout
 
 \begin_layout Itemize
-Jestliže je matice negativně definitní, pak je v bodě lokální ostré maximum,
- pokud je semidefinitní, pak maximum není ostré 
+Jestliže je matice 
+\series bold
+negativně definitní
+\series default
+, pak je v bodě
+\series bold
+ lokální ostré maximum
+\series default
+, pokud je semidefinitní, pak maximum není ostré 
 \end_layout
 
 \begin_layout Itemize
-Jestliže je matice indefinitní, pak je v bodě sedlový bod 
+Jestliže je matice indefinitní, pak je v bodě sedlový bod.
 \end_layout
 
 \begin_layout Section
 Sylvestrovo kritérium
+\end_layout
+
+\begin_layout Standard
+Sylvestrovou metodou 
+\series bold
+\bar under
+\color purple
+nelze
+\series default
+\bar default
+\color inherit
+ určit semidefinotnost.
+ V případě, že nám tato věta (metoda) nedá odpověď na otázku definitnosti
+ matice 
+\begin_inset Formula $M$
+\end_inset
+
+, pak stále ještě matice 
+\begin_inset Formula $M$
+\end_inset
+
+ může být pozitivně či negativně semidefinitní, nebo indefinitní.
 \end_layout
 
 \begin_layout Itemize
@@ -6843,21 +7296,9 @@ rohové subdeterminanty
 Vyhodnocení výsledků
 \end_layout
 
-\begin_layout Itemize
-Pokud 
-\begin_inset Formula $\forall i:\,det\left(M_{i}\right)>0\,\Leftrightarrow$
-\end_inset
-
- matice 
-\begin_inset Formula $M$
-\end_inset
-
- je 
-\series bold
-pozitivně definitní
-\series default
-.
-\end_layout
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Itemize
 Pokud 
@@ -6928,6 +7369,43 @@ tj.:
 \end_layout
 
 \end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pokud 
+\begin_inset Formula $\forall i:\,det\left(M_{i}\right)>0$
+\end_inset
+
+ je matice 
+\begin_inset Formula $M$
+\end_inset
+
+ je 
+\series bold
+pozitivně definitní
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Pokud jsou všechny determinanty 
+\begin_inset Formula $M_{k}$
+\end_inset
+
+ nenulové a střídají znaménko a první determinant je záporný (
+\begin_inset Formula $-\rightarrow+\rightarrow-\rightarrow\ldots$
+\end_inset
+
+), je matice 
+\series bold
+negativně definitní
+\series default
+.
+\end_layout
+
 \begin_layout Itemize
 Pokud má matice na diagonále 
 \series bold
@@ -6938,7 +7416,7 @@ alespoň dva prvky
 indefinitní
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 
 \series bold
 Pokud neplatí ani jedno, není možné touto metodou definitnost určit
@@ -7035,10 +7513,6 @@ z
 \begin_layout Itemize
 Do výsledku dosazujeme libovolné vektory a zjišťujeme, zda je celý výraz
  kladný nebo záporný:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper

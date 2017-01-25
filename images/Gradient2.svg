@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="566" xmlns:xlink="http://www.w3.org/1999/xlink" height="282">
+<defs>
+<linearGradient id="k" x1="301" x2="549" gradientUnits="userSpaceOnUse">
+<stop/><stop offset="1" stop-color="#fff"/></linearGradient>
+<radialGradient id="g" xlink:href="#k" cx="141" cy="141" r="123"/>
+</defs>
+<!-- =Blue Arrows= -->
+<!-- ==right part of the picture== -->
+<g stroke="#000" stroke-width="2">
+<path fill="url(#g)" d="m17,17h248v248H18z"/>
+<path fill="url(#k)" d="m301,17h248v248H301z"/></g>
+<g stroke="#00F" fill="none" stroke-width="3"> 
+<g id="w"><g id="v"><g id="u">
+<path d="m320,25-14,8 14,8m0,20-14,8 14,8m0,20-14,8 14,8m0,20-14,8 14,8m0,20-14,8 14,8m0,20-14,8 14,8m0,20-14,8 14,8m-14-8h30m0-36h-30m0-36h30m0-36h-30m0-36h30m0-36h-30m0-36h30"/></g>
+<use xlink:href="#u" x="35"/></g>
+<use xlink:href="#v" x="70"/></g>
+<use xlink:href="#w" x="105"/>
+<!-- ==left part of the picture== -->
+<g id="z"><g id="y"><g id="s"><g id="x">
+<path d="m141,20v30m0,5v29m8-13-8,14-8-14m0-35 8,14 8-14"/></g>
+<use xlink:href="#x" y="35"/></g>
+<g id="t">
+<use xlink:href="#x" transform="rotate(22.5 141,141)"/></g>
+<use xlink:href="#t" transform="rotate(45 141,141)"/>
+<use xlink:href="#s" transform="rotate(45 141,141)"/></g>
+<use xlink:href="#y" transform="rotate(90 141,141)"/></g>
+<use xlink:href="#z" transform="rotate(180 141,141)"/>
+</g></svg>
