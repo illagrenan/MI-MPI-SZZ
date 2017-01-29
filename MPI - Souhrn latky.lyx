@@ -291,7 +291,7 @@ status collapsed
 \end_layout
 
 \begin_layout Subtitle
-Souhrn látky
+Souhrn látky k SZZ
 \end_layout
 
 \begin_layout Date
@@ -301,7 +301,7 @@ leden 2017
 \begin_inset Newline newline
 \end_inset
 
-verze 0.1.1
+verze 0.2.0
 \end_layout
 
 \begin_layout Standard
@@ -777,44 +777,23 @@ status open
 \end_inset
 
  vlastnosti.
-\end_layout
-
+ Struktura je 
+\begin_inset Quotes gld
 \end_inset
 
 
-\end_layout
+\series bold
+g-id__X__m-id__X
+\series default
 
+\begin_inset Quotes grd
+\end_inset
+
+.
+\begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-————
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
 \begin_inset ERT
 status open
 
@@ -842,22 +821,9 @@ status open
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace -0.6cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-\align center
-
+: 
 \size footnotesize
-(
+
 \begin_inset ERT
 status open
 
@@ -953,24 +919,100 @@ status open
 
 \end_inset
 
-omutativita)
+omutativita
 \end_layout
 
-\begin_layout Description
-Grupoid 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="middle" width="12cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{lightgray}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Grupoid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $M$
 \end_inset
 
  je 
+\series bold
+\shape italic
 \emph on
+\bar under
+\color purple
 uzavřená
+\series default
+\shape default
 \emph default
+\bar default
+\color inherit
  vůči operaci 
 \begin_inset Formula $\circ$
 \end_inset
 
 , tj.
- výsledek operace opět náleží do množiny
+ výsledek operace opět náleží do 
+\begin_inset space ~
+\end_inset
+
+množiny
 \begin_inset Formula 
 \[
 \forall a,\,b\in M\,a\circ b\in M
@@ -979,18 +1021,60 @@ uzavřená
 \end_inset
 
 
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
 \end_layout
 
-\begin_layout Description
-Pologrupa Je grupoid.
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{lightgray}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Pologrupa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Je grupoid.
  Operace je nad 
 \begin_inset Formula $M$
 \end_inset
 
  
+\series bold
+\shape italic
 \emph on
+\bar under
+\color purple
 asociativní
+\series default
+\shape default
 \emph default
+\bar default
+\color inherit
 .
 \begin_inset Formula 
 \[
@@ -1000,14 +1084,60 @@ asociativní
 \end_inset
 
 
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
 \end_layout
 
-\begin_layout Description
-Monoid Je pologrupa.
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{lightgray}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Monoid
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Je pologrupa.
  Existuje právě jeden (v každém monoidu) 
+\series bold
+\shape italic
 \emph on
-neutrální prvek
+\bar under
+\color purple
+neutrální
+\begin_inset space ~
+\end_inset
+
+prvek
+\series default
+\shape default
 \emph default
+\bar default
+\color inherit
 .
 \begin_inset Formula 
 \[
@@ -1017,14 +1147,60 @@ neutrální prvek
 \end_inset
 
 
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
 \end_layout
 
-\begin_layout Description
-Grupa Je monoid.
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{lightgray}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Grupa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Je monoid.
  Všechny prvky (každý prvek) mají právě jeden 
+\series bold
+\shape italic
 \emph on
-inverzní prvek
+\bar under
+\color purple
+inverzní
+\begin_inset space ~
+\end_inset
+
+prvek
+\series default
+\shape default
 \emph default
+\bar default
+\color inherit
  (říkáme, že 
 \begin_inset Formula $a^{-1}$
 \end_inset
@@ -1037,7 +1213,7 @@ inverzní prvek
 \begin_inset Formula $a$
 \end_inset
 
- ).
+).
 \begin_inset Formula 
 \[
 \forall a\in M\,\exists a^{-1}\in M\,a\circ a^{-1}=a^{-1}\circ a=e
@@ -1045,6 +1221,10 @@ inverzní prvek
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 Dále platí
 \end_layout
 
@@ -1062,21 +1242,59 @@ Inverze výsledku operace:
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Abelovská
-\begin_inset space ~
+\begin_inset VSpace -0.1cm
 \end_inset
 
-grupa Operace 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cellcolor{lightgray}
+\end_layout
+
+\end_inset
+
+
+\series bold
+Abelovská grupa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Operace 
 \begin_inset Formula $\circ$
 \end_inset
 
  je 
+\series bold
+\shape italic
 \emph on
+\bar under
+\color purple
 komutativní
+\series default
+\shape default
 \emph default
+\bar default
+\color inherit
 .
 \begin_inset Formula 
 \[
@@ -1086,10 +1304,36 @@ komutativní
 \end_inset
 
 
+\begin_inset VSpace -0.5cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-————
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Přehled struktur s jednou binární operací.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -1129,6 +1373,97 @@ množina a operace
 \end_inset
 
  zjistíme, o co se jedná, jen postupným testováním všech předchozích vlastností.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Asociace závorek komutuje pořadí operandů.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Asociativity Nezáleží, jak použijeme závorky u výrazu – v jakém pořadí budeme
+ výraz počítat (
+\begin_inset Formula $\left(x*y\right)*z=x*\left(y*z\right)$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Komutativita Nezávisí na pořadí operandů (
+\begin_inset Formula $x*y=y*x$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+Distributivita Binární operaci můžeme distribuovat přes jinou operaci.
+ Roznásobení závorek (
+\begin_inset Formula $x*\left(y+z\right)=\left(x*y\right)+\left(x*z\right)$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
@@ -1202,7 +1537,11 @@ jeho
 \begin_inset Quotes grd
 \end_inset
 
- (prvku) řádek i sloupec je stejný, jako první řádek a sloupec tabulky.
+ (prvku) řádek i
+\begin_inset space ~
+\end_inset
+
+sloupec je stejný, jako první řádek a sloupec tabulky.
  
 \begin_inset ERT
 status open
@@ -1568,6 +1907,8 @@ Průnik podgrup je znovu podgrupou
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
@@ -1583,10 +1924,10 @@ Všechny podgrupy mají řád, který dělí řád grupy.
 
 \begin_layout Standard
 \begin_inset Box Shadowbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -1594,7 +1935,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -1675,10 +2016,10 @@ Důsledkem je, že grupa prvočíselného řádu má pouze triviální podgrupy.
 
 \begin_layout Standard
 \begin_inset Box Boxed
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -1686,7 +2027,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -1843,6 +2184,19 @@ Cyklické grupy a generátory
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rozšířit definici generátoru.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1903,7 +2257,7 @@ Grupa
 \end_inset
 
  takový, že 
-\begin_inset Formula $\left\langle a\right\rangle =\left\{ a^{n}|n\in\mathbb{N}\right\} =G$
+\begin_inset Formula ${\left\langle a\right\rangle =\left\{ a^{n}|n\in\mathbb{N}\right\} =G}$
 \end_inset
 
 .
@@ -2073,10 +2427,10 @@ reference "subsec:Eulerova-funkce"
 
 \begin_layout Standard
 \begin_inset Box Boxed
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -2084,7 +2438,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -2180,10 +2534,10 @@ Počet prvků grupy
 
 \begin_layout Standard
 \begin_inset Box Boxed
-position "t"
+position "b"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -2191,7 +2545,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -2260,10 +2614,10 @@ Multiplikativní grupy
 
 \begin_layout Standard
 \begin_inset Box Shadowbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -2271,7 +2625,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -2303,7 +2657,11 @@ Multiplikativní cyklická grupa
 \begin_inset Formula $p$
 \end_inset
 
- je liché prvočíslo a 
+ je liché prvočíslo a
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset Formula $k\in\mathbb{N}^{+}$
 \end_inset
 
@@ -2336,7 +2694,11 @@ Multiplikativní grupa modulo
 \begin_inset Formula $\left\{ 1,\,2,\ldots,\,p-1\right\} $
 \end_inset
 
- s operací násobení modulo 
+ s
+\begin_inset space ~
+\end_inset
+
+operací násobení modulo 
 \begin_inset Formula $p$
 \end_inset
 
@@ -2346,10 +2708,6 @@ Multiplikativní grupa modulo
 \end_inset
 
 .
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -2394,10 +2752,10 @@ Prvky multiplikativní grupy jsou nesoudělné s jejím modulem, řád multiplik
 
 \begin_layout Standard
 \begin_inset Box Boxed
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -2405,7 +2763,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -2454,10 +2812,10 @@ Příklad
 
 \begin_layout Standard
 \begin_inset Box Boxed
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -2465,7 +2823,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -3103,7 +3461,7 @@ Homomorfismus Zobrazení, které zachovává operace.
 \end_inset
 
 
-\begin_inset Formula $H=\left(N,\,\circ_{H}\right)$
+\begin_inset Formula ${H=\left(N,\,\circ_{H}\right)}$
 \end_inset
 
  dva grupoidy.
@@ -3519,6 +3877,13 @@ Skládání permutací
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Tělesa a okruhy (algebra)
 \begin_inset space ~
@@ -3535,31 +3900,6 @@ status open
 texorpdfstring{
 \backslash
 faGraduationCap}{(*)}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Zjistit:
-\end_layout
-
-\begin_layout Itemize
-K čemu je okruh polynomů;
-\end_layout
-
-\begin_layout Itemize
-Jak je to se stupněm binárního tělesa;
-\end_layout
-
-\begin_layout Itemize
-Co je to GF, je to konečné těleso?
 \end_layout
 
 \end_inset
@@ -3602,6 +3942,19 @@ status open
 
 \backslash
 end{tcolorbox}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+konstrukce tělesa, konstrukce tělesa neprvočíselného řádu
 \end_layout
 
 \end_inset
@@ -3700,14 +4053,94 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\series bold
+\shape italic
+\size normal
+\color purple
+Dvě
+\series default
+ binární operace.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Doteď jsem se zabývali strukturami, které vzniknou přidáním jedné binární
- operace k neprázdné množině.
+ operace k
+\begin_inset space ~
+\end_inset
+
+neprázdné množině.
  Jako grupu jsme definovali takovou strukturu, kde má daná operace něco
- jako svou inverzi, což je analogie k tomu co známe z klasických množin
- čísel: odečítání je přičítání inverze podobně jako dělení je násobení inverzí.
+ jako svou inverzi, což je analogie k tomu co známe z
+\begin_inset space ~
+\end_inset
+
+klasických množin čísel: odečítání je přičítání inverze podobně jako dělení
+ je násobení inverzí.
  Ovšem abychom měli aritmetiku kompletní, potřebujeme stejně jako na (reálných)
- číslech jak sčítání s odečítáním, tak také násobení s dělením, abychom
- mohli definovat například už tak základní pojem jako je polynom.
+ číslech jak sčítání s
+\begin_inset space ~
+\end_inset
+
+odečítáním, tak také násobení s dělením, abychom mohli definovat například
+ už tak základní pojem jako je polynom.
  
 \end_layout
 
@@ -3731,7 +4164,47 @@ strukturám se dvěma binárními operacemi
 \end_layout
 
 \begin_layout Section
-Okruh (Ring)
+Okruh (Ring) (
+\begin_inset Quotes gld
+\end_inset
+
+OK
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3739,15 +4212,39 @@ Okruh (Ring)
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
 \color purple
-+: Abelovská grupa;
++:
+\begin_inset space ~
+\end_inset
+
+Abelovská grupa;
 \begin_inset Newline newline
 \end_inset
 
-*: komutativita.
+*:
+\begin_inset space ~
+\end_inset
+
+pologrupa.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -3816,6 +4313,16 @@ Abelovská grupa
 \series bold
 pologrupa
 \series default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Dříve bylo v předmětu MPI definován okruh s komutativním grupoidem.
+\end_layout
+
+\end_inset
+
 ;
 \end_layout
 
@@ -3950,7 +4457,47 @@ platí-li
 \end_layout
 
 \begin_layout Section
-Obor integrity
+Obor integrity (
+\begin_inset Quotes gld
+\end_inset
+
+OB
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3958,11 +4505,31 @@ Obor integrity
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
 \color purple
-Nemá dělitele nuly.
+Obor integrity 
+\series bold
+nemá
+\series default
+ dělitele nuly.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -4047,7 +4614,47 @@ klasické
 \end_layout
 
 \begin_layout Section
-Těleso
+Těleso (
+\begin_inset Quotes gld
+\end_inset
+
+T
+\begin_inset Quotes grd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4055,11 +4662,31 @@ Těleso
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
 \color purple
-Multiplikativní grupa bez 0.
+Multiplikativní grupa je bez 
+\family typewriter
+0
+\family default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -4222,6 +4849,146 @@ V tělesech je neutrálním prvkem číslo
 \end_layout
 
 \begin_layout Subsection
+Konstrukce konečných těles
+\end_layout
+
+\begin_layout Standard
+Konečná tělesa mohou být pouze řádu 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+, kde 
+\begin_inset Formula $p$
+\end_inset
+
+ je prvočíslo a 
+\begin_inset Formula $n$
+\end_inset
+
+ je kladné přirozené číslo.
+ Jak zkonstruovat těleso řádu 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+ pro konrétní 
+\begin_inset Formula $p$
+\end_inset
+
+ a 
+\begin_inset Formula $n$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Itemize
+Případ 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\series bold
+těleso prvočíselného řádu
+\series default
+ zkonstruujeme snadno, vezmeme množinu 
+\begin_inset Formula $\mathbb{Z}_{p}$
+\end_inset
+
+ s
+\begin_inset space ~
+\end_inset
+
+operacemi sčítání a násobení modulo 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Všechna ostatní tělesa řádu 
+\begin_inset Formula $p$
+\end_inset
+
+ jsou s tímto tělesem izomorfní.
+\end_layout
+
+\begin_layout Itemize
+Případ 
+\begin_inset Formula $n>1$
+\end_inset
+
+:
+\series bold
+ těleso neprvočíselného řádu
+\series default
+ 
+\begin_inset Formula $p^{n}$
+\end_inset
+
+ zkonstruujeme jako množinu polynomů z okruhu 
+\begin_inset Formula $\mathbb{Z}_{p}\left[x\right]$
+\end_inset
+
+ stupně nejvýše 
+\begin_inset Formula $n−1$
+\end_inset
+
+ s binárními operacemi
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sčítání (
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $+$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+) po složkách modulo 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Násobení (
+\begin_inset Quotes gld
+\end_inset
+
+
+\begin_inset Formula $*$
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+) v okruhu 
+\begin_inset Formula $\mathbb{Z}_{p}\left[x\right]$
+\end_inset
+
+ modulo
+\series bold
+ zadaný polynom
+\series default
+ stupně 
+\begin_inset Formula $n$
+\end_inset
+
+ ireducibilní nad 
+\begin_inset Formula $\mathbb{Z}_{p}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
 Zápis konečných (binárních) těles
 \end_layout
 
@@ -4253,8 +5020,11 @@ Sčítání je definováno jako sčítání po složkách modulo
 
 \begin_layout Itemize
 Násobení nelze po složkách, nebudou existovat inverze – násobení se zavede
- jako klasické násobení polynomů modulo nějaký zvolený ireducibilní polynom
- 
+ jako klasické násobení polynomů modulo
+\series bold
+ nějaký zvolený
+\series default
+ ireducibilní polynom 
 \end_layout
 
 \begin_layout Standard
@@ -4356,7 +5126,7 @@ GF\left(M^{\#}\right)=\left(2^{4}\right)
 \begin_inset Formula $\#$
 \end_inset
 
- je řád:
+ je stupeň polynomu:
 \begin_inset Formula 
 \begin{eqnarray*}
 \# & = & 4\rightarrow a,\,b,\,c,\,d\\
@@ -4372,7 +5142,7 @@ y & = & ax^{\#-1}+bx^{\#-\ldots}\ldots=ax^{3}+bx^{2}+cx+d
 \begin_inset Formula $M$
 \end_inset
 
- je modulo, ve kterém počítáme:
+ je modulo koeficientů polynomu:
 \end_layout
 
 \begin_layout Standard
@@ -4386,8 +5156,29 @@ M=2\rightarrow a,\,b,\,c,\,d=\mathbf{\left\{ 0,1\right\} }
 
 \end_layout
 
-\begin_layout Subsubsection
-Aplikace
+\begin_layout Standard
+Počet prvků konečného tělesa spočítáme jako
+\begin_inset Formula 
+\[
+\mathtt{eval}\left(M^{\#}\right)-1
+\]
+
+\end_inset
+
+těleso 
+\begin_inset Formula $GF\left(2^{3}\right)$
+\end_inset
+
+ tak má 
+\begin_inset Formula $2^{3}-1=7$
+\end_inset
+
+ prvků.
+ 
+\end_layout
+
+\begin_layout Subsection
+Aplikace v praxi
 \end_layout
 
 \begin_layout Standard
@@ -4428,15 +5219,71 @@ Definice
 \end_layout
 
 \begin_layout Standard
-\begin_inset Marginal
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
 \shape italic
 \size normal
 \color purple
-Okruh polynomů s koeficienty z jiného okruhu.
+Okruh polynomů s
+\begin_inset space ~
+\end_inset
+
+koeficienty z
+\begin_inset space ~
+\end_inset
+
+jiného okruhu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -4979,7 +5826,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -5088,7 +5935,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -5135,13 +5982,6 @@ V
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5616,35 +6456,6 @@ faGraduationCap}{(*)}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Zjistit:
-\end_layout
-
-\begin_layout Itemize
-Pochopit definici přes tečnu;
-\end_layout
-
-\begin_layout Itemize
-Podle čeho určuji, v jakém bodě tu tečnu udělat?
-\end_layout
-
-\begin_layout Itemize
-Jaké je správná definice parciální derivace?
-\end_layout
-
-\begin_layout Itemize
-K čemu je Jacobiho matice?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Definice limity
 \end_layout
@@ -5732,8 +6543,182 @@ target "http://math.feld.cvut.cz/mt/txtb/5/txc3ba5a.htm"
 ]
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+TODO
+\end_layout
+
+\begin_layout Plain Layout
+Dodat matematickou definici limity.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Spojitost funkce
+\end_layout
+
+\begin_layout Standard
+Spojitá funkce je taková matematická funkce, jejíž hodnoty se mění plynule,
+ tedy při dostatečně malé změně hodnoty 
+\begin_inset Formula $x$
+\end_inset
+
+ se hodnota 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ změní libovolně málo.
+ Intuitivní (ne zcela přesná) představa spojité funkce spočívá ve funkci,
+ jejíž graf lze nakreslit jedním tahem, aniž by se tužka zvedla z papíru.
+\end_layout
+
+\begin_layout Standard
+Pro reálné funkce reálné proměnné lze spojitost funkce 
+\begin_inset Formula $f$
+\end_inset
+
+ v 
+\series bold
+hromadném bodě
+\series default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Hromadný bod množiny 
+\begin_inset Formula $M$
+\end_inset
+
+ je takový bod, v jehož každém okolí je nekonečně mnoho bodů množiny 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ definičního oboru 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ definovat následujícími dvěma podmínkami:
+\end_layout
+
+\begin_layout Enumerate
+Funkce je v bodě 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ definována (
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ patří do definičního oboru).
+\end_layout
+
+\begin_layout Enumerate
+V bodě 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ existuje limita funkce a je rovna právě funkční hodnotě v tomto bodě: 
+\begin_inset Formula 
+\[
+\lim_{x\rightarrow x_{0}}f\left(x\right)=f\left(x_{0}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tato definice mluví o spojitosti v bodě, obecně o spojité funkci se hovoří
+ v případě, že je 
+\series bold
+spojitá na celém svém definičním oboru
+\series default
+.
+\end_layout
+
 \begin_layout Subsection
 Definice derivace
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Derivací funkce získáme směrnici její tečny.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5807,6 +6792,65 @@ tuto limitu nazýváme derivace funkce
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Důležitá vlastnost: má-li funkce v bodě derivaci, pak je funkce v tomto
+ bodě spojitá.
+ Vychází opět z vlastností limit.
+ Pozor na to, že to neplatí obráceně.
+ Pokud je funkce spojitá v daném bodě, neznamená to, že je zde derivovatelná.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/derivace,limita.svg
+	lyxscale 10
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Derivace jako limita.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -5888,47 +6932,6 @@ a^{x}\,\frac{\mathrm{d}}{\mathrm{d}x} & = & a^{x}\ln a\\
 \begin_layout Subsection
 Parciální derivace v bodě 
 \begin_inset Formula $a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Shaded
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-DOTAZ
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Jak se liší definice parciální derivace od té níže?
-\end_layout
-
 \end_inset
 
 
@@ -6021,10 +7024,18 @@ bodě
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\frac{\partial f}{\partial x_{i}}\left(a_{1},\ldots,a_{n}\right)=\lim_{h\rightarrow0}\frac{f\left(a_{1},\ldots,a_{i}+h,\ldots,a_{n}\right)-f\left(a_{1},\ldots,a_{n}\right)}{h}
-\]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+TODO
+\end_layout
+
+\begin_layout Plain Layout
+Je to takto správně?
+\end_layout
 
 \end_inset
 
@@ -6032,75 +7043,72 @@ bodě
 \end_layout
 
 \begin_layout Standard
-V předchozím výrazu jsou všechny proměnné kromě 
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial f}{\partial x_{i}}\left(a_{1},\ldots,a_{n}\right) & =\lim_{h\rightarrow0}\frac{f\left(a_{1},\ldots,a_{i}+h,\ldots,a_{n}\right)-f\left(a_{1},\ldots,a_{n}\right)}{h}=\\
+ & =\lim_{x_{i}\rightarrow a_{i}}\frac{f\left(a_{1},\ldots,a_{i-1},\,x_{i}\,,a_{i+1},\ldots,\,a_{n}\right)-f\left(a_{1},\ldots,a_{n}\right)}{x_{i}-a_{i}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V předchozím výrazu jsou všechny proměnné 
+\series bold
+kromě
+\series default
+ 
 \begin_inset Formula $x_{i}$
 \end_inset
 
  pevně dané.
  Již samotná definice poskytuje návod, jak parciální derivace počítat.
  Parciální derivaci funkce podle pevně zvolené proměnné vypočítáme tak,
- že funkci derivujeme jen podle této proměnné, přičemž ostatní proměnné
- považujeme za konstanty.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-—
-\end_layout
-
-\begin_layout Plain Layout
-Definice z přednášek:
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-a=\left(a_{1},\,\ldots,\,a_{k}\right)\in D_{f}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-\frac{\partial f}{\partial x_{1}}=\lim_{x_{1}\rightarrow a_{1}}\frac{f\left(x_{1},\,a_{2},\,\ldots,\,a_{k}\right)-f\left(a\right)}{x_{1}-a_{1}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-a podobně pro 
-\begin_inset Formula $x_{2},\,\ldots,\,x_{k}$
-\end_inset
-
+ že funkci derivujeme jen podle této proměnné, přičemž 
+\series bold
+ostatní proměnné považujeme za konstanty
+\series default
 .
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
 Parciální derivace vyšších řádů
 \end_layout
 
-\begin_layout Itemize
-2.
- parciální derivace = parciální derivace parciálních derivací
+\begin_layout Standard
+Zavádíme parciální derivaci řádu 
+\begin_inset Formula $k$
+\end_inset
+
+ jako parciální derivaci parciální derivace řádu 
+\begin_inset Formula $k-1$
+\end_inset
+
+.
+ Pokud jsou parciální derivace řádu 
+\begin_inset Formula $k$
+\end_inset
+
+ spojité, pak nezáleží na pořadí derivování, ale na
+\begin_inset space ~
+\end_inset
+
+tom, kolikrát podle jednotlivých proměnných derivujeme.
+ Tedy např.
+\begin_inset Formula 
+\[
+\frac{\partial^{2}f}{\partial x\partial y}=\frac{\partial^{2}f}{\partial y\partial x}
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Značení:
+\begin_layout Standard
+Jako příklad uveďme druhou parciální derivaci:
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{\partial^{2}f}{\partial x_{i}^{2}} & = & \frac{\partial\frac{\partial f}{\partial x_{i}}}{\partial x_{i}}\\
@@ -6112,7 +7120,6 @@ Značení:
 
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Derivuj parciální derivaci podle 
 \begin_inset Formula $x$
@@ -6137,7 +7144,6 @@ Derivuj parciální derivaci podle
 ;
 \end_layout
 
-\end_deeper
 \begin_layout Section
 Vyšetření průběhu funkce
 \begin_inset space ~
@@ -6439,15 +7445,63 @@ faGraduationCap}{(*)}
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Marginal
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
 \color purple
 Vektor nejrychlejšího růstu.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -6562,7 +7616,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -6626,13 +7680,6 @@ nabla
 , značí gradient
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -6655,7 +7702,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -6692,13 +7739,6 @@ Normalizace vektoru
 \overrightarrow{n}=\frac{\overrightarrow{a}}{\left\Vert \overrightarrow{a}\right\Vert }=\left(\frac{a_{1}}{\left\Vert \overrightarrow{a}\right\Vert };\,\frac{a_{2}}{\left\Vert \overrightarrow{a}\right\Vert };\,\cdots;\,\frac{a_{n}}{\left\Vert \overrightarrow{a}\right\Vert };\right)
 \]
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset VSpace defskip
 \end_inset
 
 
@@ -7013,95 +8053,6 @@ Eukleidovská vzdálenost bodů je
 \end_layout
 
 \begin_layout Section
-Hessova matice (Hessián)
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texorpdfstring{
-\backslash
-faGraduationCap}{(*)}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Vyšetřování lokálních extrémů funkce více proměnných vede na úlohu rozhodnout
- o typu definitnosti Hessovy matice.
- 
-\end_layout
-
-\begin_layout Standard
-Hessián je determinant Hessovy matice, někdy se tak taky označuje sama matice.
- Hessova matice je matice parciálních derivací druhých řádů (
-\begin_inset Quotes gld
-\end_inset
-
-parciální derivace parciálních derivací
-\begin_inset Quotes grd
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Hessovou maticí zjistíme, zda je kritický bod extrém a případně jaký (minimum,
- maximum nebo sedlový bod).
-\end_layout
-
-\begin_layout Itemize
-Pokud máme 
-\series bold
-více bodů podezřelých z extrémů
-\series default
-, dosadíme je do Hessovy matice, kterou následně vyšetříme.
-\end_layout
-
-\begin_layout Standard
-Nechť máme funkci 
-\begin_inset Formula $f(x_{1},x_{2},\ldots,x_{n})$
-\end_inset
-
-, potom její Hessova matice je: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align*}
-\nabla^{2}f\left(x_{1},\,\ldots,\,x_{n}\right) & =\left(\begin{array}{cccc}
-\frac{\partial^{2}f}{\partial x_{1}^{\,\,2}} & \frac{\partial^{2}f}{\partial x_{1}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{1}\partial x_{n}}\\
-\frac{\partial^{2}f}{\partial x_{2}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{2}^{\,\,2}} & \cdots & \frac{\partial^{2}f}{\partial x_{2}\partial x_{n}}\\
-\vdots & \vdots & \ddots & \vdots\\
-\frac{\partial^{2}f}{\partial x_{n}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{n}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{n}^{\,\,2}}
-\end{array}\right)\\
- & \left[=\left(\begin{array}{ccc}
-\text{x podle x} & \text{x podle y} & \text{x podle z}\\
-\text{y podle x} & \text{y podle y} & \text{y podle z}\\
-\text{z podle x} & \text{z podle y} & \text{z podle z}
-\end{array}\right)\right]
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Platí, že pokud je Hessova matice nějak semidefinitivní, tak nemůžu o globálnost
-i nic prohlásit a prostě smůla.
-\end_layout
-
-\begin_layout Section
 Definitnost matic
 \begin_inset space ~
 \end_inset
@@ -7124,7 +8075,7 @@ faGraduationCap}{(*)}
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Vlastnost regulárních
 \begin_inset Foot
 status open
@@ -7183,19 +8134,39 @@ Pokud má výsledek po vynásobení různými vektory různá znaménka, je mati
 \end_layout
 
 \begin_layout Standard
-—
-\end_layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
 
-\begin_layout Standard
-\begin_inset Marginal
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
 
-\shape italic
-\size normal
-\color purple
-Pozitivní minimum; negativní maximum.
+
+\backslash
+centering
 \end_layout
 
 \end_inset
@@ -7203,36 +8174,431 @@ Pozitivní minimum; negativní maximum.
 
 \end_layout
 
-\begin_layout Itemize
-Jestliže je matice 
-\series bold
-pozitivně definitní
-\series default
-, pak je v bodě 
-\series bold
-lokální ostré minimum
-\series default
-, pokud je semidefinitní, pak minimum není ostré 
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
 \end_layout
 
-\begin_layout Itemize
-Jestliže je matice 
-\series bold
-negativně definitní
-\series default
-, pak je v bodě
-\series bold
- lokální ostré maximum
-\series default
-, pokud je semidefinitní, pak maximum není ostré 
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/pozitivne definitni.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Jestliže je matice indefinitní, pak je v bodě sedlový bod.
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pozitivně definitní funkce.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/negativne definitni.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Negativně definitní funkce.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/pozitivne semidefinitni.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pozitivně semidefinitní funkce.
+ Na dně funkce se nachází hřbet.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "45col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/negativne semidefinitni.png
+	lyxscale 20
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Negativně semidefinitní funkce.
+ Na vrcholu funkce se nachází hřbet.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Graphics
+	filename images/indefinitni.png
+	lyxscale 20
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Indefinitní funkce se sedlovým bodem.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Sylvestrovo kritérium
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+vlastní čísla? smíšená derivace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Pouze pro 
+\series bold
+SYMETRICKÉ 
+\series default
+matice.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7255,21 +8621,59 @@ nelze
 \end_inset
 
  může být pozitivně či negativně semidefinitní, nebo indefinitní.
+ Můžeme použít
+\series bold
+ pouze pro
+\series default
+\shape italic
+ 
+\series bold
+\emph on
+symetrické
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\emph on
+Symetrická matice je čtvercová matice 
+\begin_inset Formula $A$
+\end_inset
+
+, která se splňuje rovnost 
+\begin_inset Formula $A=A^{T}$
+\end_inset
+
+.
+ Prvky symetrické podle diagonály jsou stejné.
 \end_layout
 
-\begin_layout Itemize
-Můžeme použít pouze pro 
-\emph on
-symetrické matice
+\end_inset
+
+
+\series default
+ matice
+\shape default
 \emph default
 .
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+Postup:
+\end_layout
+
+\begin_layout Enumerate
 Spočítáme 
+\shape italic
 \emph on
 rohové subdeterminanty
+\shape default
 \emph default
+ 
+\begin_inset Formula $M_{1},\ldots,M_{n}$
+\end_inset
+
 :
 \end_layout
 
@@ -7290,88 +8694,8 @@ rohové subdeterminanty
 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-Vyhodnocení výsledků
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Itemize
-Pokud 
-\begin_inset Formula $\forall j:\,det\left(M_{2j+1}\right)<0\,\text{a}\,det\left(M_{2j}\right)>0\,\Leftrightarrow$
-\end_inset
-
- matice 
-\begin_inset Formula $M$
-\end_inset
-
- je 
-\series bold
-negativně definitní
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-tj.: 
-\begin_inset Quotes gld
-\end_inset
-
-
-\begin_inset Formula $-$
-\end_inset
-
-
-\begin_inset Quotes grd
-\end_inset
-
- (levý horní roh) 
-\begin_inset Formula $\rightarrow$
-\end_inset
-
- 
-\begin_inset Quotes gld
-\end_inset
-
-
-\begin_inset Formula $+$
-\end_inset
-
-
-\begin_inset Quotes grd
-\end_inset
-
- 
-\begin_inset Formula $\rightarrow$
-\end_inset
-
- 
-\begin_inset Quotes gld
-\end_inset
-
-
-\begin_inset Formula $-$
-\end_inset
-
-
-\begin_inset Quotes grd
-\end_inset
-
- 
-\begin_inset Formula $\rightarrow$
-\end_inset
-
- ...
- (pravý dolní roh).
-\end_layout
-
-\end_deeper
-\end_inset
-
-
+\begin_layout Enumerate
+Vyhodnotíme výsledky:
 \end_layout
 
 \begin_layout Itemize
@@ -7406,16 +8730,6 @@ negativně definitní
 .
 \end_layout
 
-\begin_layout Itemize
-Pokud má matice na diagonále 
-\series bold
-alespoň dva prvky
-\series default
-, kde je jeden kladný a druhý záporný, je matice 
-\series bold
-indefinitní
-\end_layout
-
 \begin_layout Standard
 
 \series bold
@@ -7426,11 +8740,34 @@ Pokud neplatí ani jedno, není možné touto metodou definitnost určit
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Toto je nejspíš kravina:
+\end_layout
+
+\begin_layout Itemize
+Pokud má matice na diagonále 
+\series bold
+alespoň dva prvky
+\series default
+, kde je jeden kladný a druhý záporný, je matice 
+\series bold
+indefinitní
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Shadowbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -7438,7 +8775,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -7448,7 +8785,7 @@ status open
 
 \series bold
 \bar under
-Determinant matice pomocí Sarussova pravidla
+Zjištění determinantu matice pomocí Sarussova pravidla
 \end_layout
 
 \begin_layout Plain Layout
@@ -7467,8 +8804,337 @@ a_{21} & {\color{green}a_{22}} & a_{23}\\
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hessova matice (Hessián)
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
-\begin_inset VSpace defskip
+
+
+\backslash
+texorpdfstring{
+\backslash
+faGraduationCap}{(*)}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Matice druhých parciálních derivací.
+ Dosazujeme do ní body podezřelé z
+\begin_inset space ~
+\end_inset
+
+extrémů.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "70col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "10pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Pokud je matice semidefinitní, nemůžeme prohlásit nic o
+\begin_inset space ~
+\end_inset
+
+globálnosti.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vyšetřování lokálních extrémů funkce více proměnných vede na úlohu 
+\series bold
+rozhodnout o
+\begin_inset space ~
+\end_inset
+
+definitnosti Hessovy matice
+\series default
+.
+ Hessián je determinant Hessovy matice, někdy se tak taky označuje sama
+ matice.
+ Hessova matice je matice parciálních derivací druhých řádů (
+\begin_inset Quotes gld
+\end_inset
+
+parciální derivace parciálních derivací
+\begin_inset Quotes grd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+Hessovou maticí zjistíme, zda je kritický bod extrém a případně jaký (minimum,
+ maximum nebo sedlový bod).
+\end_layout
+
+\begin_layout Itemize
+Pokud máme 
+\series bold
+více bodů podezřelých z extrémů
+\series default
+, dosadíme je do Hessovy matice, kterou následně vyšetříme.
+\end_layout
+
+\begin_layout Standard
+Nechť máme funkci 
+\begin_inset Formula $f(x_{1},x_{2},\ldots,x_{n})$
+\end_inset
+
+, potom její Hessova matice je: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\nabla^{2}f\left(x_{1},\,\ldots,\,x_{n}\right) & =\left(\begin{array}{cccc}
+\frac{\partial^{2}f}{\partial x_{1}^{2}} & \frac{\partial^{2}f}{\partial x_{1}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{1}\partial x_{n}}\\
+\frac{\partial^{2}f}{\partial x_{2}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{2}^{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{2}\partial x_{n}}\\
+\vdots & \vdots & \ddots & \vdots\\
+\frac{\partial^{2}f}{\partial x_{n}\partial x_{1}} & \frac{\partial^{2}f}{\partial x_{n}\partial x_{2}} & \cdots & \frac{\partial^{2}f}{\partial x_{n}^{2}}
+\end{array}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+První řádek matice říká:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Druhý řádek matice říká:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Enumerate
+Derivujeme parciální derivaci podle 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ podle 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Box Shadowbox
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "10pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\bar under
+Jak si matici odvodit/zapamatovat
+\end_layout
+
+\begin_layout Plain Layout
+Nejprve zapíšeme takto sloupec a řádek
+\begin_inset Formula 
+\[
+\begin{array}{c|ccccc}
+ & x_{1} & x_{2} & x_{i} & \cdots & x_{n}\\
+\hline x_{1} &  &  &  & \cdots\\
+x_{2} &  &  &  & \cdots\\
+x_{i} &  &  &  & \ddots\\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+x_{n} &  &  &  & \cdots
+\end{array}
+\]
+
+\end_inset
+
+a poté jen zafixujeme řádek a přidáme do každé buňky daný sloupec
+\begin_inset Formula 
+\[
+\begin{array}{c|ccccc}
+ & x_{1} & x_{2} & x_{i} & \cdots & x_{n}\\
+\hline x_{1} & \partial x_{1}^{2} & \partial x_{1}\partial x_{2} & \partial x_{1}\partial x_{i} & \cdots & \partial x_{2}\partial x_{n}\\
+x_{2} & \partial x_{2}\partial x_{1} & \partial x_{2}^{2} & \partial x_{2}\partial x_{i} & \cdots & \partial x_{2}\partial x_{n}\\
+x_{i} & \partial x_{i}\partial x_{1} & \partial x_{i}\partial x_{2} & \partial x_{i}^{2} & \ddots & \partial x_{i}\partial x_{n}\\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots\\
+x_{n} & \partial x_{n}\partial x_{1} & \partial x_{n}\partial x_{2} & \partial x_{n}\partial x_{i} & \cdots & \partial x_{n}^{2}
+\end{array}
+\]
+
 \end_inset
 
 
@@ -7477,6 +9143,119 @@ a_{21} & {\color{green}a_{22}} & a_{23}\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Kladné 
+\series bold
+pozitivní
+\series default
+ 
+\series bold
+minimum
+\series default
+;
+\begin_inset Newline newline
+\end_inset
+
+Záporné 
+\series bold
+negativní
+\series default
+ 
+\series bold
+maximum
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Jestliže je matice 
+\series bold
+pozitivně definitní
+\series default
+, pak je v bodě 
+\series bold
+lokální ostré minimum
+\series default
+, pokud je semidefinitní, pak minimum není ostré 
+\end_layout
+
+\begin_layout Itemize
+Jestliže je matice 
+\series bold
+negativně definitní
+\series default
+, pak je v bodě
+\series bold
+ lokální ostré maximum
+\series default
+, pokud je semidefinitní, pak maximum není ostré 
+\end_layout
+
+\begin_layout Itemize
+Jestliže je matice indefinitní, pak je v bodě sedlový bod.
 \end_layout
 
 \begin_layout Section
@@ -7720,6 +9499,25 @@ Základní pojmy
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+TODO
+\end_layout
+
+\begin_layout Plain Layout
+Co to znamená? Že a=b?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \series bold
 Rozdělení intervalu.
@@ -7802,6 +9600,23 @@ Fun fact:
 
 \begin_layout Section
 Riemannův integrál funkce jedné a více proměnných
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+\color purple
+Plocha pod křivkou.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -7963,13 +9778,21 @@ infimum
  Potom
 \begin_inset Formula 
 \[
-S\left(\sigma\right)=\sum_{i=1}^{n}M_{i}\Delta_{i}\text{\,\,\,a\,\,\,}s\left(\sigma\right)=\sum_{i=1}^{n}m_{i}\Delta_{i}
+S\left(\sigma\right)=\sum_{i=1}^{n}M_{i}\Delta_{i}\quad\text{a}\quad s\left(\sigma\right)=\sum_{i=1}^{n}m_{i}\Delta_{i}
 \]
 
 \end_inset
 
-nazýváme horním, resp.
- dolním, součtem funkce 
+nazýváme 
+\series bold
+horním
+\series default
+, resp.
+ 
+\series bold
+dolním
+\series default
+, (integrálním) součtem funkce 
 \begin_inset Formula $f$
 \end_inset
 
@@ -7985,10 +9808,25 @@ nazýváme horním, resp.
  Dolní, resp.
  horní, součty představují obsah plochy tvořené obdélníky pod, resp.
  nad, grafem funkce.
+ Horní integrální součet značíme 
+\begin_inset Formula $\intop_{a}^{\underline{b}}f$
+\end_inset
+
+ resp.
+ dolní 
+\begin_inset Formula $\intop_{\underline{a}}^{b}f$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Posloupnost rozdělení 
+
+\series bold
+Definice.
+
+\series default
+ Posloupnost rozdělení 
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
@@ -8009,7 +9847,12 @@ Nyní můžeme zformulovat velmi důležitou větu, umožňující definovat Rie
 \end_layout
 
 \begin_layout Standard
-Nechť 
+
+\series bold
+Věta.
+
+\series default
+ Nechť 
 \begin_inset Formula $\sigma_{n}$
 \end_inset
 
@@ -8025,11 +9868,11 @@ Nechť
 \begin_inset Formula $\left\langle a,b\right\rangle $
 \end_inset
 
- .
+.
  Potom limity
 \begin_inset Formula 
 \[
-\lim_{n\rightarrow\infty}s\left(\sigma_{n}\right)\text{\,\,\,a\,\,\,}\lim_{n\rightarrow\infty}S\left(\sigma_{n}\right)
+\lim_{n\rightarrow\infty}s\left(\sigma_{n}\right)\quad\text{a}\quad\lim_{n\rightarrow\infty}S\left(\sigma_{n}\right)
 \]
 
 \end_inset
@@ -8039,6 +9882,14 @@ existují, jsou si rovny a nezáleží na konkrétní volbě posloupnosti
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definice.
+
+\series default
  Tuto společnou limitu nazýváme Riemannovým integrálem funkce 
 \begin_inset Formula $f$
 \end_inset
@@ -8050,12 +9901,82 @@ existují, jsou si rovny a nezáleží na konkrétní volbě posloupnosti
  a značíme symboly
 \begin_inset Formula 
 \[
-\int_{a}^{b}f\text{\,\,\,nebo\,\,\,}\int_{a}^{b}f\left(x\right)\text{d}x\text{.}
+\int_{a}^{b}f\text{\quad nebo\quad}\int_{a}^{b}f\left(x\right)\text{d}x\text{.}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Definice Holeňa.
+
+\series default
+ Z výše uvedené definice dolních a horních součtů 
+\begin_inset Formula $f$
+\end_inset
+
+ při rozdělení 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ plyne, že při kterémkoliv rozdělení 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ intervalu 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+ musí platit 
+\begin_inset Formula $s\left(\sigma\right)\leq S\left(\sigma\right)$
+\end_inset
+
+.
+ Přejdeme-li k definici integrálních součtů, je tím pádem také 
+\begin_inset Formula $\intop_{\underline{a}}^{b}f\leq\intop_{a}^{\underline{b}}f$
+\end_inset
+
+.
+ V případě, kdy v této nerovnosti nastává rovnost, tj.
+ kdy
+\begin_inset Formula 
+\[
+\intop_{\underline{a}}^{b}f=\intop_{a}^{\underline{b}}f\text{,}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+říkáme, že 
+\begin_inset Formula $f$
+\end_inset
+
+ je na 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+ integrovatelné a společnou hodnotou obou integrálních součtů nazýváme určitý
+ integrál (přesněji Riemannův určitý integrál) 
+\begin_inset Formula $f$
+\end_inset
+
+ na 
+\begin_inset Formula $\left\langle a,b\right\rangle $
+\end_inset
+
+.
+ Značíme jej 
+\begin_inset Formula $\int_{a}^{b}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -8447,6 +10368,71 @@ Primitivní funkce
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Procesu hledání primitivní funkce říkáme integrování.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Primitivní funkce k funkci 
 \begin_inset Formula $f$
 \end_inset
@@ -8458,13 +10444,21 @@ Primitivní funkce k funkci
 , pro kterou platí, že 
 \begin_inset Formula 
 \[
-f=F'
+f=F'\text{.}
 \]
 
 \end_inset
 
-.
- Hledání primitivní funkce je tedy něco jako inverzní proces k derivování.
+Hledání primitivní funkce je tedy něco jako inverzní proces k derivování.
+ Ke každé funkci 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ spojité na intervalu 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ existuje na tomto intervalu funkce primitivní.
 \end_layout
 
 \begin_layout Subsection
@@ -8473,10 +10467,10 @@ Primitivní funkce elementárních funkcí
 
 \begin_layout Standard
 \begin_inset Box Shadowbox
-position "t"
+position "c"
 hor_pos "c"
 has_inner_box 1
-inner_pos "t"
+inner_pos "c"
 use_parbox 0
 use_makebox 0
 width "100col%"
@@ -8484,7 +10478,7 @@ special "none"
 height "1in"
 height_special "totalheight"
 thickness "0.4pt"
-separation "3pt"
+separation "10pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
@@ -8502,7 +10496,7 @@ Přehled tabulkových integrálů
 \begin{eqnarray*}
 \int0\,\text{d}x & = & c\\
 \int a\,\text{d}x & = & ax+c\\
-\int x^{n}\,\text{d}x & = & \frac{1}{n+1}x^{n+1}+c\,\text{pro }\,x>0,\,n\in R\,\,\text{a}\,\,n\neq-1\\
+\int x^{n}\,\text{d}x & = & \frac{x^{n+1}}{n+1}+c\,\text{pro }\,x>0,\,n\in R\,\,\text{a}\,\,n\neq-1\\
 \int\frac{1}{x}\,\text{d}x & = & \ln\left|x\right|+c\,\,\text{pro}\,\,x\neq0\\
 \int e^{x}\,\text{d}x & = & e^{x}+c\\
 \int a^{x}\,\text{d}x & = & \frac{a^{x}}{\ln\left(a\right)}+c\,\,\text{pro}\,\,a>0,\,\,\text{a}\,\,a\neq1\\
@@ -8518,6 +10512,10 @@ Přehled tabulkových integrálů
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Jak hledat primitivní funkci:
 \end_layout
 
 \begin_layout Itemize
@@ -8540,7 +10538,7 @@ per partes
 \end_layout
 
 \begin_layout Itemize
-Substituce
+Substituční metoda
 \begin_inset Formula 
 \[
 \intop_{a}^{b}f\left(x\right)\text{d}x=\intop_{\varPhi^{-1}\left(a\right)}^{\varPhi^{-1}\left(b\right)}\varPhi'\left(t\right)f\left(\varPhi'\left(t\right)\right)\text{d}t
@@ -8594,6 +10592,78 @@ Dvojný integrál nad obdélníkovou oblastí
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+\begin_inset Quotes gld
+\end_inset
+
+Klasický
+\begin_inset Quotes grd
+\end_inset
+
+ obdélník se čtyřmi body.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Následující věta nám říká, jak převést problém výpočtu dvojného integrálu
  na dva jednodimenzionální podproblémy.
  Dvojný integrál přes obdélníkovou oblast 
@@ -8603,7 +10673,7 @@ Následující věta nám říká, jak převést problém výpočtu dvojného in
  definujeme jako
 \begin_inset Formula 
 \[
-\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\,y\right)\text{d}y\right)\text{d}x\text{\,\,nebo\,\,}\intop_{c}^{d}\left(\intop_{a}^{b}f\left(x,\,y\right)\text{d}x\right)\text{d}y
+\iint_{D}f\left(x,\,y\right)\text{d}x\text{d}y=\intop_{a}^{b}\left(\intop_{c}^{d}f\left(x,\,y\right)\text{d}y\right)\text{d}x\text{\,\quad nebo\quad}\intop_{c}^{d}\left(\intop_{a}^{b}f\left(x,\,y\right)\text{d}x\right)\text{d}y
 \]
 
 \end_inset
@@ -8626,8 +10696,127 @@ eme vzhledem k jedné proměnné a druhou považujeme za konstantu.
  pouze na jedné proměnné, vzhledem které provedeme druhou integraci.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/integral pres obedlnikovou oblast.svg
+	lyxscale 10
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Integrál přes obdélníkovou oblast.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Dvojný integrál nad obecnou oblastí
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\shape italic
+\size normal
+\color purple
+Dvě strany jsou 
+\series bold
+omezeny spojitými funkcemi
+\series default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
