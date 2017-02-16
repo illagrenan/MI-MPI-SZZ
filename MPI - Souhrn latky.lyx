@@ -297,11 +297,12 @@ Souhrn látky k SZZ
 \begin_layout Date
 
 \size large
-leden 2017
+12.
+ února 2017
 \begin_inset Newline newline
 \end_inset
 
-verze 0.2.1
+verze 0.3.0
 \end_layout
 
 \begin_layout Standard
@@ -332,25 +333,6 @@ thispagestyle{empty}
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset index_print
-LatexCommand printindex
-type "idx"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -1415,10 +1397,24 @@ status open
 \noindent
 \align left
 
+\series bold
 \shape italic
 \size normal
 \color purple
+\begin_inset Quotes gld
+\end_inset
+
 Asociace závorek komutuje pořadí operandů.
+\begin_inset Quotes grd
+\end_inset
+
+
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+Asociace = roznásobení; komutace = pořadí.
 \end_layout
 
 \end_inset
@@ -1903,6 +1899,38 @@ Průnik podgrup je znovu podgrupou
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+exhyphenpenalty=10
+\backslash
+hyphenpenalty=10
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Marginal
 status open
 
@@ -1915,6 +1943,20 @@ status open
 \color purple
 Všechny podgrupy mají řád, který dělí řád grupy.
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -2365,6 +2407,10 @@ cyklická
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Itemize
+Naleznout jeden generátor je složité, ale stačí jeden, abychom nalezli všechny.
 \end_layout
 
 \begin_layout Itemize
@@ -5906,7 +5952,11 @@ Polynom
 \begin_inset Formula $A\left(x\right)*B\left(x\right)$
 \end_inset
 
- dvou polynomů kladných stupňů
+ dvou polynomů kladných stupňů.
+\end_layout
+
+\begin_layout Itemize
+Ireducibilitu polynomu je potřeba posuzovat individuálně nad každým okruhem.
 \end_layout
 
 \end_inset
@@ -6544,22 +6594,52 @@ target "http://math.feld.cvut.cz/mt/txtb/5/txc3ba5a.htm"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-TODO
-\end_layout
-
-\begin_layout Plain Layout
-Dodat matematickou definici limity.
-\end_layout
-
+Říkáme, že funkce 
+\begin_inset Formula $f\left(x\right)$
 \end_inset
 
+ má v bodě 
+\begin_inset Formula $a$
+\end_inset
 
+ limitu 
+\begin_inset Formula $A$
+\end_inset
+
+, jestliže k libovolnému 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ existuje takové 
+\begin_inset Formula $δ>0$
+\end_inset
+
+, že pro všechna 
+\begin_inset Formula $x$
+\end_inset
+
+ z 
+\begin_inset Formula $δ$
+\end_inset
+
+-okolí bodu 
+\begin_inset Formula $a$
+\end_inset
+
+, z něhož vyjmeme bod 
+\begin_inset Formula $a$
+\end_inset
+
+ (tzv.
+ prstencová okolí bodu 
+\begin_inset Formula $a$
+\end_inset
+
+) je 
+\begin_inset Formula $\left|f\left(x\right)-A\right|<\epsilon$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -7021,28 +7101,6 @@ bodě
 \end_inset
 
  tedy můžeme definovat jako:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-TODO
-\end_layout
-
-\begin_layout Plain Layout
-Je to takto správně?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{align*}
 \frac{\partial f}{\partial x_{i}}\left(a_{1},\ldots,a_{n}\right) & =\lim_{h\rightarrow0}\frac{f\left(a_{1},\ldots,a_{i}+h,\ldots,a_{n}\right)-f\left(a_{1},\ldots,a_{n}\right)}{h}=\\
@@ -7487,7 +7545,7 @@ status open
 \shape italic
 \size normal
 \color purple
-Vektor nejrychlejšího růstu.
+Vektor nejrychlejšího růstu funkce.
 \end_layout
 
 \end_inset
@@ -7891,47 +7949,6 @@ status open
 texorpdfstring{
 \backslash
 faGraduationCap}{(*)}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Shaded
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-DOTAZ
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-K čemu to je?
 \end_layout
 
 \end_inset
@@ -8520,19 +8537,6 @@ Sylvestrovo kritérium
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-vlastní čísla? smíšená derivace
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -8737,29 +8741,6 @@ Pokud neplatí ani jedno, není možné touto metodou definitnost určit
 \series default
  (přesněji řečeno: Hesseova matice není pozitivně ani negativně definitní)
  a musíme použít jinou metodu.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Toto je nejspíš kravina:
-\end_layout
-
-\begin_layout Itemize
-Pokud má matice na diagonále 
-\series bold
-alespoň dva prvky
-\series default
-, kde je jeden kladný a druhý záporný, je matice 
-\series bold
-indefinitní
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -9499,25 +9480,6 @@ Základní pojmy
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-TODO
-\end_layout
-
-\begin_layout Plain Layout
-Co to znamená? Že a=b?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 Rozdělení intervalu.
@@ -9535,7 +9497,11 @@ Rozdělení intervalu.
 \begin_inset Formula $a=x_{0}<x_{1}<\ldots<x_{n}=b$
 \end_inset
 
- se nazývá 
+ (tento zápis není intuitivní, ale stále platí, že 
+\begin_inset Formula $a<b$
+\end_inset
+
+) se nazývá 
 \series bold
 rozdělení intervalu
 \series default
@@ -9607,6 +9573,8 @@ Riemannův integrál funkce jedné a více proměnných
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 
 \shape italic
 \size normal
@@ -10078,190 +10046,6 @@ Horní součet
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Riemannův integrál vychází z faktu, že snadno vypočteme obsah obdélníka.
- Budeme tedy 
-\series bold
-aproximovat oblast pod grafem
-\series default
- funkce pomocí vhodných obdélníků.
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-\begin_inset CommandInset href
-LatexCommand href
-target "http://math.feld.cvut.cz/mt/txtd/1/txc3da1a.htm"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\intop_{a}^{\underline{b}}$
-\end_inset
-
- je horní integrální součet, 
-\begin_inset Formula $\intop_{\underline{b}}^{a}$
-\end_inset
-
- je dolní integrální součet.
- Navíc platí, že 
-\begin_inset Formula $\intop_{\underline{b}}^{a}\leq\intop_{a}^{\underline{b}}$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Pokud je funkce na intervalu integrovatelná, je možné integraci vyjádřit
- pomocí primitivní funkce (Newtonova formule)
-\begin_inset Formula 
-\[
-\intop_{a}^{b}f\left(x\right)\text{d}x=\left[F\left(x\right)\right]_{a}^{b}=F\left(b\right)-F\left(a\right)\text{.}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Počítání s určitými integrály:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-per partes – vychází z násobení derivace 
-\begin_inset Formula $(uv)'=u'v+v'u$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Itemize
-substituce – vychází z derivace složené funkce.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Místo intervalu můžeme mít např.
- pravoúhelník
-\begin_inset Formula 
-\[
-D=\left[a,~b\right]\times\left[c,~d\right]
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Vlastnosti dvojného integrálu:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Linearita – pokud jsou 
-\begin_inset Formula $f,~g$
-\end_inset
-
- integrovatelné na 
-\begin_inset Formula $D$
-\end_inset
-
-, pak jsou na 
-\begin_inset Formula $D$
-\end_inset
-
- integrovatelné 
-\begin_inset Formula $f+g$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Nerovnosti – pokud jsou 
-\begin_inset Formula $f,~g$
-\end_inset
-
- integrovatelné na 
-\begin_inset Formula $D$
-\end_inset
-
- a 
-\begin_inset Formula $f\leq g$
-\end_inset
-
-, pak 
-\begin_inset Formula $\iint_{D}f\left(x\right)\leq\iint_{D}g\left(x\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Věta:
-\begin_inset Formula $\iint_{D}f\left(x,~y\right)$
-\end_inset
-
- je možné rozepsat jako 
-\begin_inset Formula $\int_{a}^{b}\left(\int_{c}^{d}f\left(x,~y\right)\right)$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Můžeme integrovat i nad obecnější oblastí:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-typ 1 – shora a zdola,
-\end_layout
-
-\begin_layout Itemize
-typ 2 – zleva a zprava.
-\end_layout
-
-\begin_layout Itemize
-Lagrangeova funkce
-\end_layout
-
-\end_deeper
 \end_inset
 
 
