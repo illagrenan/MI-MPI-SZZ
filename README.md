@@ -2,10 +2,9 @@
 
 ## Chci se učit ##
 
-Aktuální build PDF je ve složce `pdf/`:
+Aktuální build PDF je build je v rootu repozitáře:
 
-- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/skripta/MPI%20-%20Souhrn%20latky.pdf)** 
-- :blue_book: **[Stáhnout Souhrn látky na ústní zkoušku [PDF]](https://github.com/illagrenan/mi-mpi_souhrn/raw/master/priprava_na_ustni/MPI%20-%20Ustni.pdf)** 
+- :blue_book: **[Stáhnout Souhrn látky [PDF]](https://github.com/illagrenan/MI-MPI-SZZ/raw/master/MPI%20-%20Souhrn%20latky.pdf)** 
 
 ## Chci přispět ##
 
